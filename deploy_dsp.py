@@ -44,22 +44,32 @@ workspace_volume = modal.Volume.from_name("lean-workspace", create_if_missing=Tr
 )
 def run_remote_prover():
     import subprocess
+    import os
     os.chdir("/root/workspace")
     
-    # --- Step 2: Robust Clone & Branch Selection ---
+    # --- Step 2: Robust Clone or Update ---
     if not os.path.exists("DSP-Plus"):
-        print("🚀 Step 2: Cloning repository...")
+        print("🚀 Repository missing. Cloning DSP-Plus...")
         subprocess.run([
             "git", "clone", "--recurse-submodules", 
             "https://github.com/A2DR1/DSP-Plus.git"
         ], check=True)
+        os.chdir("DSP-Plus")
+    else:
+        print("🔄 Repository exists. Updating from GitHub...")
+        os.chdir("DSP-Plus")
+        # Reset local changes in the cloud to avoid merge conflicts
+        subprocess.run(["git", "reset", "--hard"], check=True)
+        # Pull the latest changes for the Austin_01 branch
+        subprocess.run(["git", "pull", "origin", "Austin_01"], check=True)
     
-    os.chdir("DSP-Plus")
-    
-    # Ensure you are on the correct research branch
-    print("🌿 Switching to Austin_01 branch...")
+    # Ensure you are on the correct branch
+    print("🌿 Ensuring Austin_01 branch is active...")
     subprocess.run(["git", "checkout", "Austin_01"], check=True)
-
+    
+    # Update submodules in case mathlib4 or others changed
+    subprocess.run(["git", "submodule", "update", "--init", "--recursive"], check=True)
+    
     # --- Step 4: Build Mathlib4 ---
     if not os.path.exists("mathlib4/build"):
         print("🔨 Step 4: Deep build of Mathlib4/LeanCopilot...")
