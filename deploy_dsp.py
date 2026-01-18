@@ -234,8 +234,9 @@ def verify_dependencies():
     secrets=[modal.Secret.from_name("dsp-plus-secrets")],
     volumes={"/root/workspace": workspace_volume},
     memory=32768,      # 32GB for Mathlib builds
-    timeout=14400,     # 4 hours timeout
-    cpu=8.0            # More CPUs for faster compilation
+    timeout=21600,     # 6 hours timeout (increased for workflow)
+    cpu=8.0,           # More CPUs for faster compilation
+    retries=0          # Don't retry on failure
 )
 def run_remote_prover():
     """Main function to run the DSP-Plus prover."""
@@ -259,10 +260,18 @@ def run_remote_prover():
     setup_openblas_for_leancopilot(repo_path)
     build_mathlib(repo_path)
     
-    # Step 4: Run the workflow
+    # Step 4: Run the workflow with unbuffered output
     print("🏃 Starting the DSP workflow...")
+    
+    # Use unbuffered Python output and verbose logging
+    workflow_cmd = """
+    source /root/.elan/env
+    export PYTHONUNBUFFERED=1
+    python -u dsp_workflow.py --config config/default.py 2>&1 | tee -a workflow.log
+    """
+    
     run_command(
-        "source /root/.elan/env && python dsp_workflow.py --config config/default.py",
+        workflow_cmd,
         cwd=repo_path,
         shell=True,
         description="Running DSP workflow"
