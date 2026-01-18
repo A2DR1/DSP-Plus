@@ -24,6 +24,9 @@ from dsp import Draft, Sketch, Prove
 from dsp.proving import create_app
 from dsp.utils import load_dataset, load_config
 
+import modal 
+# Volume to store the 10GB+ of Mathlib build artifacts
+workspace_volume = modal.Volume.from_name("lean-workspace", create_if_missing=True)
 
 def process_single_task(tasks: Tuple[dict, str, int]) -> None:
     """
@@ -76,6 +79,8 @@ if __name__ == "__main__":
     # Multi-process submit in order
     all_tasks = [(data, cfg.target_dir, idx) for idx in range(cfg.attempts) for data in datasets]
     processes = []
+    counter = 0
+
     try:
         for task in all_tasks:
             while len(processes) >= cfg.concurrent_num:
@@ -84,6 +89,12 @@ if __name__ == "__main__":
             p = mp.Process(target=process_single_task, args=(task,))
             p.start()
             processes.append(p)
+            
+            counter += 1
+            if counter % 5 == 0:
+                logger.info(f"Submitted {counter}/{len(all_tasks)} tasks.")
+                workspace_volume.commit()
+
     except KeyboardInterrupt:
         print("🛑 KeyboardInterrupt received! Terminating all processes...")
         for p in processes:

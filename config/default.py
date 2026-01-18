@@ -5,6 +5,8 @@
 Record all your configurations here
 """
 
+import os
+
 # Input data file path
 data = "datasets/minif2f.jsonl"
 
@@ -35,22 +37,14 @@ prove_leanserver_num = 64
 # Configuration for the draft model servers. Needs to be replaced before launching.
 draft_model_config = [
     {
-        "base_url": "http://localhost:20000/v1",
-        "api_key": "EMPTY",
-    },
-    {
-        "base_url": "http://localhost:20001/v1",
-        "api_key": "EMPTY",
-    },
-    {
-        "base_url": "http://localhost:20002/v1",
-        "api_key": "EMPTY",
-    },
+        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "api_key": os.environ.get("FOUNDARY_API_KEY"),
+    }
 ]
 
 # Sampling configuration for draft model
 draft_sample_config = {
-    "model": "Qwen/QwQ-32B",
+    "model": "DeepSeek-R1",
     "temperature": 0.6,
     "top_p": 0.95,
     "timeout": 3600,
@@ -60,14 +54,14 @@ draft_sample_config = {
 # Configuration for the sketch model servers. Needs to be replaced before launching.
 sketch_model_config = [
     {
-        "base_url": "http://localhost:8081/v1",
-        "api_key": "EMPTY",
+        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "api_key": os.environ.get("FOUNDARY_API_KEY"),
     },
 ]
 
 # Sampling configuration for the sketch model
 sketch_sample_config = {
-    "model": "deepseek-ai/DeepSeek-V3-0324",
+    "model": "DeepSeek-V3-0324",
     "temperature": 0.7,
     "top_p": 0.95,
     "timeout": 600,
@@ -82,7 +76,7 @@ sketch_verify_config = {
 # Configuration for the proving model servers. Needs to be replaced before launching.
 prove_model_config = [
     {
-        "base_url": "http://127.0.0.1:30001/v1",
+        "base_url": "https://austinszj--vllm-bfs-prover-inference-serve.modal.run",
         "api_key": "EMPTY",
     },
 ]
@@ -90,7 +84,7 @@ prove_model_config = [
 # Sampling configuration for the proving model
 prove_sampling_config = {
     "name_lean_copilot": "BFS-Prover-API",
-    "model": "bytedance-research/BFS-Prover",
+    "model": "ByteDance-Seed/BFS-Prover-V1-7B",
     "temperature": 1.1,
     "top_p": 1,
     "timeout": 1800,
