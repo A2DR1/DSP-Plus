@@ -69,14 +69,17 @@ def run_remote_prover():
     
     # Update submodules in case mathlib4 or others changed
     subprocess.run(["git", "submodule", "update", "--init", "--recursive"], check=True)
-    
+
+    # --- Step 4: Build Mathlib4 ---
     # --- Step 4: Build Mathlib4 ---
     if not os.path.exists("mathlib4/build"):
         print("🔨 Step 4: Deep build of Mathlib4/LeanCopilot...")
         os.chdir("mathlib4")
-        # Sourcing the environment is safer for nested lake builds
+        
+        # We pass the shared library path to Lake so it uses the system OpenBLAS
         build_script = """
         source /root/.elan/env
+        export LEAN_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:$LEAN_LIBRARY_PATH
         lake build RulesetInit
         lake build LeanCopilot
         lake build repl
@@ -87,6 +90,6 @@ def run_remote_prover():
 
     # --- Start Execution ---
     print("🏃 Starting the 244-problem dataset run...")
-    subprocess.run("source /root/.elan/env && python dsp_workflow.py --config configs/default.py", shell=True, executable="/bin/bash", check=True)
+    subprocess.run("source /root/.elan/env && python dsp_workflow.py --config config/default.py", shell=True, executable="/bin/bash", check=True)
     
     workspace_volume.commit() #
