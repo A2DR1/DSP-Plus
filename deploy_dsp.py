@@ -63,7 +63,7 @@ def run_command(cmd, cwd=None, shell=False, check=True, description=None):
                 shell=True,
                 cwd=cwd,
                 check=check,
-                capture_output=True,
+                capture_output=False,
                 text=True,
                 executable="/bin/bash"
             )
@@ -72,7 +72,7 @@ def run_command(cmd, cwd=None, shell=False, check=True, description=None):
                 cmd,
                 cwd=cwd,
                 check=check,
-                capture_output=True,
+                capture_output=False,
                 text=True
             )
         
