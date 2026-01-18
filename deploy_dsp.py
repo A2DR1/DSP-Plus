@@ -140,18 +140,20 @@ def setup_repository(workspace_path: Path, repo_url: str, branch: str):
     return repo_path
 
 
-def setup_openblas_symlink(repo_path: Path):
-    """Create symlink to system OpenBLAS for LeanCopilot."""
-    print("🔗 Setting up OpenBLAS symlink for LeanCopilot...")
+def setup_openblas_for_leancopilot(repo_path: Path):
+    """Setup system OpenBLAS for LeanCopilot to avoid building from source."""
+    print("🔗 Setting up system OpenBLAS for LeanCopilot...")
     
-    leancopilot_lib = repo_path / "mathlib4" / ".lake" / "packages" / "LeanCopilot" / ".lake" / "build" / "lib"
+    mathlib_path = repo_path / "mathlib4"
+    leancopilot_lib = mathlib_path / ".lake" / "packages" / "LeanCopilot" / ".lake" / "build" / "lib"
     leancopilot_lib.mkdir(parents=True, exist_ok=True)
     
-    # Find system OpenBLAS
-    system_openblas = "/usr/lib/x86_64-linux-gnu/libopenblas.so"
+    # System OpenBLAS location
+    system_openblas = Path("/usr/lib/x86_64-linux-gnu/libopenblas.so.0")
     target_link = leancopilot_lib / "libopenblas.so"
     
-    if target_link.exists():
+    # Create symlink to system library
+    if target_link.exists() or target_link.is_symlink():
         target_link.unlink()
     
     target_link.symlink_to(system_openblas)
@@ -192,6 +194,7 @@ def build_mathlib(repo_path: Path):
     lake build
     
     # Create completion marker
+    mkdir -p build
     touch build/.build_complete
     echo "✅ Build completed successfully"
     """
@@ -251,9 +254,9 @@ def run_remote_prover():
         branch="Austin_01"
     )
     
-    # Step 3: Build Mathlib4 if needed
+    # Step 3: Setup OpenBLAS and build Mathlib4 if needed
     os.chdir(repo_path)
-    setup_openblas_symlink(repo_path)
+    setup_openblas_for_leancopilot(repo_path)
     build_mathlib(repo_path)
     
     # Step 4: Run the workflow
