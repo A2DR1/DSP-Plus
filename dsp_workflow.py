@@ -62,6 +62,8 @@ if __name__ == "__main__":
     parser.add_argument('--world_size', type=int, default=1)
     args = parser.parse_args()
     cfg = load_config(args.config)
+
+    print("🚀 Starting DSP+ Workflow")
     
     # load dataset
     datasets = load_dataset(cfg.data, cfg.split, args.node_rank, args.world_size)
@@ -80,6 +82,9 @@ if __name__ == "__main__":
     all_tasks = [(data, cfg.target_dir, idx) for idx in range(cfg.attempts) for data in datasets]
     processes = []
     counter = 0
+
+    print("📝 Submitting tasks...")
+    print(f"Total tasks to process: {len(all_tasks)}")
 
     try:
         for task in all_tasks:
