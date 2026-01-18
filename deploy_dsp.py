@@ -262,6 +262,9 @@ def run_remote_prover():
     
     # Step 4: Run the workflow with unbuffered output
     print("🏃 Starting the DSP workflow...")
+
+    # print current path
+    print(f"Current working directory: {os.getcwd()}")
     
     # Use unbuffered Python output and verbose logging
     workflow_cmd = """
