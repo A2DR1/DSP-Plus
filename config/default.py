@@ -37,8 +37,9 @@ prove_leanserver_num = 64
 # Configuration for the draft model servers. Needs to be replaced before launching.
 draft_model_config = [
     {
-        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
-        "api_key": os.environ.get("FOUNDARY_API_KEY"),
+        # "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "base_url": "accounts/fireworks/models/deepseek-v3p2",
+        "api_key": os.environ.get("FIREWORK_API_KEY"),
     }
 ]
 
@@ -54,8 +55,9 @@ draft_sample_config = {
 # Configuration for the sketch model servers. Needs to be replaced before launching.
 sketch_model_config = [
     {
-        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
-        "api_key": os.environ.get("FOUNDARY_API_KEY"),
+        # "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "base_url": "accounts/fireworks/models/deepseek-r1-0528",
+        "api_key": os.environ.get("FIREWORK_API_KEY"),
     },
 ]
 
