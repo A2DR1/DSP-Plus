@@ -45,7 +45,7 @@ draft_model_config = [
 
 # Sampling configuration for draft model
 draft_sample_config = {
-    "model": "fireworks/deepseek-r1-basic",
+    "model": "fireworks/deepseek-r1-0528",
     "temperature": 0.6,
     "top_p": 0.95,
     "timeout": 3600,

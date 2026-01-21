@@ -26,6 +26,8 @@ def post_process_output(model_name, output):
         result = output.split(":::")[-1]
     elif model_name == "ByteDance-Seed/BFS-Prover-V1-7B":
         result = output.split(":::")[-1]
+    elif "BFS-Prover" in model_name:
+        result = output.split(":::")[-1]
     else:
         raise NotImplementedError(f"External model '{model_name}' not supported")
     return result
