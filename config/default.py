@@ -38,14 +38,14 @@ prove_leanserver_num = 64
 draft_model_config = [
     {
         # "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
-        "base_url": "accounts/fireworks/models/deepseek-v3p2",
+        "base_url": "https://api.fireworks.ai/inference/v1",
         "api_key": os.environ.get("FIREWORK_API_KEY"),
     }
 ]
 
 # Sampling configuration for draft model
 draft_sample_config = {
-    "model": "DeepSeek-R1",
+    "model": "fireworks/deepseek-r1-basic",
     "temperature": 0.6,
     "top_p": 0.95,
     "timeout": 3600,
@@ -56,14 +56,14 @@ draft_sample_config = {
 sketch_model_config = [
     {
         # "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
-        "base_url": "accounts/fireworks/models/deepseek-r1-0528",
+        "base_url": "https://api.fireworks.ai/inference/v1",
         "api_key": os.environ.get("FIREWORK_API_KEY"),
     },
 ]
 
 # Sampling configuration for the sketch model
 sketch_sample_config = {
-    "model": "DeepSeek-V3-0324",
+    "model": "fireworks/deepseek-v3p2",
     "temperature": 0.7,
     "top_p": 0.95,
     "timeout": 600,

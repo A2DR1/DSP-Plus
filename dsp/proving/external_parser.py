@@ -22,7 +22,9 @@ def pre_process_input(model_name, input):
 
 
 def post_process_output(model_name, output):
-    if model_name == "bytedance-research/BFS-Prover" or model_name == "ByteDance-Seed/BFS-Prover-V1-7B":
+    if model_name == "bytedance-research/BFS-Prover":
+        result = output.split(":::")[-1]
+    elif model_name == "ByteDance-Seed/BFS-Prover-V1-7B":
         result = output.split(":::")[-1]
     else:
         raise NotImplementedError(f"External model '{model_name}' not supported")
