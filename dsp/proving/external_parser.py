@@ -12,7 +12,7 @@ from abc import ABC, abstractmethod
 
 
 def pre_process_input(model_name, input):
-    if model_name == "bytedance-research/BFS-Prover":
+    if model_name == "bytedance-research/BFS-Prover" or model_name == "ByteDance-Seed/BFS-Prover-V1-7B":
         prompt = (
             input + ":::"
         )

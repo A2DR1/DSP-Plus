@@ -49,7 +49,8 @@ draft_sample_config = {
     "temperature": 0.6,
     "top_p": 0.95,
     "timeout": 3600,
-    "max_tokens": 32768,
+    # "max_tokens": 32768,
+    "max_tokens": 4096,
 }
 
 # Configuration for the sketch model servers. Needs to be replaced before launching.
@@ -67,7 +68,8 @@ sketch_sample_config = {
     "temperature": 0.7,
     "top_p": 0.95,
     "timeout": 600,
-    "max_tokens": 32768,
+    # "max_tokens": 32768,
+    "max_tokens": 4096,
 }
 
 # Verify configuration used in sketch phase
