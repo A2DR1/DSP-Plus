@@ -267,10 +267,16 @@ def run_remote_prover():
     print(f"Current working directory: {os.getcwd()}")
     
     # Use unbuffered Python output and verbose logging
+    # workflow_cmd = """
+    # source /root/.elan/env
+    # export PYTHONUNBUFFERED=1
+    # python -u dsp_workflow.py --config config/default.py 2>&1 | tee -a workflow.log
+    # """
+
     workflow_cmd = """
     source /root/.elan/env
     export PYTHONUNBUFFERED=1
-    python -u dsp_workflow.py --config config/default.py 2>&1 | tee -a workflow.log
+    python quick_start.py 2>&1 | tee -a workflow.log
     """
     
     run_command(

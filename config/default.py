@@ -20,19 +20,19 @@ target_dir = "result/dsp_minif2f"
 concurrent_num = 8
 
 # Attempts means the number of DSP workflow attempts for each problem
-attempts = 32
+attempts = 8
 
 # The maximum number of requests for each model server (will be counted and controlled locally)
-draft_max_running_requests = 128
+draft_max_running_requests = 32
 
 # The maximum number of requests for each model server (will be counted and controlled locally)
-sketch_max_running_requests = 128
+sketch_max_running_requests = 32
 
 # Number of Lean servers used for sketch verification
-sketch_leanserver_num = 8
+sketch_leanserver_num = 2
 
 # Number of Lean servers used for proof verification
-prove_leanserver_num = 64
+prove_leanserver_num = 16
 
 # Configuration for the draft model servers. Needs to be replaced before launching.
 draft_model_config = [
@@ -80,7 +80,7 @@ sketch_verify_config = {
 # Configuration for the proving model servers. Needs to be replaced before launching.
 prove_model_config = [
     {
-        "base_url": "https://austinszj--vllm-bfs-prover-inference-serve.modal.run",
+        "base_url": "https://austinszj--vllm-bfs-prover-inference-serve.modal.run/v1",
         "api_key": "EMPTY",
     },
 ]
