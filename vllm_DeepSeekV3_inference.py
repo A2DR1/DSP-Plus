@@ -14,7 +14,7 @@ vllm_image = (
 )
 
 MODEL_NAME = "deepseek-ai/DeepSeek-V3-0324"
-MODEL_REVISION = "e9b33ad038a3d5e0f7976e568f6a978f6a5b8281"  # avoid nasty surprises when repos update!
+MODEL_REVISION = "e9b33ad"  # avoid nasty surprises when repos update!
 
 hf_cache_vol = modal.Volume.from_name("huggingface-cache", create_if_missing=True)
 vllm_cache_vol = modal.Volume.from_name("vllm-cache", create_if_missing=True)
