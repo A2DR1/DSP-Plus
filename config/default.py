@@ -32,7 +32,7 @@ sketch_max_running_requests = 32
 sketch_leanserver_num = 2
 
 # Number of Lean servers used for proof verification
-prove_leanserver_num = 16
+prove_leanserver_num = 8
 
 # Configuration for the draft model servers. Needs to be replaced before launching.
 draft_model_config = [
