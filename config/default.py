@@ -17,7 +17,7 @@ split = ["test"]
 target_dir = "result/dsp_minif2f"
 
 # Number of concurrent processes allowed
-concurrent_num = 64
+concurrent_num = 8
 
 # Attempts means the number of DSP workflow attempts for each problem
 attempts = 32
@@ -37,8 +37,8 @@ prove_leanserver_num = 64
 # Configuration for the draft model servers. Needs to be replaced before launching.
 draft_model_config = [
     {
-        "base_url": "https://austinszj--vllm-deepseekr1-inference-serve.modal.run",
-        "api_key": "EMPTY",
+        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "api_key": os.environ.get("FOUNDARY_API_KEY"),
     }
 ]
 
@@ -54,8 +54,8 @@ draft_sample_config = {
 # Configuration for the sketch model servers. Needs to be replaced before launching.
 sketch_model_config = [
     {
-        "base_url": "https://austinszj--vllm-deepseekv3-inference-serve.modal.run",
-        "api_key": "EMPTY",
+        "base_url": "https://austinszj-3211-resource.openai.azure.com/openai/v1",
+        "api_key": os.environ.get("FOUNDARY_API_KEY"),
     },
 ]
 
