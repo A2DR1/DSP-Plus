@@ -233,10 +233,11 @@ def verify_dependencies():
     image=image,
     secrets=[modal.Secret.from_name("dsp-plus-secrets")],
     volumes={"/root/workspace": workspace_volume},
-    memory=32768,      # 32GB for Mathlib builds
-    timeout=21600,     # 6 hours timeout (increased for workflow)
-    cpu=8.0,           # More CPUs for faster compilation
-    retries=0          # Don't retry on failure
+    # Increase Memory to 64GB and CPU to 16 to handle the I/O storm
+    memory=65536,      
+    cpu=16.0,          
+    timeout=21600,     
+    retries=0          
 )
 def run_remote_prover():
     """Main function to run the DSP-Plus prover."""
