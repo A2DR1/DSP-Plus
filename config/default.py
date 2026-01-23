@@ -1,9 +1,13 @@
 #  Copyright (c) Microsoft Corporation.
 #  Licensed under the MIT License.
 import os
-import dotenv
+from dotenv import load_dotenv
 
-dotenv.load_dotenv()
+load_dotenv()
+
+print("Loaded environment variables from .env file.")
+print(f"OPENAI_API_KEY: {os.environ.get('OPENAI_API_KEY')}")
+print(f"FIREWORKS_API_KEY: {os.environ.get('FIREWORKS_API_KEY')}")
 
 """
 Record all your configurations here
@@ -36,13 +40,13 @@ prove_leanserver_num = 2
 # --- DRAFT PHASE (Thinking/Natural Language Proof) ---
 draft_model_config = [
     {
-        "base_url": "https://api.openai.com/v1",
-        "api_key": os.getenv("OPENAI_API_KEY"), # Replace with fresh key
+        "base_url": "https://api.fireworks.ai/inference/v1",
+        "api_key": os.environ.get("FIREWORKS_API_KEY"),
     },
 ]
 
 draft_sample_config = {
-    "model": "gpt-4o",
+    "model": "fireworks/deepseek-r1-0528",
     "temperature": 0.6,
     "top_p": 0.95,
     "timeout": 3600,
@@ -52,13 +56,13 @@ draft_sample_config = {
 # --- SKETCH PHASE (Autoformalization into Lean 4) ---
 sketch_model_config = [
     {
-        "base_url": "https://api.openai.com/v1",
-        "api_key": os.getenv("OPENAI_API_KEY"), # Replace with fresh key        
+        "base_url": "https://api.fireworks.ai/inference/v1",
+        "api_key": os.environ.get("FIREWORKS_API_KEY"),     
     },
 ]
 
 sketch_sample_config = {
-    "model": "gpt-4o",
+    "model": "fireworks/deepseek-v3p2",
     "temperature": 0.7,
     "top_p": 0.95,
     "timeout": 600,
@@ -72,14 +76,15 @@ sketch_verify_config = {
 # --- PROVING PHASE (Symbolic Step-by-Step Tactic Generation) ---
 prove_model_config = [
     {
-        "base_url": "https://api.openai.com/v1",
-        "api_key": os.getenv("OPENAI_API_KEY"), # Replace with fresh key
+        "base_url": "https://austinszj--vllm-bfs-prover-inference-serve.modal.run/v1",
+        "api_key": "EMPTY",
     },
 ]
 
 prove_sampling_config = {
     "name_lean_copilot": "BFS-Prover-API",
-    "model": "gpt-4o-mini", # Faster and cheaper for high-frequency search
+    # "model": "gpt-4o-mini", # Faster and cheaper for high-frequency search
+    "model": "ByteDance-Seed/BFS-Prover-V1-7B",
     "temperature": 1.1,
     "top_p": 1,
     "timeout": 1800,

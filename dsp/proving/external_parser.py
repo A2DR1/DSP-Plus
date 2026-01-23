@@ -6,7 +6,7 @@ def pre_process_input(model_name, input):
     # Add support for OpenAI models
     if model_name in ["gpt-4o-mini", "gpt-4o"]:
         return input
-    elif model_name == "bytedance-research/BFS-Prover":
+    elif model_name in ["bytedance-research/BFS-Prover", "ByteDance-Seed/BFS-Prover-V1-7B"]:
         return input + ":::"
     else:
         raise NotImplementedError(f"External model '{model_name}' not supported")
@@ -15,7 +15,7 @@ def post_process_output(model_name, output):
     # Add support for OpenAI models
     if model_name in ["gpt-4o-mini", "gpt-4o"]:
         return output
-    elif model_name == "bytedance-research/BFS-Prover":
+    elif model_name in ["bytedance-research/BFS-Prover", "ByteDance-Seed/BFS-Prover-V1-7B"]:
         return output.split(":::")[-1]
     else:
         raise NotImplementedError(f"External model '{model_name}' not supported")
