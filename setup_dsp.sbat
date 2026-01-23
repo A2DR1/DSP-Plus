@@ -1,0 +1,30 @@
+#!/bin/bash
+#SBATCH --job-name=DSP_Setup
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32g
+#SBATCH --time=04:00:00
+#SBATCH --account=lsa1
+#SBATCH --partition=standard
+
+# 1. Clear and Load System Modules
+module purge
+module load python3.11-anaconda/2024.02
+module load gcc
+module load cmake
+
+# 2. Initialize Environments
+source /sw/pkgs/arc/python3.11-anaconda/2024.02-1/etc/profile.d/conda.sh
+conda activate DSP_Plus_env
+source $HOME/.elan/env
+
+# 3. Navigate to Project Root
+cd /home/austinsz/Lean_QC/DSP-Plus
+
+# 4. Clean Build Command
+# Removed the -j flag to prevent syntax errors
+cd mathlib4
+lake build RulesetInit && lake build LeanCopilot && lake build repl && lake build
+
+echo "✅ DSP-Plus Build Complete at $(date)"

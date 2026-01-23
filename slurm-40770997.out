@@ -1,0 +1,2329 @@
+Build completed successfully.
+ℹ [3/559] Replayed LeanCopilot/libopenblas
+info: Cloning OpenBLAS from https://github.com/OpenMathLib/OpenBLAS
+info: Building OpenBLAS with `make NO_LAPACK=1 NO_FORTRAN=1 -j4`
+ℹ [4/559] Replayed LeanCopilot/libctranslate2
+info: Cloning CTranslate2 from https://github.com/OpenNMT/CTranslate2
+info: Configuring CTranslate2 with `cmake -DOPENMP_RUNTIME=NONE -DWITH_MKL=OFF -DWITH_ACCELERATE=OFF -DWITH_OPENBLAS=ON -DOPENBLAS_INCLUDE_DIR=../../OpenBLAS -DOPENBLAS_LIBRARY=../../OpenBLAS/libopenblas.so -DWITH_CUDA=OFF -DWITH_CUDNN=OFF ..`
+info: Building CTranslate2 with `make -j4`
+info: stdout:
+[  2%] Building C object third_party/cpu_features/CMakeFiles/utils.dir/src/filesystem.c.o
+[  2%] Building C object third_party/cpu_features/CMakeFiles/utils.dir/src/stack_line_reader.c.o
+[  3%] Building C object third_party/cpu_features/CMakeFiles/utils.dir/src/string_view.c.o
+[  3%] Built target utils
+[  3%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_aarch64_linux_or_android.c.o
+[  4%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_arm_linux_or_android.c.o
+[  5%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_mips_linux_or_android.c.o
+[  5%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_ppc_linux.c.o
+[  6%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_x86_freebsd.c.o
+[  7%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_x86_linux_or_android.c.o
+[  7%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_x86_macos.c.o
+[  8%] Building C object third_party/cpu_features/CMakeFiles/cpu_features.dir/src/impl_x86_windows.c.o
+[  9%] Linking C static library libcpu_features.a
+[  9%] Built target cpu_features
+[  9%] Building CXX object CMakeFiles/ctranslate2.dir/src/allocator.cc.o
+[ 10%] Building CXX object CMakeFiles/ctranslate2.dir/src/batch_reader.cc.o
+[ 11%] Building CXX object CMakeFiles/ctranslate2.dir/src/buffered_translation_wrapper.cc.o
+[ 12%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/allocator.cc.o
+[ 12%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/backend.cc.o
+[ 13%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/cpu_info.cc.o
+[ 15%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/cpu_isa.cc.o
+[ 15%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/kernels.cc.o
+[ 16%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/parallel.cc.o
+[ 17%] Building CXX object CMakeFiles/ctranslate2.dir/src/cpu/primitives.cc.o
+[ 17%] Building CXX object CMakeFiles/ctranslate2.dir/src/decoding.cc.o
+[ 18%] Building CXX object CMakeFiles/ctranslate2.dir/src/decoding_utils.cc.o
+[ 19%] Building CXX object CMakeFiles/ctranslate2.dir/src/devices.cc.o
+[ 20%] Building CXX object CMakeFiles/ctranslate2.dir/src/dtw.cc.o
+[ 20%] Building CXX object CMakeFiles/ctranslate2.dir/src/encoder.cc.o
+[ 21%] Building CXX object CMakeFiles/ctranslate2.dir/src/env.cc.o
+[ 22%] Building CXX object CMakeFiles/ctranslate2.dir/src/filesystem.cc.o
+[ 22%] Building CXX object CMakeFiles/ctranslate2.dir/src/generator.cc.o
+[ 23%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/attention_layer.cc.o
+[ 24%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/attention.cc.o
+[ 24%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/flash_attention.cc.o
+[ 25%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/common.cc.o
+[ 26%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/decoder.cc.o
+[ 27%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/transformer.cc.o
+[ 27%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/wav2vec2.cc.o
+[ 29%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/wav2vec2bert.cc.o
+[ 30%] Building CXX object CMakeFiles/ctranslate2.dir/src/layers/whisper.cc.o
+[ 30%] Building CXX object CMakeFiles/ctranslate2.dir/src/logging.cc.o
+[ 31%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/language_model.cc.o
+[ 32%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/model.cc.o
+[ 32%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/model_factory.cc.o
+[ 33%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/model_reader.cc.o
+[ 34%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/sequence_to_sequence.cc.o
+[ 35%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/transformer.cc.o
+[ 35%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/wav2vec2.cc.o
+[ 36%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/wav2vec2bert.cc.o
+[ 37%] Building CXX object CMakeFiles/ctranslate2.dir/src/models/whisper.cc.o
+[ 37%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/activation.cc.o
+[ 38%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/add.cc.o
+[ 39%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/alibi_add.cc.o
+[ 39%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/alibi_add_cpu.cc.o
+[ 40%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/bias_add.cc.o
+[ 41%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/bias_add_cpu.cc.o
+[ 43%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/concat.cc.o
+[ 43%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/concat_split_slide_cpu.cc.o
+[ 44%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/conv1d.cc.o
+[ 45%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/conv1d_cpu.cc.o
+[ 45%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/cos.cc.o
+[ 46%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/dequantize.cc.o
+[ 47%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/dequantize_cpu.cc.o
+[ 47%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/flash_attention.cc.o
+[ 48%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/flash_attention_cpu.cc.o
+[ 49%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gather.cc.o
+[ 50%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gather_cpu.cc.o
+[ 50%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gelu.cc.o
+[ 51%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gemm.cc.o
+[ 52%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gumbel_max.cc.o
+[ 52%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/gumbel_max_cpu.cc.o
+[ 53%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/layer_norm.cc.o
+[ 54%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/layer_norm_cpu.cc.o
+[ 54%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/log.cc.o
+[ 55%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/matmul.cc.o
+[ 56%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/mean.cc.o
+[ 58%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/mean_cpu.cc.o
+[ 58%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/median_filter.cc.o
+[ 59%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/median_filter_cpu.cc.o
+[ 60%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/min_max.cc.o
+[ 60%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/mul.cc.o
+[ 61%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/multinomial.cc.o
+[ 62%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/multinomial_cpu.cc.o
+[ 62%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/quantize.cc.o
+[ 63%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/quantize_cpu.cc.o
+[ 64%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/relu.cc.o
+[ 65%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/rms_norm.cc.o
+[ 65%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/rms_norm_cpu.cc.o
+[ 66%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/rotary.cc.o
+[ 67%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/rotary_cpu.cc.o
+[ 67%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/sin.cc.o
+[ 68%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/softmax.cc.o
+[ 69%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/softmax_cpu.cc.o
+[ 69%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/split.cc.o
+[ 70%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/slide.cc.o
+[ 72%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/sub.cc.o
+[ 73%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/sigmoid.cc.o
+[ 73%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/swish.cc.o
+[ 74%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/tanh.cc.o
+[ 75%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/tile.cc.o
+[ 75%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/tile_cpu.cc.o
+[ 76%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/topk.cc.o
+[ 77%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/topk_cpu.cc.o
+[ 77%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/topp_mask.cc.o
+[ 78%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/topp_mask_cpu.cc.o
+[ 79%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/transpose.cc.o
+[ 80%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/nccl_ops.cc.o
+[ 80%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/nccl_ops_cpu.cc.o
+[ 81%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/dequantize.cc.o
+[ 82%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/dequantize_cpu.cc.o
+[ 82%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/gemm.cc.o
+[ 83%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/gemm_cpu.cc.o
+[ 84%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/gemv.cc.o
+[ 84%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/awq/gemv_cpu.cc.o
+[ 86%] Building CXX object CMakeFiles/ctranslate2.dir/src/ops/sum.cc.o
+[ 87%] Building CXX object CMakeFiles/ctranslate2.dir/src/padder.cc.o
+[ 88%] Building CXX object CMakeFiles/ctranslate2.dir/src/profiler.cc.o
+[ 88%] Building CXX object CMakeFiles/ctranslate2.dir/src/random.cc.o
+[ 89%] Building CXX object CMakeFiles/ctranslate2.dir/src/sampling.cc.o
+[ 90%] Building CXX object CMakeFiles/ctranslate2.dir/src/scoring.cc.o
+[ 90%] Building CXX object CMakeFiles/ctranslate2.dir/src/storage_view.cc.o
+[ 91%] Building CXX object CMakeFiles/ctranslate2.dir/src/thread_pool.cc.o
+[ 92%] Building CXX object CMakeFiles/ctranslate2.dir/src/translator.cc.o
+[ 92%] Building CXX object CMakeFiles/ctranslate2.dir/src/types.cc.o
+[ 93%] Building CXX object CMakeFiles/ctranslate2.dir/src/utils.cc.o
+[ 94%] Building CXX object CMakeFiles/ctranslate2.dir/src/vocabulary.cc.o
+[ 95%] Building CXX object CMakeFiles/ctranslate2.dir/src/vocabulary_map.cc.o
+[ 95%] Building CXX object CMakeFiles/ctranslate2.dir/kernels_avx.cc.o
+[ 96%] Building CXX object CMakeFiles/ctranslate2.dir/kernels_avx2.cc.o
+[ 97%] Building CXX object CMakeFiles/ctranslate2.dir/kernels_avx512.cc.o
+[ 97%] Linking CXX shared library libctranslate2.so
+[ 97%] Built target ctranslate2
+[ 98%] Building CXX object cli/CMakeFiles/translator.dir/translator.cc.o
+[100%] Linking CXX executable ct2-translator
+[100%] Built target translator
+info: stderr:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/backend.cc: In function ‘ctranslate2::cpu::GemmBackend ctranslate2::cpu::get_gemm_backend(ctranslate2::ComputeType)’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/backend.cc:51:18: warning: unused variable ‘is_int8’ [-Wunused-variable]
+   51 |       const bool is_int8 = (compute_type == ComputeType::INT8
+      |                  ^~~~~~~
+In file included from /home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:19:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/vec.h: In instantiation of ‘static void ctranslate2::cpu::Vec<T, ISA>::convert_and_store(float, U*, ctranslate2::dim_t) [with U = unsigned char; T = float; ctranslate2::cpu::CpuIsa ISA = ctranslate2::cpu::CpuIsa::GENERIC; ctranslate2::dim_t = long int]’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:598:37:   required from ‘float ctranslate2::cpu::quantize_s8_row(const float*, int8_t*, ctranslate2::dim_t, bool, const RoundFunc&) [with RoundFunc = float(float); int8_t = signed char; ctranslate2::dim_t = long int]’
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:634:38:   required from ‘void ctranslate2::cpu::quantize_s8_batch(const float*, int8_t*, float*, ctranslate2::dim_t, ctranslate2::dim_t, bool, const RoundFunc&) [with RoundFunc = float(float); int8_t = signed char; ctranslate2::dim_t = long int]’
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:648:26:   required from here
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/vec.h:148:65: warning: unused parameter ‘count’ [-Wunused-parameter]
+  148 |       static inline void convert_and_store(float v, U* a, dim_t count) {
+      |                                                           ~~~~~~^~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/vec.h: In instantiation of ‘static void ctranslate2::cpu::Vec<T, ISA>::convert_and_store(float, U*, ctranslate2::dim_t) [with U = signed char; T = float; ctranslate2::cpu::CpuIsa ISA = ctranslate2::cpu::CpuIsa::GENERIC; ctranslate2::dim_t = long int]’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:609:37:   required from ‘float ctranslate2::cpu::quantize_s8_row(const float*, int8_t*, ctranslate2::dim_t, bool, const RoundFunc&) [with RoundFunc = float(float); int8_t = signed char; ctranslate2::dim_t = long int]’
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:634:38:   required from ‘void ctranslate2::cpu::quantize_s8_batch(const float*, int8_t*, float*, ctranslate2::dim_t, ctranslate2::dim_t, bool, const RoundFunc&) [with RoundFunc = float(float); int8_t = signed char; ctranslate2::dim_t = long int]’
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/kernels.cc:648:26:   required from here
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/vec.h:148:65: warning: unused parameter ‘count’ [-Wunused-parameter]
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc: In static member function ‘static void ctranslate2::primitives<D>::gemm(bool, bool, bool, bool, ctranslate2::dim_t, ctranslate2::dim_t, ctranslate2::dim_t, float, const In*, ctranslate2::dim_t, const In*, ctranslate2::dim_t, float, Out*, ctranslate2::dim_t, const Out*) [with In = signed char; Out = int; ctranslate2::Device D = ctranslate2::Device::CPU; ctranslate2::dim_t = long int]’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:904:43: warning: unused parameter ‘transpose_a’ [-Wunused-parameter]
+  904 |                                      bool transpose_a, bool transpose_b,
+      |                                      ~~~~~^~~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:904:61: warning: unused parameter ‘transpose_b’ [-Wunused-parameter]
+  904 |                                      bool transpose_a, bool transpose_b,
+      |                                                        ~~~~~^~~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:905:44: warning: unused parameter ‘m’ [-Wunused-parameter]
+  905 |                                      dim_t m, dim_t n, dim_t k,
+      |                                      ~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:905:53: warning: unused parameter ‘n’ [-Wunused-parameter]
+  905 |                                      dim_t m, dim_t n, dim_t k,
+      |                                               ~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:905:62: warning: unused parameter ‘k’ [-Wunused-parameter]
+  905 |                                      dim_t m, dim_t n, dim_t k,
+      |                                                        ~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:906:44: warning: unused parameter ‘alpha’ [-Wunused-parameter]
+  906 |                                      float alpha,
+      |                                      ~~~~~~^~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:907:52: warning: unused parameter ‘a’ [-Wunused-parameter]
+  907 |                                      const int8_t* a, dim_t lda,
+      |                                      ~~~~~~~~~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:907:61: warning: unused parameter ‘lda’ [-Wunused-parameter]
+  907 |                                      const int8_t* a, dim_t lda,
+      |                                                       ~~~~~~^~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:908:52: warning: unused parameter ‘b’ [-Wunused-parameter]
+  908 |                                      const int8_t* b, dim_t ldb,
+      |                                      ~~~~~~~~~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:908:61: warning: unused parameter ‘ldb’ [-Wunused-parameter]
+  908 |                                      const int8_t* b, dim_t ldb,
+      |                                                       ~~~~~~^~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:909:44: warning: unused parameter ‘beta’ [-Wunused-parameter]
+  909 |                                      float beta,
+      |                                      ~~~~~~^~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:910:47: warning: unused parameter ‘c’ [-Wunused-parameter]
+  910 |                                      int32_t* c, dim_t ldc,
+      |                                      ~~~~~~~~~^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:910:56: warning: unused parameter ‘ldc’ [-Wunused-parameter]
+  910 |                                      int32_t* c, dim_t ldc,
+      |                                                  ~~~~~~^~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/cpu/primitives.cc:911:53: warning: unused parameter ‘a_shift_compensation’ [-Wunused-parameter]
+  911 |                                      const int32_t* a_shift_compensation) {
+      |                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/layers/attention.cc: In member function ‘void ctranslate2::layers::MultiHeadAttention::process_cross_attention(const ctranslate2::StorageView&, const ctranslate2::StorageView&, ctranslate2::StorageView&, ctranslate2::StorageView&, ctranslate2::StorageView&, ctranslate2::StorageView&, ctranslate2::StorageView*, ctranslate2::StorageView*, const ctranslate2::Padder*, const ctranslate2::Padder*, ctranslate2::dim_t&) const’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/layers/attention.cc:356:28: warning: unused parameter ‘queries’ [-Wunused-parameter]
+  356 |         const StorageView& queries,
+      |         ~~~~~~~~~~~~~~~~~~~^~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc: In function ‘ctranslate2::models::VARIABLE_TYPE ctranslate2::models::classify_variable(const std::string&)’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:489:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  489 |             if (parameterName == "weight")
+      |             ^~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:491:11: note: here
+  491 |           default:
+      |           ^~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:513:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  513 |             if (parameterName == "weight")
+      |             ^~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:515:11: note: here
+  515 |           default:
+      |           ^~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:538:13: warning: this statement may fall through [-Wimplicit-fallthrough=]
+  538 |             if (parameterName == "weight")
+      |             ^~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:540:11: note: here
+  540 |           default:
+      |           ^~~~~~~
+In file included from /home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/storage_view.h:8,
+                 from /home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/models/model.h:9,
+                 from /home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:1:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc: In static member function ‘static std::shared_ptr<const ctranslate2::models::Model> ctranslate2::models::Model::load(ctranslate2::models::ModelReader&, ctranslate2::Device, int, ctranslate2::ComputeType, bool, bool)’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:693:94: warning: ‘world_size’ may be used uninitialized [-Wmaybe-uninitialized]
+  693 |                   dim_t dim_per_kqv_per_partition = SAFE_DIVIDE(variable.dim(outer_dim) / 3, world_size);
+      |                                                                                              ^~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/utils.h:96:44: note: in definition of macro ‘SAFE_DIVIDE’
+   96 | #define SAFE_DIVIDE(x, y) ((y != 0 && (x % y == 0)) ? (x / y) : (throw std::runtime_error("Division has a remainder," \
+      |                                            ^
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/models/model.cc:570:11: note: ‘world_size’ was declared here
+  570 |       int world_size;
+      |           ^~~~~~~~~~
+In file included from /home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/ops/gemm.cc:1:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/ops/gemm.h: In constructor ‘ctranslate2::ops::Gemm::Gemm(float, float, bool, bool, bool, bool, const ctranslate2::ops::ActivationType*)’:
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/ops/gemm.h:54:12: warning: ‘ctranslate2::ops::Gemm::_b_is_packed’ will be initialized after [-Wreorder]
+   54 |       bool _b_is_packed;
+      |            ^~~~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/include/ctranslate2/ops/gemm.h:46:29: warning:   ‘const ctranslate2::ops::ActivationType* ctranslate2::ops::Gemm::_activation_type’ [-Wreorder]
+   46 |       const ActivationType* _activation_type;
+      |                             ^~~~~~~~~~~~~~~~
+/home/austinsz/Lean_QC/DSP-Plus/mathlib4/.lake/packages/LeanCopilot/.lake/build/CTranslate2/src/ops/gemm.cc:28:5: warning:   when initialized here [-Wreorder]
+   28 |     Gemm::Gemm(float alpha,
+      |     ^~~~
+ℹ [10/559] Replayed ModelCheckpointManager.Url
+info: ././.lake/packages/LeanCopilot/././ModelCheckpointManager/Url.lean:68:0: { protocol := "https", hostname := "huggingface.co", path := FilePath.mk "kaiyuy/ct2-leandojo-lean4-tacgen-byt5-small" }
+info: ././.lake/packages/LeanCopilot/././ModelCheckpointManager/Url.lean:69:0: { protocol := "https", hostname := "huggingface.co", path := FilePath.mk "bert-base-uncased" }
+info: ././.lake/packages/LeanCopilot/././ModelCheckpointManager/Url.lean:71:0: "ct2-leandojo-lean4-tacgen-byt5-small"
+info: ././.lake/packages/LeanCopilot/././ModelCheckpointManager/Url.lean:72:0: "bert-base-uncased"
+Build completed successfully.
+Build completed successfully.
+✔ [1689/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Creates.Finite
+✔ [2024/6049] Built Mathlib.CategoryTheory.Sites.Pretopology
+✔ [2027/6049] Built Mathlib.CategoryTheory.Subpresheaf.Sieves
+✔ [2249/6049] Built Mathlib.Algebra.Lie.Matrix
+✔ [2269/6049] Built Mathlib.RingTheory.Norm.Defs
+✔ [2274/6049] Built Mathlib.Algebra.Lie.Sl2
+✔ [2313/6049] Built Mathlib.Algebra.Module.Presentation.Finite
+✔ [2457/6049] Built Mathlib.Analysis.Asymptotics.Theta
+✔ [2523/6049] Built Mathlib.Topology.Algebra.Module.Determinant
+✔ [2678/6049] Built Mathlib.Algebra.Symmetrized
+✔ [2782/6049] Built Mathlib.Analysis.Asymptotics.SuperpolynomialDecay
+✔ [2838/6049] Built Mathlib.Analysis.NormedSpace.Extr
+✔ [2846/6049] Built Mathlib.Data.Complex.Determinant
+✔ [2847/6049] Built Mathlib.Order.Filter.ZeroAndBoundedAtFilter
+✔ [3058/6049] Built Mathlib.CategoryTheory.Presentable.Basic
+✔ [3554/6049] Built Mathlib.LinearAlgebra.Eigenspace.Matrix
+✔ [3556/6049] Built Mathlib.LinearAlgebra.FreeModule.Determinant
+✔ [3567/6049] Built Mathlib.LinearAlgebra.Matrix.Gershgorin
+✔ [4000/6049] Built Mathlib.Analysis.LocallyConvex.BalancedCoreHull
+✔ [4001/6049] Built Mathlib.Topology.Algebra.Valued.ValuedField
+✔ [4002/6049] Built Mathlib.CategoryTheory.Sites.Spaces
+✔ [4003/6049] Built Mathlib.Analysis.Normed.Order.UpperLower
+✔ [4004/6049] Built Mathlib.Topology.MetricSpace.Perfect
+✔ [4005/6049] Built Mathlib.Algebra.Lie.Free
+✔ [4006/6049] Built Mathlib.RingTheory.LocalProperties.Projective
+✔ [4007/6049] Built Mathlib.CategoryTheory.ChosenFiniteProducts
+✔ [4008/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Images
+✔ [4009/6049] Built Mathlib.Topology.UrysohnsLemma
+✔ [4010/6049] Built Mathlib.MeasureTheory.Measure.NullMeasurable
+✔ [4011/6049] Built Mathlib.Analysis.Normed.Group.AddCircle
+✔ [4012/6049] Built Mathlib.LinearAlgebra.Lagrange
+✔ [4013/6049] Built Mathlib.CategoryTheory.ChosenFiniteProducts.InfSemilattice
+✔ [4014/6049] Built Mathlib.Algebra.Lie.CartanMatrix
+✔ [4015/6049] Built Mathlib.CategoryTheory.Limits.ExactFunctor
+✔ [4016/6049] Built Mathlib.CategoryTheory.Sites.SheafOfTypes
+✔ [4017/6049] Built Mathlib.Algebra.Lie.Derivation.Basic
+✔ [4018/6049] Built Mathlib.Algebra.Lie.Abelian
+✔ [4019/6049] Built Mathlib.Topology.Separation.CompletelyRegular
+✔ [4020/6049] Built Mathlib.Analysis.Asymptotics.AsymptoticEquivalent
+✔ [4021/6049] Built Mathlib.NumberTheory.Padics.PadicIntegers
+✔ [4022/6049] Built Mathlib.CategoryTheory.Sites.Closed
+✔ [4023/6049] Built Mathlib.CategoryTheory.ChosenFiniteProducts.Cat
+✔ [4024/6049] Built Mathlib.NumberTheory.Pell
+✔ [4025/6049] Built Mathlib.Analysis.NormedSpace.Pointwise
+✔ [4026/6049] Built Mathlib.CategoryTheory.ChosenFiniteProducts.FunctorCategory
+✔ [4027/6049] Built Mathlib.CategoryTheory.Limits.Shapes.ZeroMorphisms
+✔ [4028/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.Coeff
+✔ [4029/6049] Built Mathlib.CategoryTheory.Closed.Cartesian
+✔ [4030/6049] Built Mathlib.Topology.Algebra.Valued.LocallyCompact
+✔ [4031/6049] Built Mathlib.Algebra.Lie.Derivation.AdjointAction
+✔ [4032/6049] Built Mathlib.Analysis.Normed.Affine.Isometry
+✔ [4033/6049] Built Mathlib.Topology.PartitionOfUnity
+✔ [4034/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Zero
+✔ [4035/6049] Built Mathlib.Analysis.Asymptotics.SpecificAsymptotics
+✔ [4036/6049] Built Mathlib.Topology.Sheaves.Presheaf
+✔ [4037/6049] Built Mathlib.CategoryTheory.Closed.Zero
+✔ [4038/6049] Built Mathlib.Algebra.Lie.Normalizer
+✔ [4039/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.Univ
+✔ [4040/6049] Built Mathlib.Analysis.NormedSpace.HomeomorphBall
+✔ [4041/6049] Built Mathlib.RingTheory.Ideal.Cotangent
+✔ [4042/6049] Built Mathlib.Analysis.Convex.PartitionOfUnity
+✔ [4043/6049] Built Mathlib.Topology.Sheaves.PresheafOfFunctions
+✔ [4044/6049] Built Mathlib.CategoryTheory.Limits.MonoCoprod
+✔ [4045/6049] Built Mathlib.LinearAlgebra.Orientation
+✔ [4046/6049] Built Mathlib.Analysis.Normed.Affine.MazurUlam
+✔ [4047/6049] Built Mathlib.CategoryTheory.Closed.Functor
+✔ [4048/6049] Built Mathlib.Analysis.SpecificLimits.Normed
+✔ [4049/6049] Built Mathlib.Analysis.Normed.Group.SemiNormedGrp
+✔ [4050/6049] Built Mathlib.CategoryTheory.Limits.Types
+✔ [4051/6049] Built Mathlib.Analysis.Convex.Visible
+✔ [4052/6049] Built Mathlib.Data.Complex.Orientation
+✔ [4053/6049] Built Mathlib.Topology.MetricSpace.PartitionOfUnity
+✔ [4054/6049] Built Mathlib.Analysis.Polynomial.Basic
+✔ [4055/6049] Built Mathlib.CategoryTheory.Limits.FunctorToTypes
+✔ [4056/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Ulift
+✔ [4057/6049] Built Mathlib.RingTheory.AdicCompletion.Functoriality
+✔ [4058/6049] Built Mathlib.CategoryTheory.Limits.Elements
+✔ [4059/6049] Built Mathlib.CategoryTheory.Limits.TypesFiltered
+✔ [4060/6049] Built Mathlib.Algebra.Homology.ShortComplex.Basic
+✔ [4061/6049] Built Mathlib.CategoryTheory.Limits.Shapes.SingleObj
+✔ [4062/6049] Built Mathlib.CategoryTheory.Limits.Filtered
+✔ [4063/6049] Built Mathlib.RingTheory.Norm.Transitivity
+✔ [4064/6049] Built Mathlib.NumberTheory.Padics.RingHoms
+✔ [4065/6049] Built Mathlib.Topology.Category.TopCat.Limits.Basic
+✔ [4066/6049] Built Mathlib.CategoryTheory.Limits.ColimitLimit
+✔ [4067/6049] Built Mathlib.CategoryTheory.Limits.Yoneda
+✔ [4068/6049] Built Mathlib.Topology.Algebra.Module.Cardinality
+✔ [4069/6049] Built Mathlib.CategoryTheory.Limits.FunctorCategory.Filtered
+✔ [4070/6049] Built Mathlib.Analysis.Normed.Group.ControlledClosure
+✔ [4071/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.LinearMap
+✔ [4072/6049] Built Mathlib.NumberTheory.EulerProduct.Basic
+✔ [4073/6049] Built Mathlib.Analysis.Normed.Ring.Units
+✔ [4074/6049] Built Mathlib.CategoryTheory.Filtered.OfColimitCommutesFiniteLimit
+✔ [4075/6049] Built Mathlib.NumberTheory.Padics.ProperSpace
+✔ [4076/6049] Built Mathlib.Topology.Category.TopCat.Limits.Konig
+✔ [4077/6049] Built Mathlib.CategoryTheory.Limits.ConcreteCategory.Basic
+✔ [4078/6049] Built Mathlib.Topology.Category.TopCat.Limits.Cofiltered
+✔ [4079/6049] Built Mathlib.CategoryTheory.Limits.Shapes.FunctorToTypes
+✔ [4080/6049] Built Mathlib.MeasureTheory.Measure.MeasureSpace
+✔ [4081/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Yoneda
+✔ [4082/6049] Built Mathlib.Algebra.Lie.TensorProduct
+✔ [4083/6049] Built Mathlib.Topology.Algebra.Module.FiniteDimension
+✔ [4084/6049] Built Mathlib.Topology.ContinuousMap.Units
+✔ [4085/6049] Built Mathlib.Topology.Category.CompHaus.Basic
+✔ [4086/6049] Built Mathlib.LinearAlgebra.Matrix.SesquilinearForm
+✔ [4087/6049] Built Mathlib.Analysis.NormedSpace.Connected
+✔ [4088/6049] Built Mathlib.RingTheory.IntegralClosure.Algebra.Basic
+✔ [4089/6049] Built Mathlib.CategoryTheory.CofilteredSystem
+✔ [4090/6049] Built Mathlib.Topology.Category.CompHaus.Frm
+✔ [4091/6049] Built Mathlib.NumberTheory.Padics.Hensel
+✔ [4092/6049] Built Mathlib.Analysis.RCLike.Basic
+✔ [4093/6049] Built Mathlib.CategoryTheory.Category.Cat.Limit
+✔ [4094/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Kernels
+✔ [4095/6049] Built Mathlib.Algebra.Category.MonCat.Limits
+✔ [4096/6049] Built Mathlib.RingTheory.AdicCompletion.Exactness
+✔ [4097/6049] Built Mathlib.MeasureTheory.Measure.Map
+✔ [4098/6049] Built Mathlib.Combinatorics.Hall.Basic
+✔ [4099/6049] Built Mathlib.Combinatorics.SimpleGraph.Ends.Defs
+✔ [4100/6049] Built Mathlib.Topology.Compactness.CompactlyGeneratedSpace
+✔ [4101/6049] Built Mathlib.CategoryTheory.Shift.Basic
+✔ [4102/6049] Built Mathlib.Topology.Category.Locale
+✔ [4103/6049] Built Mathlib.Combinatorics.SimpleGraph.Finsubgraph
+✔ [4104/6049] Built Mathlib.CategoryTheory.Subobject.MonoOver
+✔ [4105/6049] Built Mathlib.Topology.Category.Profinite.Basic
+✔ [4106/6049] Built Mathlib.Analysis.Seminorm
+✔ [4107/6049] Built Mathlib.Analysis.Normed.Group.Tannery
+✔ [4108/6049] Built Mathlib.MeasureTheory.Group.Defs
+✔ [4109/6049] Built Mathlib.CategoryTheory.Shift.Predicate
+✔ [4110/6049] Built Mathlib.Analysis.SpecificLimits.RCLike
+✔ [4111/6049] Built Mathlib.Analysis.ConstantSpeed
+✔ [4112/6049] Built Mathlib.Combinatorics.SimpleGraph.Ends.Properties
+✔ [4113/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Types
+✔ [4114/6049] Built Mathlib.Dynamics.BirkhoffSum.NormedSpace
+✔ [4115/6049] Built Mathlib.MeasureTheory.Measure.AbsolutelyContinuous
+✔ [4116/6049] Built Mathlib.MeasureTheory.Measure.Comap
+✔ [4117/6049] Built Mathlib.Topology.Maps.Proper.CompactlyGenerated
+✔ [4118/6049] Built Mathlib.Topology.Category.CompactlyGenerated
+✔ [4119/6049] Built Mathlib.Geometry.RingedSpace.PresheafedSpace
+✔ [4120/6049] Built Mathlib.CategoryTheory.Subterminal
+✔ [4121/6049] Built Mathlib.CategoryTheory.Limits.Shapes.NormalMono.Basic
+✔ [4122/6049] Built Mathlib.Analysis.Normed.Group.SemiNormedGrp.Kernels
+✔ [4123/6049] Built Mathlib.Algebra.Lie.SkewAdjoint
+✔ [4124/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Kernels
+✔ [4125/6049] Built Mathlib.Topology.Category.Profinite.Product
+✔ [4126/6049] Built Mathlib.CategoryTheory.Abelian.Images
+✔ [4127/6049] Built Mathlib.Topology.Category.TopCat.Limits.Products
+✔ [4128/6049] Built Mathlib.Analysis.NormedSpace.RieszLemma
+✔ [4129/6049] Built Mathlib.CategoryTheory.ConcreteCategory.Elementwise
+✔ [4130/6049] Built Mathlib.CategoryTheory.Preadditive.Basic
+✔ [4131/6049] Built Mathlib.Topology.Category.Profinite.AsLimit
+✔ [4132/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unital
+✔ [4133/6049] Built Mathlib.CategoryTheory.Monoidal.Types.Basic
+✔ [4134/6049] Built Mathlib.CategoryTheory.Limits.FintypeCat
+✔ [4135/6049] Built Mathlib.Topology.Order.Category.FrameAdjunction
+✔ [4136/6049] Built Mathlib.MeasureTheory.Covering.VitaliFamily
+✔ [4137/6049] Built Mathlib.Topology.Category.Compactum
+✔ [4138/6049] Built Mathlib.Analysis.Convex.Birkhoff
+✔ [4139/6049] Built Mathlib.Topology.Category.Profinite.CofilteredLimit
+✔ [4140/6049] Built Mathlib.Topology.Algebra.ProperAction.ProperlyDiscontinuous
+✔ [4141/6049] Built Mathlib.MeasureTheory.Measure.QuasiMeasurePreserving
+✔ [4142/6049] Built Mathlib.Algebra.Category.MonCat.Colimits
+✔ [4143/6049] Built Mathlib.Analysis.Convex.EGauge
+✔ [4144/6049] Built Mathlib.Algebra.Homology.ShortComplex.FunctorEquivalence
+✔ [4145/6049] Built Mathlib.Analysis.InnerProductSpace.Defs
+✔ [4146/6049] Built Mathlib.CategoryTheory.Shift.CommShift
+✔ [4147/6049] Built Mathlib.CategoryTheory.Sites.EqualizerSheafCondition
+✔ [4148/6049] Built Mathlib.CategoryTheory.Monoidal.Types.Coyoneda
+✔ [4149/6049] Built Mathlib.CategoryTheory.Limits.FilteredColimitCommutesProduct
+✔ [4150/6049] Built Mathlib.CategoryTheory.Monoidal.Types.Symmetric
+✔ [4151/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.AbelianImages
+✔ [4152/6049] Built Mathlib.Algebra.Lie.BaseChange
+✔ [4153/6049] Built Mathlib.Analysis.Complex.Basic
+✔ [4154/6049] Built Mathlib.Algebra.Category.Grp.Preadditive
+✔ [4155/6049] Built Mathlib.CategoryTheory.Closed.Ideal
+✔ [4156/6049] Built Mathlib.AlgebraicTopology.FundamentalGroupoid.Product
+✔ [4157/6049] Built Mathlib.CategoryTheory.Preadditive.FunctorCategory
+✔ [4158/6049] Built Mathlib.Algebra.Homology.ShortComplex.LeftHomology
+✔ [4159/6049] Built Mathlib.CategoryTheory.Preadditive.SingleObj
+✔ [4160/6049] Built Mathlib.CategoryTheory.Linear.Basic
+✔ [4161/6049] Built Mathlib.CategoryTheory.Limits.Shapes.NormalMono.Equalizers
+✔ [4162/6049] Built Mathlib.CategoryTheory.DifferentialObject
+✔ [4163/6049] Built Mathlib.Analysis.Complex.IsIntegral
+✔ [4164/6049] Built Mathlib.Analysis.Complex.Asymptotics
+✔ [4165/6049] Built Mathlib.Analysis.Complex.HalfPlane
+✔ [4166/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unitary
+✔ [4167/6049] Built Mathlib.Analysis.LocallyConvex.Bounded
+✔ [4168/6049] Built Mathlib.CategoryTheory.GradedObject
+✔ [4169/6049] Built Mathlib.Analysis.Complex.ReImTopology
+✔ [4170/6049] Built Mathlib.Topology.Category.TopCat.Limits.Pullbacks
+✔ [4171/6049] Built Mathlib.Analysis.Calculus.TangentCone
+✔ [4172/6049] Built Mathlib.CategoryTheory.Subobject.Basic
+✔ [4173/6049] Built Mathlib.RingTheory.IntegralClosure.IsIntegralClosure.Basic
+✔ [4174/6049] Built Mathlib.Topology.Instances.Complex
+✔ [4175/6049] Built Mathlib.CategoryTheory.Linear.FunctorCategory
+✔ [4176/6049] Built Mathlib.Algebra.Lie.Classical
+✔ [4177/6049] Built Mathlib.CategoryTheory.Enriched.Basic
+✔ [4178/6049] Built Mathlib.AlgebraicTopology.FundamentalGroupoid.InducedMaps
+✔ [4179/6049] Built Mathlib.Topology.Category.TopCat.EffectiveEpi
+✔ [4180/6049] Built Mathlib.CategoryTheory.Subobject.WellPowered
+✔ [4181/6049] Built Mathlib.CategoryTheory.GradedObject.Single
+✔ [4182/6049] Built Mathlib.Topology.Algebra.Module.Multilinear.Bounded
+✔ [4183/6049] Built Mathlib.Analysis.CStarAlgebra.Classes
+✔ [4184/6049] Built Mathlib.Topology.Algebra.Module.UniformConvergence
+✔ [4185/6049] Built Mathlib.MeasureTheory.Measure.Restrict
+✔ [4186/6049] Built Mathlib.Algebra.Category.Grp.Adjunctions
+✔ [4187/6049] Built Mathlib.CategoryTheory.Monoidal.Internal.Types
+✔ [4188/6049] Built Mathlib.CategoryTheory.Shift.SingleFunctors
+✔ [4189/6049] Built Mathlib.CategoryTheory.Subobject.FactorThru
+✔ [4190/6049] Built Mathlib.CategoryTheory.Shift.Induced
+✔ [4191/6049] Built Mathlib.Analysis.Complex.Convex
+✔ [4192/6049] Built Mathlib.Analysis.LocallyConvex.ContinuousOfBounded
+✔ [4193/6049] Built Mathlib.Topology.Algebra.Category.ProfiniteGrp.Basic
+✔ [4194/6049] Built Mathlib.RingTheory.Extension
+✔ [4195/6049] Built Mathlib.Analysis.Asymptotics.TVS
+✔ [4196/6049] Built Mathlib.AlgebraicTopology.FundamentalGroupoid.SimplyConnected
+✔ [4197/6049] Built Mathlib.MeasureTheory.Measure.MutuallySingular
+✔ [4198/6049] Built Mathlib.CategoryTheory.Abelian.NonPreadditive
+✔ [4199/6049] Built Mathlib.CategoryTheory.Limits.Opposites
+✔ [4200/6049] Built Mathlib.Algebra.Category.MonCat.FilteredColimits
+✔ [4201/6049] Built Mathlib.Analysis.Complex.AbelLimit
+✔ [4202/6049] Built Mathlib.CategoryTheory.Dialectica.Basic
+✔ [4203/6049] Built Mathlib.Analysis.SpecialFunctions.Exp
+✔ [4204/6049] Built Mathlib.CategoryTheory.Enriched.Ordinary.Basic
+✔ [4205/6049] Built Mathlib.CategoryTheory.Shift.Quotient
+✔ [4206/6049] Built Mathlib.Topology.Category.TopCat.Yoneda
+✔ [4207/6049] Built Mathlib.Analysis.SpecialFunctions.PolynomialExp
+✔ [4208/6049] Built Mathlib.CategoryTheory.Functor.FunctorHom
+✔ [4209/6049] Built Mathlib.CategoryTheory.Enriched.HomCongr
+✔ [4210/6049] Built Mathlib.CategoryTheory.Shift.Adjunction
+✔ [4211/6049] Built Mathlib.CategoryTheory.Shift.Localization
+✔ [4212/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Opposites
+✔ [4213/6049] Built Mathlib.CategoryTheory.Closed.Enrichment
+✔ [4214/6049] Built Mathlib.CategoryTheory.Enriched.Opposite
+✔ [4215/6049] Built Mathlib.Analysis.Complex.Circle
+✔ [4216/6049] Built Mathlib.RingTheory.Algebraic.Integral
+✔ [4217/6049] Built Mathlib.Algebra.Category.Grp.FilteredColimits
+✔ [4218/6049] Built Mathlib.Algebra.Category.Grp.Limits
+✔ [4219/6049] Built Mathlib.CategoryTheory.Closed.FunctorToTypes
+✔ [4220/6049] Built Mathlib.RingTheory.Valuation.AlgebraInstances
+✔ [4221/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.Basic
+✔ [4222/6049] Built Mathlib.CategoryTheory.Limits.IndYoneda
+✔ [4223/6049] Built Mathlib.CategoryTheory.Subobject.Types
+✔ [4224/6049] Built Mathlib.CategoryTheory.GradedObject.Bifunctor
+✔ [4225/6049] Built Mathlib.Analysis.Convex.Gauge
+✔ [4226/6049] Built Mathlib.Analysis.Complex.IntegerCompl
+✔ [4227/6049] Built Mathlib.Analysis.Complex.UnitDisc.Basic
+✔ [4228/6049] Built Mathlib.Analysis.SpecialFunctions.Log.Basic
+✔ [4229/6049] Built Mathlib.Topology.Algebra.Module.Multilinear.Topology
+✔ [4230/6049] Built Mathlib.Analysis.Complex.Isometry
+✔ [4231/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Pullbacks
+✔ [4232/6049] Built Mathlib.MeasureTheory.Measure.Typeclasses
+✔ [4233/6049] Built Mathlib.FieldTheory.IntermediateField.Algebraic
+✔ [4234/6049] Built Mathlib.NumberTheory.VonMangoldt
+✔ [4235/6049] Built Mathlib.CategoryTheory.Limits.Constructions.EpiMono
+✔ [4236/6049] Built Mathlib.NumberTheory.ModularForms.SlashActions
+✔ [4237/6049] Built Mathlib.MeasureTheory.Measure.Trim
+✔ [4238/6049] Built Mathlib.MeasureTheory.Measure.Sub
+✔ [4239/6049] Built Mathlib.CategoryTheory.ConcreteCategory.EpiMono
+✔ [4240/6049] Built Mathlib.Analysis.SpecialFunctions.Log.PosLog
+✔ [4241/6049] Built Mathlib.Algebra.Category.Ring.FilteredColimits
+✔ [4242/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Images
+✔ [4243/6049] Built Mathlib.Algebra.Category.Grp.Colimits
+✔ [4244/6049] Built Mathlib.FieldTheory.Minpoly.Field
+✔ [4245/6049] Built Mathlib.CategoryTheory.Limits.FunctorCategory.EpiMono
+✔ [4246/6049] Built Mathlib.MeasureTheory.Constructions.Projective
+✔ [4247/6049] Built Mathlib.RingTheory.Localization.Integral
+✔ [4248/6049] Built Mathlib.CategoryTheory.Limits.Constructions.BinaryProducts
+✔ [4249/6049] Built Mathlib.MeasureTheory.Decomposition.Exhaustion
+✔ [4250/6049] Built Mathlib.MeasureTheory.Measure.Dirac
+✔ [4251/6049] Built Mathlib.Algebra.Homology.ShortComplex.RightHomology
+✔ [4252/6049] Built Mathlib.MeasureTheory.Decomposition.UnsignedHahn
+✔ [4253/6049] Built Mathlib.Probability.ConditionalProbability
+✔ [4254/6049] Built Mathlib.CategoryTheory.Enriched.FunctorCategory
+✔ [4255/6049] Built Mathlib.Analysis.InnerProductSpace.Basic
+✔ [4256/6049] Built Mathlib.Algebra.Category.Ring.Epi
+✔ [4257/6049] Built Mathlib.Analysis.LocallyConvex.WithSeminorms
+✔ [4258/6049] Built Mathlib.RingTheory.Generators
+✔ [4259/6049] Built Mathlib.CategoryTheory.Limits.Constructions.Equalizers
+✔ [4260/6049] Built Mathlib.Algebra.Polynomial.Module.FiniteDimensional
+✔ [4261/6049] Built Mathlib.NumberTheory.ModularForms.SlashInvariantForms
+✔ [4262/6049] Built Mathlib.FieldTheory.IntermediateField.Adjoin.Algebra
+✔ [4263/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Basic
+✔ [4264/6049] Built Mathlib.Topology.Algebra.Module.StrongTopology
+✔ [4265/6049] Built Mathlib.LinearAlgebra.Charpoly.Basic
+✔ [4266/6049] Built Mathlib.CategoryTheory.Subpresheaf.Image
+✔ [4267/6049] Built Mathlib.CategoryTheory.Limits.Shapes.ConcreteCategory
+✔ [4268/6049] Built Mathlib.Topology.Algebra.Module.Alternating.Topology
+✔ [4269/6049] Built Mathlib.MeasureTheory.Measure.AEMeasurable
+✔ [4270/6049] Built Mathlib.CategoryTheory.Limits.Final
+✔ [4271/6049] Built Mathlib.LinearAlgebra.AnnihilatingPolynomial
+✔ [4272/6049] Built Mathlib.CategoryTheory.Limits.Constructions.ZeroObjects
+✔ [4273/6049] Built Mathlib.Topology.Algebra.Category.ProfiniteGrp.Limits
+✔ [4274/6049] Built Mathlib.CategoryTheory.Limits.Comma
+✔ [4275/6049] Built Mathlib.MeasureTheory.Measure.Count
+✔ [4276/6049] Built Mathlib.Algebra.Homology.ShortComplex.Limits
+✔ [4277/6049] Built Mathlib.Order.Category.NonemptyFinLinOrd
+✔ [4278/6049] Built Mathlib.LinearAlgebra.Eigenspace.Minpoly
+✔ [4279/6049] Built Mathlib.Probability.ProbabilityMassFunction.Basic
+✔ [4280/6049] Built Mathlib.NumberTheory.ModularForms.Identities
+✔ [4281/6049] Built Mathlib.Topology.Compactness.DeltaGeneratedSpace
+✔ [4282/6049] Built Mathlib.Analysis.LocallyConvex.WeakDual
+✔ [4283/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.Topology
+✔ [4284/6049] Built Mathlib.Analysis.LocallyConvex.StrongTopology
+✔ [4285/6049] Built Mathlib.Analysis.LocallyConvex.Barrelled
+✔ [4286/6049] Built Mathlib.CategoryTheory.Subpresheaf.OfSection
+✔ [4287/6049] Built Mathlib.FieldTheory.Normal.Defs
+✔ [4288/6049] Built Mathlib.NumberTheory.ModularForms.EisensteinSeries.Defs
+✔ [4289/6049] Built Mathlib.Algebra.Category.Grp.EpiMono
+✔ [4290/6049] Built Mathlib.CategoryTheory.Subpresheaf.Equalizer
+✔ [4291/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Isometry
+✔ [4292/6049] Built Mathlib.Geometry.Euclidean.Inversion.Basic
+✔ [4293/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Basic
+✔ [4294/6049] Built Mathlib.RingTheory.IntegralClosure.IntegrallyClosed
+✔ [4295/6049] Built Mathlib.RingTheory.AlgebraicIndependent.TranscendenceBasis
+✔ [4296/6049] Built Mathlib.CategoryTheory.Limits.Final.ParallelPair
+✔ [4297/6049] Built Mathlib.MeasureTheory.Order.Lattice
+✔ [4298/6049] Built Mathlib.CategoryTheory.Limits.IsConnected
+✔ [4299/6049] Built Mathlib.CategoryTheory.Closed.FunctorCategory.Basic
+✔ [4300/6049] Built Mathlib.CategoryTheory.Limits.Sifted
+✔ [4301/6049] Built Mathlib.Analysis.LocallyConvex.AbsConvex
+✔ [4302/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Basis
+✔ [4303/6049] Built Mathlib.MeasureTheory.VectorMeasure.Basic
+✔ [4304/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Countable
+✔ [4305/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Preorder.HasIterationOfShape
+✔ [4306/6049] Built Mathlib.CategoryTheory.Limits.Over
+✔ [4307/6049] Built Mathlib.RingTheory.Valuation.Integral
+✔ [4308/6049] Built Mathlib.Dynamics.Ergodic.MeasurePreserving
+✔ [4309/6049] Built Mathlib.LinearAlgebra.Charpoly.ToMatrix
+✔ [4310/6049] Built Mathlib.Probability.UniformOn
+✔ [4311/6049] Built Mathlib.Algebra.Category.Grp.Kernels
+✔ [4312/6049] Built Mathlib.CategoryTheory.Subobject.Lattice
+✔ [4313/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.FunctionsBoundedAtInfty
+✔ [4314/6049] Built Mathlib.Topology.Category.DeltaGenerated
+✔ [4315/6049] Built Mathlib.Algebra.GCDMonoid.IntegrallyClosed
+✔ [4316/6049] Built Mathlib.Algebra.Homology.ShortComplex.Homology
+✔ [4317/6049] Built Mathlib.CategoryTheory.Comma.Presheaf.Colimit
+✔ [4318/6049] Built Mathlib.Analysis.Normed.Operator.Compact
+✔ [4319/6049] Built Mathlib.Analysis.Convex.Strong
+✔ [4320/6049] Built Mathlib.NumberTheory.Modular
+✔ [4321/6049] Built Mathlib.Probability.ProbabilityMassFunction.Monad
+✔ [4322/6049] Built Mathlib.CategoryTheory.Subobject.Comma
+✔ [4323/6049] Built Mathlib.RingTheory.Polynomial.RationalRoot
+✔ [4324/6049] Built Mathlib.RingTheory.PowerBasis
+✔ [4325/6049] Built Mathlib.CategoryTheory.Filtered.Final
+✔ [4326/6049] Built Mathlib.Dynamics.Ergodic.Ergodic
+✔ [4327/6049] Built Mathlib.LinearAlgebra.QuadraticForm.IsometryEquiv
+✔ [4328/6049] Built Mathlib.RingTheory.AlgebraicIndependent.Adjoin
+✔ [4329/6049] Built Mathlib.MeasureTheory.Measure.Complex
+✔ [4330/6049] Built Mathlib.MeasureTheory.Group.Arithmetic
+✔ [4331/6049] Built Mathlib.CategoryTheory.Sites.Sheaf
+✔ [4332/6049] Built Mathlib.LinearAlgebra.Charpoly.BaseChange
+✔ [4333/6049] Built Mathlib.CategoryTheory.Limits.Constructions.LimitsOfProductsAndEqualizers
+✔ [4334/6049] Built Mathlib.Algebra.Homology.ShortComplex.QuasiIso
+✔ [4335/6049] Built Mathlib.CategoryTheory.Limits.FinallySmall
+✔ [4336/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Biproducts
+✔ [4337/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Inverse
+✔ [4338/6049] Built Mathlib.MeasureTheory.Decomposition.SignedHahn
+✔ [4339/6049] Built Mathlib.Algebra.Category.Ring.Limits
+✔ [4340/6049] Built Mathlib.MeasureTheory.Group.Pointwise
+✔ [4341/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.Minpoly
+✔ [4342/6049] Built Mathlib.MeasureTheory.Order.Group.Lattice
+✔ [4343/6049] Built Mathlib.CategoryTheory.GlueData
+✔ [4344/6049] Built Mathlib.CategoryTheory.Sites.Canonical
+✔ [4345/6049] Built Mathlib.CategoryTheory.SmallObject.Iteration.Basic
+✔ [4346/6049] Built Mathlib.CategoryTheory.Sites.CoversTop
+✔ [4347/6049] Built Mathlib.CategoryTheory.Sites.Coverage
+✔ [4348/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Real
+✔ [4349/6049] Built Mathlib.Topology.Sheaves.Sheaf
+✔ [4350/6049] Built Mathlib.CategoryTheory.Generator.Basic
+✔ [4351/6049] Built Mathlib.Topology.Category.LightProfinite.Basic
+✔ [4352/6049] Built Mathlib.CategoryTheory.GuitartExact.Basic
+✔ [4353/6049] Built Mathlib.Order.Category.OmegaCompletePartialOrder
+✔ [4354/6049] Built Mathlib.RingTheory.Kaehler.Basic
+✔ [4355/6049] Built Mathlib.Algebra.Homology.ShortComplex.Retract
+✔ [4356/6049] Built Mathlib.RingTheory.Ideal.Over
+✔ [4357/6049] Built Mathlib.Probability.ProbabilityMassFunction.Constructions
+✔ [4358/6049] Built Mathlib.CategoryTheory.Sites.OneHypercover
+✔ [4359/6049] Built Mathlib.RingTheory.Presentation
+✔ [4360/6049] Built Mathlib.CategoryTheory.Sites.Sheafification
+✔ [4361/6049] Built Mathlib.LinearAlgebra.Eigenspace.Zero
+✔ [4362/6049] Built Mathlib.CategoryTheory.Preadditive.Projective
+✔ [4363/6049] Built Mathlib.Topology.Category.Profinite.Extend
+✔ [4364/6049] Built Mathlib.CategoryTheory.Preadditive.OfBiproducts
+✔ [4365/6049] Built Mathlib.Topology.Sheaves.Forget
+✔ [4366/6049] Built Mathlib.AlgebraicTopology.SimplexCategory
+✔ [4367/6049] Built Mathlib.RingTheory.Adjoin.PowerBasis
+✔ [4368/6049] Built Mathlib.CategoryTheory.Subobject.Limits
+✔ [4369/6049] Built Mathlib.MeasureTheory.Group.MeasurableEquiv
+✔ [4370/6049] Built Mathlib.CategoryTheory.Sites.Types
+✔ [4371/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Basic
+✔ [4372/6049] Built Mathlib.Topology.Category.LightProfinite.Sequence
+✔ [4373/6049] Built Mathlib.CategoryTheory.Adjunction.AdjointFunctorTheorems
+✔ [4374/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Biproducts
+✔ [4375/6049] Built Mathlib.Probability.ProbabilityMassFunction.Binomial
+✔ [4376/6049] Built Mathlib.Topology.Category.LightProfinite.AsLimit
+✔ [4377/6049] Built Mathlib.CategoryTheory.Sites.Whiskering
+✔ [4378/6049] Built Mathlib.CategoryTheory.Generator.Presheaf
+✔ [4379/6049] Built Mathlib.RingTheory.DedekindDomain.Basic
+✔ [4380/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Prod
+✔ [4381/6049] Built Mathlib.CategoryTheory.Sites.IsSheafOneHypercover
+✔ [4382/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Angle
+✔ [4383/6049] Built Mathlib.MeasureTheory.Decomposition.Jordan
+✔ [4384/6049] Built Mathlib.LinearAlgebra.Dual
+✔ [4385/6049] Built Mathlib.CategoryTheory.SmallObject.Iteration.ExtendToSucc
+✔ [4386/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Basic
+✔ [4387/6049] Built Mathlib.FieldTheory.Separable
+✔ [4388/6049] Built Mathlib.CategoryTheory.Sites.Localization
+✔ [4389/6049] Built Mathlib.CategoryTheory.Preadditive.Injective
+✔ [4390/6049] Built Mathlib.CategoryTheory.SmallObject.Iteration.FunctorOfCocone
+✔ [4391/6049] Built Mathlib.Topology.Baire.BaireMeasurable
+✔ [4392/6049] Built Mathlib.Topology.Category.Profinite.Projective
+✔ [4393/6049] Built Mathlib.Topology.Category.CompHaus.Projective
+✔ [4394/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Complex
+✔ [4395/6049] Built Mathlib.CategoryTheory.Triangulated.Basic
+✔ [4396/6049] Built Mathlib.CategoryTheory.Limits.Presheaf
+✔ [4397/6049] Built Mathlib.Algebra.Homology.ImageToKernel
+✔ [4398/6049] Built Mathlib.Dynamics.Ergodic.Conservative
+✔ [4399/6049] Built Mathlib.AlgebraicTopology.TopologicalSimplex
+✔ [4400/6049] Built Mathlib.MeasureTheory.Measure.OpenPos
+✔ [4401/6049] Built Mathlib.RingTheory.LocalRing.Quotient
+✔ [4402/6049] Built Mathlib.CategoryTheory.Sites.Subcanonical
+✔ [4403/6049] Built Mathlib.CategoryTheory.Sites.Continuous
+✔ [4404/6049] Built Mathlib.CategoryTheory.GuitartExact.VerticalComposition
+✔ [4405/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.CommSq
+✔ [4406/6049] Built Mathlib.CategoryTheory.Sites.Limits
+✔ [4407/6049] Built Mathlib.LinearAlgebra.Matrix.Dual
+✔ [4408/6049] Built Mathlib.LinearAlgebra.TensorPower.Pairing
+✔ [4409/6049] Built Mathlib.RingTheory.Polynomial.SeparableDegree
+✔ [4410/6049] Built Mathlib.CategoryTheory.Limits.Shapes.SequentialProduct
+✔ [4411/6049] Built Mathlib.Algebra.Homology.ShortComplex.PreservesHomology
+✔ [4412/6049] Built Mathlib.MeasureTheory.Covering.Vitali
+✔ [4413/6049] Built Mathlib.Topology.Category.LightProfinite.Extend
+✔ [4414/6049] Built Mathlib.CategoryTheory.Limits.Constructions.Filtered
+✔ [4415/6049] Built Mathlib.CategoryTheory.Sites.Plus
+✔ [4416/6049] Built Mathlib.Topology.Gluing
+✔ [4417/6049] Built Mathlib.RingTheory.Smooth.StandardSmooth
+✔ [4418/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Basic
+✔ [4419/6049] Built Mathlib.LinearAlgebra.Basis.Flag
+✔ [4420/6049] Built Mathlib.RingTheory.Valuation.LocalSubring
+✔ [4421/6049] Built Mathlib.CategoryTheory.Limits.EpiMono
+✔ [4422/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Asymptotics
+✔ [4423/6049] Built Mathlib.Analysis.NormedSpace.RCLike
+✔ [4424/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Dual
+✔ [4425/6049] Built Mathlib.CategoryTheory.LiftingProperties.Limits
+✔ [4426/6049] Built Mathlib.CategoryTheory.SmallObject.Iteration.Nonempty
+✔ [4427/6049] Built Mathlib.RingTheory.DiscreteValuationRing.TFAE
+✔ [4428/6049] Built Mathlib.Topology.Category.Stonean.Basic
+✔ [4429/6049] Built Mathlib.CategoryTheory.Generator.Sheaf
+✔ [4430/6049] Built Mathlib.CategoryTheory.Localization.DerivabilityStructure.Basic
+✔ [4431/6049] Built Mathlib.Analysis.NormedSpace.Extend
+✔ [4432/6049] Built Mathlib.Algebra.Homology.HomologicalComplex
+✔ [4433/6049] Built Mathlib.Algebra.Module.LinearMap.Polynomial
+✔ [4434/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Order
+✔ [4435/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.Equalizer
+✔ [4436/6049] Built Mathlib.CategoryTheory.Sites.Preserves
+✔ [4437/6049] Built Mathlib.CategoryTheory.Dialectica.Monoidal
+✔ [4438/6049] Built Mathlib.CategoryTheory.Sites.ChosenFiniteProducts
+✔ [4439/6049] Built Mathlib.Topology.Sheaves.Limits
+✔ [4440/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.NNNorm
+✔ [4441/6049] Built Mathlib.CategoryTheory.Limits.Preserves.FunctorCategory
+✔ [4442/6049] Built Mathlib.RingTheory.Spectrum.Prime.Topology
+✔ [4443/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.Arg
+✔ [4444/6049] Built Mathlib.CategoryTheory.Limits.Shapes.KernelPair
+✔ [4445/6049] Built Mathlib.FieldTheory.Finite.Basic
+✔ [4446/6049] Built Mathlib.LinearAlgebra.PerfectPairing.Basic
+✔ [4447/6049] Built Mathlib.LinearAlgebra.BilinearForm.Properties
+✔ [4448/6049] Built Mathlib.Algebra.Homology.Embedding.Boundary
+✔ [4449/6049] Built Mathlib.Topology.Category.Stonean.Adjunctions
+✔ [4450/6049] Built Mathlib.CategoryTheory.Closed.Types
+✔ [4451/6049] Built Mathlib.MeasureTheory.Function.Floor
+✔ [4452/6049] Built Mathlib.RingTheory.Derivation.MapCoeffs
+✔ [4453/6049] Built Mathlib.Algebra.Homology.Functor
+✔ [4454/6049] Built Mathlib.CategoryTheory.GradedObject.Trifunctor
+✔ [4455/6049] Built Mathlib.RingTheory.AdjoinRoot
+✔ [4456/6049] Built Mathlib.MeasureTheory.Function.AEMeasurableOrder
+✔ [4457/6049] Built Mathlib.CategoryTheory.Sites.CartesianClosed
+✔ [4458/6049] Built Mathlib.Data.Matrix.Rank
+✔ [4459/6049] Built Mathlib.LinearAlgebra.BilinearForm.TensorProduct
+✔ [4460/6049] Built Mathlib.RingTheory.Jacobson.Ring
+✔ [4461/6049] Built Mathlib.LinearAlgebra.Contraction
+✔ [4462/6049] Built Mathlib.RingTheory.Spectrum.Prime.ConstructibleSet
+✔ [4463/6049] Built Mathlib.RingTheory.Spectrum.Maximal.Topology
+✔ [4464/6049] Built Mathlib.Algebra.Homology.Single
+✔ [4465/6049] Built Mathlib.CategoryTheory.Preadditive.Biproducts
+✔ [4466/6049] Built Mathlib.CategoryTheory.Sites.CoverLifting
+✔ [4467/6049] Built Mathlib.NumberTheory.Wilson
+✔ [4468/6049] Built Mathlib.RingTheory.Spectrum.Prime.IsOpenComapC
+✔ [4469/6049] Built Mathlib.CategoryTheory.Localization.DerivabilityStructure.Constructor
+✔ [4470/6049] Built Mathlib.RingTheory.Spectrum.Prime.Module
+✔ [4471/6049] Built Mathlib.MeasureTheory.Function.EssSup
+✔ [4472/6049] Built Mathlib.FieldTheory.Fixed
+✔ [4473/6049] Built Mathlib.CategoryTheory.Sites.ConcreteSheafification
+✔ [4474/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Real
+✔ [4475/6049] Built Mathlib.Algebra.Homology.HomologicalBicomplex
+✔ [4476/6049] Built Mathlib.RingTheory.Spectrum.Prime.Noetherian
+✔ [4477/6049] Built Mathlib.MeasureTheory.Measure.Stieltjes
+✔ [4478/6049] Built Mathlib.RingTheory.Spectrum.Prime.TensorProduct
+✔ [4479/6049] Built Mathlib.NumberTheory.DirichletCharacter.Bounds
+✔ [4480/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.FiniteField
+✔ [4481/6049] Built Mathlib.FieldTheory.ChevalleyWarning
+✔ [4482/6049] Built Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.Basic
+✔ [4483/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.Log
+✔ [4484/6049] Built Mathlib.Algebra.Category.Ring.Constructions
+✔ [4485/6049] Built Mathlib.MeasureTheory.Measure.Regular
+✔ [4486/6049] Built Mathlib.CategoryTheory.Sites.CompatiblePlus
+✔ [4487/6049] Built Mathlib.NumberTheory.SumFourSquares
+✔ [4488/6049] Built Mathlib.CategoryTheory.Limits.Constructions.Over.Products
+✔ [4489/6049] Built Mathlib.Algebra.Homology.DifferentialObject
+✔ [4490/6049] Built Mathlib.MeasureTheory.Function.SimpleFunc
+✔ [4491/6049] Built Mathlib.RingTheory.Kaehler.TensorProduct
+✔ [4492/6049] Built Mathlib.CategoryTheory.GradedObject.Associator
+✔ [4493/6049] Built Mathlib.NumberTheory.FermatPsp
+✔ [4494/6049] Built Mathlib.Analysis.NormedSpace.HahnBanach.Separation
+✔ [4495/6049] Built Mathlib.Algebra.Homology.ComplexShapeSigns
+✔ [4496/6049] Built Mathlib.RingTheory.Localization.Away.AdjoinRoot
+✔ [4497/6049] Built Mathlib.LinearAlgebra.BilinearForm.DualLattice
+✔ [4498/6049] Built Mathlib.FieldTheory.KummerPolynomial
+✔ [4499/6049] Built Mathlib.LinearAlgebra.ExteriorAlgebra.Basic
+✔ [4500/6049] Built Mathlib.Algebra.Polynomial.Bivariate
+✔ [4501/6049] Built Mathlib.FieldTheory.Finite.Polynomial
+✔ [4502/6049] Built Mathlib.RingTheory.Kaehler.Polynomial
+✔ [4503/6049] Built Mathlib.LinearAlgebra.Reflection
+✔ [4504/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Grading
+✔ [4505/6049] Built Mathlib.RingTheory.Spectrum.Prime.Jacobson
+✔ [4506/6049] Built Mathlib.Algebra.Homology.Double
+✔ [4507/6049] Built Mathlib.CategoryTheory.Limits.VanKampen
+✔ [4508/6049] Built Mathlib.LinearAlgebra.BilinearForm.Orthogonal
+✔ [4509/6049] Built Mathlib.RingTheory.Adjoin.Field
+✔ [4510/6049] Built Mathlib.GroupTheory.SpecificGroups.ZGroup
+✔ [4511/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Metric
+✔ [4512/6049] Built Mathlib.Algebra.Category.Grp.Biproducts
+✔ [4513/6049] Built Mathlib.CategoryTheory.Limits.FilteredColimitCommutesFiniteLimit
+✔ [4514/6049] Built Mathlib.LinearAlgebra.Coevaluation
+✔ [4515/6049] Built Mathlib.CategoryTheory.Preadditive.AdditiveFunctor
+✔ [4516/6049] Built Mathlib.LinearAlgebra.FreeModule.Norm
+✔ [4517/6049] Built Mathlib.CategoryTheory.Preadditive.HomOrthogonal
+✔ [4518/6049] Built Mathlib.LinearAlgebra.Matrix.GeneralLinearGroup.Card
+✔ [4519/6049] Built Mathlib.Topology.ContinuousMap.Bounded.Basic
+✔ [4520/6049] Built Mathlib.MeasureTheory.Measure.ContinuousPreimage
+✔ [4521/6049] Built Mathlib.Combinatorics.Configuration
+✔ [4522/6049] Built Mathlib.CategoryTheory.Limits.Constructions.Over.Basic
+✔ [4523/6049] Built Mathlib.NumberTheory.LegendreSymbol.Basic
+✔ [4524/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.Circle
+✔ [4525/6049] Built Mathlib.MeasureTheory.Measure.RegularityCompacts
+✔ [4526/6049] Built Mathlib.CategoryTheory.Sites.CompatibleSheafification
+✔ [4527/6049] Built Mathlib.Analysis.Convex.KreinMilman
+✔ [4528/6049] Built Mathlib.Combinatorics.Additive.ErdosGinzburgZiv
+✔ [4529/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Reflexive
+✔ [4530/6049] Built Mathlib.RingTheory.RootsOfUnity.Complex
+✔ [4531/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Complex
+✔ [4532/6049] Built Mathlib.MeasureTheory.Measure.Content
+✔ [4533/6049] Built Mathlib.Algebra.Homology.HomologicalComplexLimits
+✔ [4534/6049] Built Mathlib.LinearAlgebra.Matrix.BilinearForm
+✔ [4535/6049] Built Mathlib.RingTheory.RingHomProperties
+✔ [4536/6049] Built Mathlib.MeasureTheory.Group.Action
+✔ [4537/6049] Built Mathlib.Algebra.Homology.CommSq
+✔ [4538/6049] Built Mathlib.RingTheory.WittVector.StructurePolynomial
+✔ [4539/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.Metrizable
+✔ [4540/6049] Built Mathlib.FieldTheory.Perfect
+✔ [4541/6049] Built Mathlib.LinearAlgebra.PerfectPairing.Restrict
+✔ [4542/6049] Built Mathlib.RingTheory.Unramified.Basic
+✔ [4543/6049] Built Mathlib.Analysis.LocallyConvex.WeakSpace
+✔ [4544/6049] Built Mathlib.Algebra.Homology.Augment
+✔ [4545/6049] Built Mathlib.RepresentationTheory.Basic
+✔ [4546/6049] Built Mathlib.Analysis.Calculus.FDeriv.Basic
+✔ [4547/6049] Built Mathlib.CategoryTheory.GradedObject.Unitor
+✔ [4548/6049] Built Mathlib.CategoryTheory.Abelian.Basic
+✔ [4549/6049] Built Mathlib.RingTheory.Smooth.Basic
+✔ [4550/6049] Built Mathlib.FieldTheory.SplittingField.IsSplittingField
+✔ [4551/6049] Built Mathlib.CategoryTheory.Preadditive.LeftExact
+✔ [4552/6049] Built Mathlib.Algebra.Category.Ring.Under.Basic
+✔ [4553/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Presheaf
+✔ [4554/6049] Built Mathlib.Algebra.Homology.TotalComplex
+✔ [4555/6049] Built Mathlib.CategoryTheory.Preadditive.Transfer
+✔ [4556/6049] Built Mathlib.CategoryTheory.Shift.ShiftedHom
+✔ [4557/6049] Built Mathlib.RingTheory.DedekindDomain.Ideal
+✔ [4558/6049] Built Mathlib.CategoryTheory.Quotient.Preadditive
+✔ [4559/6049] Built Mathlib.Topology.UrysohnsBounded
+✔ [4560/6049] Built Mathlib.CategoryTheory.Preadditive.EndoFunctor
+✔ [4561/6049] Built Mathlib.Topology.ContinuousMap.BoundedCompactlySupported
+✔ [4562/6049] Built Mathlib.Topology.Metrizable.Urysohn
+✔ [4563/6049] Built Mathlib.CategoryTheory.Preadditive.Opposite
+✔ [4564/6049] Built Mathlib.MeasureTheory.Constructions.Polish.Basic
+✔ [4565/6049] Built Mathlib.CategoryTheory.Filtered.CostructuredArrow
+✔ [4566/6049] Built Mathlib.CategoryTheory.Extensive
+✔ [4567/6049] Built Mathlib.LinearAlgebra.ExteriorAlgebra.Grading
+✔ [4568/6049] Built Mathlib.Analysis.Normed.Group.SemiNormedGrp.Completion
+✔ [4569/6049] Built Mathlib.Topology.ContinuousMap.Bounded.Star
+✔ [4570/6049] Built Mathlib.Topology.MetricSpace.ThickenedIndicator
+✔ [4571/6049] Built Mathlib.CategoryTheory.Linear.LinearFunctor
+✔ [4572/6049] Built Mathlib.CategoryTheory.Preadditive.EilenbergMoore
+✔ [4573/6049] Built Mathlib.AlgebraicTopology.SimplicialObject.Basic
+✔ [4574/6049] Built Mathlib.LinearAlgebra.QuadraticForm.Complex
+✔ [4575/6049] Built Mathlib.CategoryTheory.Shift.ShiftSequence
+✔ [4576/6049] Built Mathlib.LinearAlgebra.Trace
+✔ [4577/6049] Built Mathlib.CategoryTheory.Localization.CalculusOfFractions.Preadditive
+✔ [4578/6049] Built Mathlib.Geometry.RingedSpace.PresheafedSpace.HasColimits
+✔ [4579/6049] Built Mathlib.RingTheory.RingHom.Injective
+✔ [4580/6049] Built Mathlib.Topology.Algebra.PontryaginDual
+✔ [4581/6049] Built Mathlib.CategoryTheory.Monad.Coequalizer
+✔ [4582/6049] Built Mathlib.NumberTheory.Zsqrtd.QuadraticReciprocity
+✔ [4583/6049] Built Mathlib.CategoryTheory.Monad.Equalizer
+✔ [4584/6049] Built Mathlib.NumberTheory.MulChar.Lemmas
+✔ [4585/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Diagonal
+✔ [4586/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Conjugation
+✔ [4587/6049] Built Mathlib.CategoryTheory.Triangulated.Rotate
+✔ [4588/6049] Built Mathlib.Topology.MetricSpace.GromovHausdorffRealized
+✔ [4589/6049] Built Mathlib.CategoryTheory.Idempotents.Basic
+✔ [4590/6049] Built Mathlib.LinearAlgebra.RootSystem.Defs
+✔ [4591/6049] Built Mathlib.CategoryTheory.Abelian.Subobject
+✔ [4592/6049] Built Mathlib.MeasureTheory.Function.SimpleFuncDense
+✔ [4593/6049] Built Mathlib.CategoryTheory.Shift.Pullback
+✔ [4594/6049] Built Mathlib.Analysis.Calculus.FDeriv.RestrictScalars
+✔ [4595/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Prod
+✔ [4596/6049] Built Mathlib.MeasureTheory.Group.AEStabilizer
+✔ [4597/6049] Built Mathlib.CategoryTheory.Limits.Indization.IndObject
+✔ [4598/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Bilinear
+✔ [4599/6049] Built Mathlib.RingTheory.Unramified.Pi
+✔ [4600/6049] Built Mathlib.Algebra.Module.DedekindDomain
+✔ [4601/6049] Built Mathlib.CategoryTheory.Sites.PreservesSheafification
+✔ [4602/6049] Built Mathlib.RingTheory.WittVector.Defs
+✔ [4603/6049] Built Mathlib.Algebra.Homology.ShortComplex.Abelian
+✔ [4604/6049] Built Mathlib.CategoryTheory.Monoidal.Preadditive
+✔ [4605/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex
+✔ [4606/6049] Built Mathlib.Algebra.Homology.TotalComplexSymmetry
+✔ [4607/6049] Built Mathlib.CategoryTheory.Simple
+✔ [4608/6049] Built Mathlib.CategoryTheory.Localization.SmallShiftedHom
+✔ [4609/6049] Built Mathlib.RingTheory.Etale.Basic
+✔ [4610/6049] Built Mathlib.CategoryTheory.Abelian.Transfer
+✔ [4611/6049] Built Mathlib.MeasureTheory.Constructions.Polish.EmbeddingReal
+✔ [4612/6049] Built Mathlib.CategoryTheory.Abelian.FunctorCategory
+✔ [4613/6049] Built Mathlib.RingTheory.Smooth.Pi
+✔ [4614/6049] Built Mathlib.CategoryTheory.EffectiveEpi.Extensive
+✔ [4615/6049] Built Mathlib.NumberTheory.LegendreSymbol.GaussEisensteinLemmas
+✔ [4616/6049] Built Mathlib.Algebra.Homology.Additive
+✔ [4617/6049] Built Mathlib.CategoryTheory.Sites.Coherent.Basic
+✔ [4618/6049] Built Mathlib.Analysis.Calculus.FDeriv.Comp
+✔ [4619/6049] Built Mathlib.RingTheory.Spectrum.Prime.Polynomial
+✔ [4620/6049] Built Mathlib.RingTheory.LocalProperties.Basic
+✔ [4621/6049] Built Mathlib.AlgebraicTopology.SimplicialObject.Coskeletal
+✔ [4622/6049] Built Mathlib.Algebra.Category.ModuleCat.Basic
+✔ [4623/6049] Built Mathlib.FieldTheory.PerfectClosure
+✔ [4624/6049] Built Mathlib.Topology.Category.CompHausLike.Limits
+✔ [4625/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Star
+✔ [4626/6049] Built Mathlib.CategoryTheory.Quotient.Linear
+✔ [4627/6049] Built Mathlib.CategoryTheory.Abelian.Opposite
+✔ [4628/6049] Built Mathlib.CategoryTheory.Shift.InducedShiftSequence
+✔ [4629/6049] Built Mathlib.Topology.TietzeExtension
+✔ [4630/6049] Built Mathlib.Algebra.DirectSum.LinearMap
+✔ [4631/6049] Built Mathlib.CategoryTheory.Adjunction.Lifting.Left
+✔ [4632/6049] Built Mathlib.CategoryTheory.Adhesive
+✔ [4633/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Real
+✔ [4634/6049] Built Mathlib.LinearAlgebra.PID
+✔ [4635/6049] Built Mathlib.CategoryTheory.Shift.Opposite
+✔ [4636/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Basic
+✔ [4637/6049] Built Mathlib.MeasureTheory.Integral.Lebesgue
+✔ [4638/6049] Built Mathlib.FieldTheory.SplittingField.Construction
+✔ [4639/6049] Built Mathlib.LinearAlgebra.QuadraticForm.TensorProduct
+✔ [4640/6049] Built Mathlib.NumberTheory.SumTwoSquares
+✔ [4641/6049] Built Mathlib.AlgebraicTopology.SimplicialObject.Split
+✔ [4642/6049] Built Mathlib.CategoryTheory.Adjunction.Lifting.Right
+✔ [4643/6049] Built Mathlib.RingTheory.Trace.Defs
+✔ [4644/6049] Built Mathlib.RingTheory.DedekindDomain.Factorization
+✔ [4645/6049] Built Mathlib.AlgebraicTopology.MooreComplex
+✔ [4646/6049] Built Mathlib.LinearAlgebra.RootSystem.Base
+✔ [4647/6049] Built Mathlib.Dynamics.Ergodic.Action.Basic
+✔ [4648/6049] Built Mathlib.CategoryTheory.Limits.Indization.LocallySmall
+✔ [4649/6049] Built Mathlib.CategoryTheory.Monad.Monadicity
+✔ [4650/6049] Built Mathlib.Topology.ContinuousMap.ZeroAtInfty
+✔ [4651/6049] Built Mathlib.CategoryTheory.Functor.Flat
+✔ [4652/6049] Built Mathlib.CategoryTheory.Idempotents.Karoubi
+✔ [4653/6049] Built Mathlib.CategoryTheory.Monad.Comonadicity
+✔ [4654/6049] Built Mathlib.CategoryTheory.Noetherian
+✔ [4655/6049] Built Mathlib.CategoryTheory.Preadditive.Mat
+✔ [4656/6049] Built Mathlib.CategoryTheory.Monoidal.Linear
+✔ [4657/6049] Built Mathlib.CategoryTheory.Sites.Coherent.ExtensiveTopology
+✔ [4658/6049] Built Mathlib.LinearAlgebra.RootSystem.RootPositive
+✔ [4659/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Fold
+✔ [4660/6049] Built Mathlib.LinearAlgebra.RootSystem.OfBilinear
+✔ [4661/6049] Built Mathlib.CategoryTheory.Limits.Indization.FilteredColimits
+✔ [4662/6049] Built Mathlib.CategoryTheory.MorphismProperty.Limits
+✔ [4663/6049] Built Mathlib.Algebra.Homology.Embedding.Restriction
+✔ [4664/6049] Built Mathlib.RingTheory.LocalProperties.Reduced
+✔ [4665/6049] Built Mathlib.Algebra.Homology.HomologicalComplexBiprod
+✔ [4666/6049] Built Mathlib.Algebra.Category.Grp.ZModuleEquivalence
+✔ [4667/6049] Built Mathlib.RingTheory.RingHom.Surjective
+✔ [4668/6049] Built Mathlib.Topology.Category.CompHausLike.SigmaComparison
+✔ [4669/6049] Built Mathlib.Topology.Separation.NotNormal
+✔ [4670/6049] Built Mathlib.RingTheory.DedekindDomain.AdicValuation
+✔ [4671/6049] Built Mathlib.CategoryTheory.Sites.Adjunction
+✔ [4672/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.Affine
+✔ [4673/6049] Built Mathlib.Topology.Category.Profinite.Limits
+✔ [4674/6049] Built Mathlib.CategoryTheory.Galois.Basic
+✔ [4675/6049] Built Mathlib.CategoryTheory.GradedObject.Monoidal
+✔ [4676/6049] Built Mathlib.RingTheory.Etale.Pi
+✔ [4677/6049] Built Mathlib.Topology.Category.CompHaus.Limits
+✔ [4678/6049] Built Mathlib.CategoryTheory.Sites.Coherent.CoherentSheaves
+✔ [4679/6049] Built Mathlib.Algebra.Order.AbsoluteValue.Equivalence
+✔ [4680/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Completeness
+✔ [4681/6049] Built Mathlib.CategoryTheory.Sites.Coherent.ExtensiveSheaves
+✔ [4682/6049] Built Mathlib.Algebra.Homology.ShortComplex.Preadditive
+✔ [4683/6049] Built Mathlib.Topology.Category.Stonean.Limits
+✔ [4684/6049] Built Mathlib.Topology.Category.LightProfinite.Limits
+✔ [4685/6049] Built Mathlib.RingTheory.ClassGroup
+✔ [4686/6049] Built Mathlib.Analysis.SpecialFunctions.Log.Monotone
+✔ [4687/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.Basic
+✔ [4688/6049] Built Mathlib.Algebra.Category.ModuleCat.Tannaka
+✔ [4689/6049] Built Mathlib.CategoryTheory.Sites.Coherent.Comparison
+✔ [4690/6049] Built Mathlib.Algebra.Homology.Linear
+✔ [4691/6049] Built Mathlib.RingTheory.LocalProperties.IntegrallyClosed
+✔ [4692/6049] Built Mathlib.LinearAlgebra.QuadraticForm.QuadraticModuleCat
+✔ [4693/6049] Built Mathlib.RingTheory.RingHom.Integral
+✔ [4694/6049] Built Mathlib.CategoryTheory.Sites.Abelian
+✔ [4695/6049] Built Mathlib.Topology.ContinuousMap.Compact
+✔ [4696/6049] Built Mathlib.Algebra.Category.ModuleCat.EpiMono
+✔ [4697/6049] Built Mathlib.Algebra.Homology.Bifunctor
+✔ [4698/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Arctan
+✔ [4699/6049] Built Mathlib.RingTheory.RingHom.StandardSmooth
+✔ [4700/6049] Built Mathlib.MeasureTheory.Measure.GiryMonad
+✔ [4701/6049] Built Mathlib.Algebra.Category.ModuleCat.Algebra
+✔ [4702/6049] Built Mathlib.RingTheory.WittVector.Basic
+✔ [4703/6049] Built Mathlib.CategoryTheory.Limits.ConcreteCategory.WithAlgebraicStructures
+✔ [4704/6049] Built Mathlib.LinearAlgebra.RootSystem.BaseChange
+✔ [4705/6049] Built Mathlib.MeasureTheory.Integral.Indicator
+✔ [4706/6049] Built Mathlib.Algebra.Category.CoalgebraCat.Basic
+✔ [4707/6049] Built Mathlib.MeasureTheory.Measure.HasOuterApproxClosed
+✔ [4708/6049] Built Mathlib.Algebra.Category.AlgebraCat.Basic
+✔ [4709/6049] Built Mathlib.RingTheory.Complex
+✔ [4710/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.NormedSpace
+✔ [4711/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Nerve
+✔ [4712/6049] Built Mathlib.RingTheory.NormTrace
+✔ [4713/6049] Built Mathlib.RingTheory.RingHom.Finite
+✔ [4714/6049] Built Mathlib.Algebra.Category.ModuleCat.Colimits
+✔ [4715/6049] Built Mathlib.LinearAlgebra.Semisimple
+✔ [4716/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Monoidal
+✔ [4717/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Prod
+✔ [4718/6049] Built Mathlib.LinearAlgebra.RootSystem.CartanMatrix
+✔ [4719/6049] Built Mathlib.AlgebraicTopology.SingularSet
+✔ [4720/6049] Built Mathlib.Analysis.Normed.Ring.Seminorm
+✔ [4721/6049] Built Mathlib.Analysis.Convex.SpecificFunctions.Basic
+✔ [4722/6049] Built Mathlib.Analysis.SpecialFunctions.Log.Base
+✔ [4723/6049] Built Mathlib.MeasureTheory.Measure.WithDensity
+✔ [4724/6049] Built Mathlib.CategoryTheory.Filtered.Flat
+✔ [4725/6049] Built Mathlib.Algebra.Category.ModuleCat.Products
+✔ [4726/6049] Built Mathlib.CategoryTheory.Idempotents.Biproducts
+✔ [4727/6049] Built Mathlib.CategoryTheory.Sites.Coherent.RegularSheaves
+✔ [4728/6049] Built Mathlib.Combinatorics.SimpleGraph.Regularity.Bound
+✔ [4729/6049] Built Mathlib.Algebra.Category.ModuleCat.Limits
+✔ [4730/6049] Built Mathlib.CategoryTheory.Closed.FunctorCategory.Complete
+✔ [4731/6049] Built Mathlib.Analysis.Normed.Group.ZeroAtInfty
+✔ [4732/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.NNReal
+✔ [4733/6049] Built Mathlib.NumberTheory.ClassNumber.AdmissibleCardPowDegree
+✔ [4734/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.StdSimplex
+✔ [4735/6049] Built Mathlib.CategoryTheory.Sites.Subsheaf
+✔ [4736/6049] Built Mathlib.CategoryTheory.Sites.Coherent.CoherentTopology
+✔ [4737/6049] Built Mathlib.CategoryTheory.Preadditive.Yoneda.Basic
+✔ [4738/6049] Built Mathlib.CategoryTheory.Limits.Indization.Products
+✔ [4739/6049] Built Mathlib.CategoryTheory.Sites.MorphismProperty
+✔ [4740/6049] Built Mathlib.Analysis.SpecificLimits.FloorPow
+✔ [4741/6049] Built Mathlib.CategoryTheory.Limits.MorphismProperty
+✔ [4742/6049] Built Mathlib.CategoryTheory.MorphismProperty.Representable
+✔ [4743/6049] Built Mathlib.CategoryTheory.Sites.LeftExact
+✔ [4744/6049] Built Mathlib.RingTheory.Polynomial.GaussLemma
+✔ [4745/6049] Built Mathlib.CategoryTheory.Idempotents.KaroubiKaroubi
+✔ [4746/6049] Built Mathlib.CategoryTheory.Localization.FiniteProducts
+✔ [4747/6049] Built Mathlib.CategoryTheory.Triangulated.Opposite.Basic
+✔ [4748/6049] Built Mathlib.CategoryTheory.MorphismProperty.LiftingProperty
+✔ [4749/6049] Built Mathlib.RingTheory.DedekindDomain.SInteger
+✔ [4750/6049] Built Mathlib.CategoryTheory.Sites.CoverPreserving
+✔ [4751/6049] Built Mathlib.Probability.Distributions.Geometric
+✔ [4752/6049] Built Mathlib.Algebra.Homology.ShortComplex.Exact
+✔ [4753/6049] Built Mathlib.CategoryTheory.Limits.Shapes.Pullback.Square
+✔ [4754/6049] Built Mathlib.LinearAlgebra.RootSystem.Hom
+✔ [4755/6049] Built Mathlib.CategoryTheory.Sites.Coherent.ExtensiveColimits
+✔ [4756/6049] Built Mathlib.MeasureTheory.Function.Egorov
+✔ [4757/6049] Built Mathlib.FieldTheory.IntermediateField.Adjoin.Basic
+✔ [4758/6049] Built Mathlib.Algebra.Category.ModuleCat.Injective
+✔ [4759/6049] Built Mathlib.CategoryTheory.Idempotents.FunctorCategories
+✔ [4760/6049] Built Mathlib.CategoryTheory.Idempotents.HomologicalComplex
+✔ [4761/6049] Built Mathlib.Topology.Category.CompHausLike.EffectiveEpi
+✔ [4762/6049] Built Mathlib.Topology.MetricSpace.Ultra.ContinuousMaps
+✔ [4763/6049] Built Mathlib.RingTheory.DedekindDomain.Dvr
+✔ [4764/6049] Built Mathlib.Probability.Kernel.Defs
+✔ [4765/6049] Built Mathlib.CategoryTheory.GradedObject.Braiding
+✔ [4766/6049] Built Mathlib.CategoryTheory.Action.Limits
+✔ [4767/6049] Built Mathlib.RingTheory.WittVector.Teichmuller
+✔ [4768/6049] Built Mathlib.MeasureTheory.Function.SpecialFunctions.Arctan
+✔ [4769/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Equivs
+✔ [4770/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.CategoryTheory
+✔ [4771/6049] Built Mathlib.Algebra.Homology.BifunctorFlip
+✔ [4772/6049] Built Mathlib.FieldTheory.RatFunc.AsPolynomial
+✔ [4773/6049] Built Mathlib.Algebra.BrauerGroup.Defs
+✔ [4774/6049] Built Mathlib.CategoryTheory.Triangulated.TriangleShift
+✔ [4775/6049] Built Mathlib.Algebra.Category.ModuleCat.Monoidal.Basic
+✔ [4776/6049] Built Mathlib.RingTheory.DedekindDomain.SelmerGroup
+✔ [4777/6049] Built Mathlib.Algebra.Category.ModuleCat.Kernels
+✔ [4778/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.AEStronglyMeasurable
+✔ [4779/6049] Built Mathlib.Analysis.SpecialFunctions.Bernstein
+✔ [4780/6049] Built Mathlib.MeasureTheory.Category.MeasCat
+✔ [4781/6049] Built Mathlib.NumberTheory.RamificationInertia.Basic
+✔ [4782/6049] Built Mathlib.LinearAlgebra.ExteriorAlgebra.OfAlternating
+✔ [4783/6049] Built Mathlib.LinearAlgebra.QuadraticForm.TensorProduct.Isometries
+✔ [4784/6049] Built Mathlib.RingTheory.DedekindDomain.FiniteAdeleRing
+✔ [4785/6049] Built Mathlib.Topology.ContinuousMap.CompactlySupported
+✔ [4786/6049] Built Mathlib.Algebra.Category.ModuleCat.Projective
+✔ [4787/6049] Built Mathlib.Analysis.Complex.OperatorNorm
+✔ [4788/6049] Built Mathlib.CategoryTheory.Monoidal.Subcategory
+✔ [4789/6049] Built Mathlib.Algebra.Homology.ShortComplex.Linear
+✔ [4790/6049] Built Mathlib.Analysis.Normed.Operator.BanachSteinhaus
+✔ [4791/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousMap
+✔ [4792/6049] Built Mathlib.CategoryTheory.Galois.GaloisObjects
+✔ [4793/6049] Built Mathlib.MeasureTheory.Constructions.BorelSpace.ContinuousLinearMap
+✔ [4794/6049] Built Mathlib.Probability.Kernel.Disintegration.MeasurableStieltjes
+✔ [4795/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.BaseChange
+✔ [4796/6049] Built Mathlib.RingTheory.Localization.Finiteness
+✔ [4797/6049] Built Mathlib.CategoryTheory.Sites.Coherent.RegularTopology
+✔ [4798/6049] Built Mathlib.AlgebraicTopology.SimplicialCategory.Basic
+✔ [4799/6049] Built Mathlib.RingTheory.WittVector.IsPoly
+✔ [4800/6049] Built Mathlib.CategoryTheory.Idempotents.FunctorExtension
+✔ [4801/6049] Built Mathlib.Topology.ContinuousMap.ContinuousMapZero
+✔ [4802/6049] Built Mathlib.LinearAlgebra.RootSystem.Finite.CanonicalBilinear
+✔ [4803/6049] Built Mathlib.RingTheory.RingHom.FiniteType
+✔ [4804/6049] Built Mathlib.Analysis.Normed.Module.Completion
+✔ [4805/6049] Built Mathlib.CategoryTheory.Sites.Coherent.ReflectsPrecoherent
+✔ [4806/6049] Built Mathlib.LinearAlgebra.Eigenspace.Semisimple
+✔ [4807/6049] Built Mathlib.MeasureTheory.Integral.LebesgueNormedSpace
+✔ [4808/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Boundary
+✔ [4809/6049] Built Mathlib.Analysis.Normed.Ring.SeminormFromConst
+✔ [4810/6049] Built Mathlib.AlgebraicTopology.CechNerve
+✔ [4811/6049] Built Mathlib.CategoryTheory.Generator.Preadditive
+✔ [4812/6049] Built Mathlib.RingTheory.RingHom.Locally
+✔ [4813/6049] Built Mathlib.Analysis.Convex.SpecificFunctions.Pow
+✔ [4814/6049] Built Mathlib.MeasureTheory.Measure.Doubling
+✔ [4815/6049] Built Mathlib.Analysis.SpecialFunctions.Log.ENNRealLog
+✔ [4816/6049] Built Mathlib.Algebra.Category.BialgebraCat.Basic
+✔ [4817/6049] Built Mathlib.RingTheory.Kaehler.CotangentComplex
+✔ [4818/6049] Built Mathlib.LinearAlgebra.JordanChevalley
+✔ [4819/6049] Built Mathlib.CategoryTheory.MorphismProperty.OverAdjunction
+✔ [4820/6049] Built Mathlib.Analysis.Normed.Algebra.Norm
+✔ [4821/6049] Built Mathlib.CategoryTheory.Adjunction.Additive
+✔ [4822/6049] Built Mathlib.CategoryTheory.Abelian.Refinements
+✔ [4823/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Horn
+✔ [4824/6049] Built Mathlib.MeasureTheory.Measure.Prod
+✔ [4825/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Even
+✔ [4826/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics
+✔ [4827/6049] Built Mathlib.Analysis.Normed.Ring.SeminormFromBounded
+✔ [4828/6049] Built Mathlib.LinearAlgebra.RootSystem.WeylGroup
+✔ [4829/6049] Built Mathlib.Analysis.NormedSpace.OperatorNorm.Mul
+✔ [4830/6049] Built Mathlib.Algebra.Homology.Square
+✔ [4831/6049] Built Mathlib.CategoryTheory.Preadditive.Yoneda.Projective
+✔ [4832/6049] Built Mathlib.Analysis.Normed.Affine.ContinuousAffineMap
+✔ [4833/6049] Built Mathlib.CategoryTheory.Comma.Final
+✔ [4834/6049] Built Mathlib.CategoryTheory.Idempotents.SimplicialObject
+✔ [4835/6049] Built Mathlib.MeasureTheory.Function.SpecialFunctions.Basic
+✔ [4836/6049] Built Mathlib.Algebra.Homology.ShortComplex.ShortExact
+✔ [4837/6049] Built Mathlib.LinearAlgebra.RootSystem.RootPairingCat
+✔ [4838/6049] Built Mathlib.Computability.AkraBazzi.GrowsPolynomially
+✔ [4839/6049] Built Mathlib.Topology.Category.CompHaus.EffectiveEpi
+✔ [4840/6049] Built Mathlib.Probability.Kernel.Basic
+✔ [4841/6049] Built Mathlib.CategoryTheory.Sites.Pullback
+✔ [4842/6049] Built Mathlib.Topology.Category.LightProfinite.EffectiveEpi
+✔ [4843/6049] Built Mathlib.RingTheory.Valuation.Minpoly
+✔ [4844/6049] Built Mathlib.CategoryTheory.Preadditive.Yoneda.Injective
+✔ [4845/6049] Built Mathlib.Algebra.Category.ModuleCat.FilteredColimits
+✔ [4846/6049] Built Mathlib.CategoryTheory.Sites.Over
+✔ [4847/6049] Built Mathlib.Analysis.Calculus.Deriv.Basic
+✔ [4848/6049] Built Mathlib.CategoryTheory.Limits.Preserves.Shapes.Square
+✔ [4849/6049] Built Mathlib.CategoryTheory.Galois.Examples
+✔ [4850/6049] Built Mathlib.CategoryTheory.Shift.ShiftedHomOpposite
+✔ [4851/6049] Built Mathlib.Analysis.MeanInequalitiesPow
+✔ [4852/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.ENNReal
+✔ [4853/6049] Built Mathlib.FieldTheory.Laurent
+✔ [4854/6049] Built Mathlib.Algebra.Category.Grp.Injective
+✔ [4855/6049] Built Mathlib.CategoryTheory.Sites.LocallyInjective
+✔ [4856/6049] Built Mathlib.AlgebraicTopology.AlternatingFaceMapComplex
+✔ [4857/6049] Built Mathlib.FieldTheory.Minpoly.IsIntegrallyClosed
+✔ [4858/6049] Built Mathlib.Topology.ContinuousMap.Ideals
+✔ [4859/6049] Built Mathlib.Algebra.Category.ModuleCat.Monoidal.Symmetric
+✔ [4860/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Contraction
+✔ [4861/6049] Built Mathlib.Topology.ContinuousMap.Weierstrass
+✔ [4862/6049] Built Mathlib.RingTheory.DedekindDomain.PID
+✔ [4863/6049] Built Mathlib.CategoryTheory.Linear.Yoneda
+✔ [4864/6049] Built Mathlib.Algebra.Category.ModuleCat.Subobject
+✔ [4865/6049] Built Mathlib.RingTheory.WittVector.MulP
+✔ [4866/6049] Built Mathlib.MeasureTheory.Function.L1Space.HasFiniteIntegral
+✔ [4867/6049] Built Mathlib.CategoryTheory.Sites.Coherent.ReflectsPreregular
+✔ [4868/6049] Built Mathlib.Algebra.Category.AlgebraCat.Limits
+✔ [4869/6049] Built Mathlib.NumberTheory.Padics.MahlerBasis
+✔ [4870/6049] Built Mathlib.FieldTheory.RatFunc.Degree
+✔ [4871/6049] Built Mathlib.RingTheory.WittVector.Verschiebung
+✔ [4872/6049] Built Mathlib.CategoryTheory.Action.Monoidal
+✔ [4873/6049] Built Mathlib.Algebra.Category.ModuleCat.Abelian
+✔ [4874/6049] Built Mathlib.Algebra.Category.AlgebraCat.Monoidal
+✔ [4875/6049] Built Mathlib.MeasureTheory.Function.AEEqFun
+✔ [4876/6049] Built Mathlib.LinearAlgebra.QuadraticForm.QuadraticModuleCat.Monoidal
+✔ [4877/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.KanComplex
+✔ [4878/6049] Built Mathlib.AlgebraicTopology.SimplicialCategory.SimplicialObject
+✔ [4879/6049] Built Mathlib.Algebra.Homology.ExactSequence
+✔ [4880/6049] Built Mathlib.RingTheory.Perfection
+✔ [4881/6049] Built Mathlib.RingTheory.AlgebraicIndependent.RankAndCardinality
+✔ [4882/6049] Built Mathlib.Analysis.Normed.Ring.WithAbs
+✔ [4883/6049] Built Mathlib.Analysis.MeanInequalities
+✔ [4884/6049] Built Mathlib.CategoryTheory.Triangulated.Pretriangulated
+✔ [4885/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Path
+✔ [4886/6049] Built Mathlib.Analysis.Normed.Operator.Banach
+✔ [4887/6049] Built Mathlib.CategoryTheory.Abelian.Exact
+✔ [4888/6049] Built Mathlib.CategoryTheory.Generator.Abelian
+✔ [4889/6049] Built Mathlib.MeasureTheory.Group.Convolution
+✔ [4890/6049] Built Mathlib.Algebra.Homology.ShortComplex.HomologicalComplex
+✔ [4891/6049] Built Mathlib.RingTheory.WittVector.Frobenius
+✔ [4892/6049] Built Mathlib.RingTheory.WittVector.InitTail
+✔ [4893/6049] Built Mathlib.CategoryTheory.Galois.Decomposition
+✔ [4894/6049] Built Mathlib.Topology.ContinuousMap.StarOrdered
+✔ [4895/6049] Built Mathlib.Algebra.Homology.HomologicalComplexAbelian
+✔ [4896/6049] Built Mathlib.LinearAlgebra.RootSystem.Finite.Nondegenerate
+✔ [4897/6049] Built Mathlib.Probability.Kernel.Composition.CompNotation
+✔ [4898/6049] Built Mathlib.Condensed.Basic
+✔ [4899/6049] Built Mathlib.Analysis.BoxIntegral.Partition.Additive
+✔ [4900/6049] Built Mathlib.RingTheory.Polynomial.Cyclotomic.Basic
+✔ [4901/6049] Built Mathlib.Analysis.SpecialFunctions.Log.ENNRealLogExp
+✔ [4902/6049] Built Mathlib.Condensed.Light.Basic
+✔ [4903/6049] Built Mathlib.MeasureTheory.Integral.RieszMarkovKakutani
+✔ [4904/6049] Built Mathlib.CategoryTheory.Abelian.EpiWithInjectiveKernel
+✔ [4905/6049] Built Mathlib.Combinatorics.SimpleGraph.Regularity.Chunk
+✔ [4906/6049] Built Mathlib.Probability.Kernel.MeasurableLIntegral
+✔ [4907/6049] Built Mathlib.RingTheory.Localization.Free
+✔ [4908/6049] Built Mathlib.Analysis.Calculus.Deriv.Support
+✔ [4909/6049] Built Mathlib.Analysis.SpecialFunctions.CompareExp
+✔ [4910/6049] Built Mathlib.Algebra.Category.HopfAlgebraCat.Basic
+✔ [4911/6049] Built Mathlib.LinearAlgebra.ExteriorPower.Basic
+✔ [4912/6049] Built Mathlib.AlgebraicTopology.DoldKan.Notations
+✔ [4913/6049] Built Mathlib.Algebra.Category.Grp.Subobject
+✔ [4914/6049] Built Mathlib.Analysis.Normed.Module.FiniteDimension
+✔ [4915/6049] Built Mathlib.Algebra.Category.ModuleCat.Adjunctions
+✔ [4916/6049] Built Mathlib.CategoryTheory.Limits.Indization.ParallelPair
+✔ [4917/6049] Built Mathlib.MeasureTheory.Function.AEEqOfLIntegral
+✔ [4918/6049] Built Mathlib.AlgebraicTopology.Quasicategory.Basic
+✔ [4919/6049] Built Mathlib.Topology.Category.Stonean.EffectiveEpi
+✔ [4920/6049] Built Mathlib.Analysis.Calculus.Deriv.Slope
+✔ [4921/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.Inversion
+✔ [4922/6049] Built Mathlib.Dynamics.TopologicalEntropy.CoverEntropy
+✔ [4923/6049] Built Mathlib.Algebra.Category.ModuleCat.Monoidal.Closed
+✔ [4924/6049] Built Mathlib.CategoryTheory.Sites.SheafHom
+✔ [4925/6049] Built Mathlib.CategoryTheory.Triangulated.Opposite.Triangle
+✔ [4926/6049] Built Mathlib.Dynamics.Ergodic.Function
+✔ [4927/6049] Built Mathlib.FieldTheory.Relrank
+✔ [4928/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Continuity
+✔ [4929/6049] Built Mathlib.CategoryTheory.Preadditive.Yoneda.Limits
+✔ [4930/6049] Built Mathlib.RingTheory.RootsOfUnity.Minpoly
+✔ [4931/6049] Built Mathlib.FieldTheory.Extension
+✔ [4932/6049] Built Mathlib.RingTheory.RingHom.FinitePresentation
+✔ [4933/6049] Built Mathlib.Algebra.Category.AlgebraCat.Symmetric
+✔ [4934/6049] Built Mathlib.Topology.Category.Profinite.EffectiveEpi
+✔ [4935/6049] Built Mathlib.Algebra.Category.ModuleCat.Images
+✔ [4936/6049] Built Mathlib.Algebra.Homology.BifunctorAssociator
+✔ [4937/6049] Built Mathlib.Algebra.Category.ModuleCat.Simple
+✔ [4938/6049] Built Mathlib.CategoryTheory.Sites.LocallySurjective
+✔ [4939/6049] Built Mathlib.CategoryTheory.Triangulated.TStructure.Basic
+✔ [4940/6049] Built Mathlib.Algebra.Homology.Refinements
+✔ [4941/6049] Built Mathlib.LinearAlgebra.QuadraticForm.QuadraticModuleCat.Symmetric
+✔ [4942/6049] Built Mathlib.Algebra.Homology.Embedding.RestrictionHomology
+✔ [4943/6049] Built Mathlib.Algebra.Category.Grp.Abelian
+✔ [4944/6049] Built Mathlib.Analysis.Normed.Algebra.Unitization
+✔ [4945/6049] Built Mathlib.Algebra.Module.Presentation.Differentials
+✔ [4946/6049] Built Mathlib.Algebra.Homology.ShortComplex.ExactFunctor
+✔ [4947/6049] Built Mathlib.CategoryTheory.Triangulated.Triangulated
+✔ [4948/6049] Built Mathlib.Algebra.Homology.SingleHomology
+✔ [4949/6049] Built Mathlib.RingTheory.WittVector.Truncated
+✔ [4950/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.StrictSegal
+✔ [4951/6049] Built Mathlib.Condensed.Functors
+✔ [4952/6049] Built Mathlib.MeasureTheory.Group.Measure
+✔ [4953/6049] Built Mathlib.Condensed.Light.Functors
+✔ [4954/6049] Built Mathlib.Algebra.Homology.Factorizations.Basic
+✔ [4955/6049] Built Mathlib.Probability.Independence.Kernel
+✔ [4956/6049] Built Mathlib.Analysis.Calculus.Deriv.Comp
+✔ [4957/6049] Built Mathlib.RingTheory.WittVector.Identities
+✔ [4958/6049] Built Mathlib.RingTheory.IsAdjoinRoot
+✔ [4959/6049] Built Mathlib.Condensed.CartesianClosed
+✔ [4960/6049] Built Mathlib.Analysis.Normed.Module.Complemented
+✔ [4961/6049] Built Mathlib.CategoryTheory.Limits.Indization.Equalizers
+✔ [4962/6049] Built Mathlib.CategoryTheory.Abelian.Pseudoelements
+✔ [4963/6049] Built Mathlib.CategoryTheory.Monoidal.Internal.Module
+✔ [4964/6049] Built Mathlib.Algebra.Category.ModuleCat.ExteriorPower
+✔ [4965/6049] Built Mathlib.Algebra.Module.CharacterModule
+✔ [4966/6049] Built Mathlib.AlgebraicTopology.SimplicialNerve
+✔ [4967/6049] Built Mathlib.Dynamics.TopologicalEntropy.Semiconj
+✔ [4968/6049] Built Mathlib.LinearAlgebra.RootSystem.Basic
+✔ [4969/6049] Built Mathlib.Analysis.RCLike.Lemmas
+✔ [4970/6049] Built Mathlib.CategoryTheory.Sites.LocallyFullyFaithful
+✔ [4971/6049] Built Mathlib.Analysis.Normed.Ring.IsPowMulFaithful
+✔ [4972/6049] Built Mathlib.Analysis.Normed.Lp.ProdLp
+✔ [4973/6049] Built Mathlib.Dynamics.TopologicalEntropy.NetEntropy
+✔ [4974/6049] Built Mathlib.Analysis.Normed.Affine.AddTorsorBases
+✔ [4975/6049] Built Mathlib.Combinatorics.SimpleGraph.Regularity.Increment
+✔ [4976/6049] Built Mathlib.CategoryTheory.Sites.LocallyBijective
+✔ [4977/6049] Built Mathlib.Algebra.Category.CoalgebraCat.ComonEquivalence
+✔ [4978/6049] Built Mathlib.CategoryTheory.Abelian.Projective
+✔ [4979/6049] Built Mathlib.CategoryTheory.Galois.Prorepresentability
+✔ [4980/6049] Built Mathlib.CategoryTheory.Abelian.Injective
+✔ [4981/6049] Built Mathlib.Algebra.Category.Grp.Images
+✔ [4982/6049] Built Mathlib.Topology.MetricSpace.Holder
+✔ [4983/6049] Built Mathlib.MeasureTheory.Integral.MeanInequalities
+✔ [4984/6049] Built Mathlib.RingTheory.Polynomial.Cyclotomic.Roots
+✔ [4985/6049] Built Mathlib.LinearAlgebra.ExteriorPower.Pairing
+✔ [4986/6049] Built Mathlib.Probability.Kernel.Proper
+✔ [4987/6049] Built Mathlib.Condensed.Module
+✔ [4988/6049] Built Mathlib.MeasureTheory.Group.LIntegral
+✔ [4989/6049] Built Mathlib.Analysis.Calculus.InverseFunctionTheorem.ApproximatesLinearOn
+✔ [4990/6049] Built Mathlib.CategoryTheory.Abelian.DiagramLemmas.Four
+✔ [4991/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.Jacobian
+✔ [4992/6049] Built Mathlib.Algebra.Homology.ShortComplex.Ab
+✔ [4993/6049] Built Mathlib.AlgebraicTopology.Quasicategory.StrictSegal
+✔ [4994/6049] Built Mathlib.RingTheory.WittVector.Domain
+✔ [4995/6049] Built Mathlib.Algebra.Homology.Homotopy
+✔ [4996/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.EvenEquiv
+✔ [4997/6049] Built Mathlib.FieldTheory.Minpoly.IsConjRoot
+✔ [4998/6049] Built Mathlib.Algebra.Category.Grp.LargeColimits
+✔ [4999/6049] Built Mathlib.NumberTheory.Ostrowski
+✔ [5000/6049] Built Mathlib.Probability.Kernel.Composition.Basic
+✔ [5001/6049] Built Mathlib.RingTheory.WittVector.Compare
+✔ [5002/6049] Built Mathlib.RingTheory.WittVector.MulCoeff
+✔ [5003/6049] Built Mathlib.LinearAlgebra.CliffordAlgebra.SpinGroup
+✔ [5004/6049] Built Mathlib.Analysis.CStarAlgebra.Unitization
+✔ [5005/6049] Built Mathlib.Algebra.Homology.ShortComplex.SnakeLemma
+✔ [5006/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.Coskeletal
+✔ [5007/6049] Built Mathlib.Algebra.Category.FGModuleCat.Basic
+✔ [5008/6049] Built Mathlib.Algebra.Homology.Monoidal
+✔ [5009/6049] Built Mathlib.MeasureTheory.Measure.EverywherePos
+✔ [5010/6049] Built Mathlib.CategoryTheory.Sites.EpiMono
+✔ [5011/6049] Built Mathlib.Analysis.Normed.Lp.PiLp
+✔ [5012/6049] Built Mathlib.MeasureTheory.Function.LpSeminorm.Basic
+✔ [5013/6049] Built Mathlib.Combinatorics.SimpleGraph.Regularity.Lemma
+✔ [5014/6049] Built Mathlib.MeasureTheory.Group.Prod
+✔ [5015/6049] Built Mathlib.Algebra.Category.Grp.EnoughInjectives
+✔ [5016/6049] Built Mathlib.Analysis.PSeries
+✔ [5017/6049] Built Mathlib.FieldTheory.Normal.Basic
+✔ [5018/6049] Built Mathlib.Condensed.Limits
+✔ [5019/6049] Built Mathlib.CategoryTheory.Limits.Indization.Category
+✔ [5020/6049] Built Mathlib.MeasureTheory.Function.SpecialFunctions.RCLike
+✔ [5021/6049] Built Mathlib.CategoryTheory.Galois.Action
+✔ [5022/6049] Built Mathlib.Probability.Independence.Basic
+✔ [5023/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.Basic
+✔ [5024/6049] Built Mathlib.AlgebraicTopology.Quasicategory.Nerve
+✔ [5025/6049] Built Mathlib.Analysis.Calculus.InverseFunctionTheorem.FiniteDimensional
+✔ [5026/6049] Built Mathlib.Analysis.Convex.Intrinsic
+✔ [5027/6049] Built Mathlib.Analysis.Normed.Algebra.UnitizationL1
+✔ [5028/6049] Built Mathlib.Topology.MetricSpace.HolderNorm
+✔ [5029/6049] Built Mathlib.Probability.Kernel.Invariance
+✔ [5030/6049] Built Mathlib.CategoryTheory.Galois.Topology
+✔ [5031/6049] Built Mathlib.Probability.Kernel.Composition.ParallelComp
+✔ [5032/6049] Built Mathlib.RingTheory.WittVector.Complete
+✔ [5033/6049] Built Mathlib.RingTheory.Polynomial.Cyclotomic.Expand
+✔ [5034/6049] Built Mathlib.CategoryTheory.Sites.DenseSubsite.Basic
+✔ [5035/6049] Built Mathlib.AlgebraicTopology.DoldKan.Homotopies
+✔ [5036/6049] Built Mathlib.Analysis.Convex.Normed
+✔ [5037/6049] Built Mathlib.MeasureTheory.Function.LpSeminorm.Trim
+✔ [5038/6049] Built Mathlib.RingTheory.WittVector.DiscreteValuationRing
+✔ [5039/6049] Built Mathlib.Analysis.Complex.Tietze
+✔ [5040/6049] Built Mathlib.CategoryTheory.Sites.MayerVietorisSquare
+✔ [5041/6049] Built Mathlib.Algebra.Homology.ShortComplex.ConcreteCategory
+✔ [5042/6049] Built Mathlib.MeasureTheory.Constructions.Pi
+✔ [5043/6049] Built Mathlib.MeasureTheory.Function.LpSeminorm.ChebyshevMarkov
+✔ [5044/6049] Built Mathlib.Algebra.Homology.QuasiIso
+✔ [5045/6049] Built Mathlib.Analysis.NormedSpace.HahnBanach.Extension
+✔ [5046/6049] Built Mathlib.FieldTheory.IsAlgClosed.Basic
+✔ [5047/6049] Built Mathlib.Algebra.Category.FGModuleCat.Limits
+✔ [5048/6049] Built Mathlib.Dynamics.Ergodic.Action.Regular
+✔ [5049/6049] Built Mathlib.CategoryTheory.Generator.Indization
+✔ [5050/6049] Built Mathlib.Algebra.Category.Grp.Ulift
+✔ [5051/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.FunctorCategory
+✔ [5052/6049] Built Mathlib.Algebra.Homology.HomotopyCategory
+✔ [5053/6049] Built Mathlib.NumberTheory.SumPrimeReciprocals
+✔ [5054/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.Types
+✔ [5055/6049] Built Mathlib.Condensed.Solid
+✔ [5056/6049] Built Mathlib.Analysis.PSeriesComplex
+✔ [5057/6049] Built Mathlib.MeasureTheory.Function.LpSeminorm.TriangleInequality
+✔ [5058/6049] Built Mathlib.RingTheory.Coalgebra.TensorProduct
+✔ [5059/6049] Built Mathlib.Algebra.Homology.BifunctorHomotopy
+✔ [5060/6049] Built Mathlib.CategoryTheory.Galois.Full
+✔ [5061/6049] Built Mathlib.CategoryTheory.Sites.PreservesLocallyBijective
+✔ [5062/6049] Built Mathlib.Topology.Sheaves.SheafCondition.Sites
+✔ [5063/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckCategory
+✔ [5064/6049] Built Mathlib.Algebra.Homology.HomotopyCofiber
+✔ [5065/6049] Built Mathlib.Analysis.NormedSpace.Multilinear.Basic
+✔ [5066/6049] Built Mathlib.NumberTheory.LSeries.Basic
+✔ [5067/6049] Built Mathlib.AlgebraicTopology.ExtraDegeneracy
+✔ [5068/6049] Built Mathlib.Algebra.Category.Grp.AB
+✔ [5069/6049] Built Mathlib.Topology.Sheaves.MayerVietoris
+✔ [5070/6049] Built Mathlib.NumberTheory.KummerDedekind
+✔ [5071/6049] Built Mathlib.CategoryTheory.Preadditive.ProjectiveResolution
+✔ [5072/6049] Built Mathlib.RingTheory.LaurentSeries
+✔ [5073/6049] Built Mathlib.NumberTheory.ModularForms.EisensteinSeries.UniformConvergence
+✔ [5074/6049] Built Mathlib.Analysis.Convex.GaugeRescale
+✔ [5075/6049] Built Mathlib.Analysis.Convex.AmpleSet
+✔ [5076/6049] Built Mathlib.LinearAlgebra.Matrix.Charpoly.Eigs
+✔ [5077/6049] Built Mathlib.MeasureTheory.Measure.Haar.Basic
+✔ [5078/6049] Built Mathlib.AlgebraicTopology.DoldKan.Faces
+✔ [5079/6049] Built Mathlib.Algebra.Category.ModuleCat.ChangeOfRings
+✔ [5080/6049] Built Mathlib.AlgebraicTopology.SimplicialSet.HomotopyCat
+✔ [5081/6049] Built Mathlib.FieldTheory.IsAlgClosed.Spectrum
+✔ [5082/6049] Built Mathlib.Combinatorics.SimpleGraph.Triangle.Removal
+✔ [5083/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.Indization
+✔ [5084/6049] Built Mathlib.Topology.ContinuousMap.StoneWeierstrass
+✔ [5085/6049] Built Mathlib.CategoryTheory.Galois.IsFundamentalgroup
+✔ [5086/6049] Built Mathlib.Analysis.Convex.StrictConvexSpace
+✔ [5087/6049] Built Mathlib.Topology.Sheaves.PUnit
+✔ [5088/6049] Built Mathlib.CategoryTheory.Preadditive.InjectiveResolution
+✔ [5089/6049] Built Mathlib.MeasureTheory.Function.LpSeminorm.CompareExp
+✔ [5090/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.NonUnital
+✔ [5091/6049] Built Mathlib.Algebra.Category.CoalgebraCat.Monoidal
+✔ [5092/6049] Built Mathlib.FieldTheory.Normal.Closure
+✔ [5093/6049] Built Mathlib.MeasureTheory.Integral.Marginal
+✔ [5094/6049] Built Mathlib.CategoryTheory.Abelian.GrothendieckAxioms.Sheaf
+✔ [5095/6049] Built Mathlib.Analysis.Convex.Continuous
+✔ [5096/6049] Built Mathlib.Algebra.Homology.HomologySequence
+✔ [5097/6049] Built Mathlib.RingTheory.Flat.Basic
+✔ [5098/6049] Built Mathlib.CategoryTheory.Sites.DenseSubsite.SheafEquiv
+✔ [5099/6049] Built Mathlib.Algebra.Category.ModuleCat.AB
+✔ [5100/6049] Built Mathlib.NumberTheory.LSeries.Convergence
+✔ [5101/6049] Built Mathlib.Analysis.NormedSpace.PiTensorProduct.ProjectiveSeminorm
+✔ [5102/6049] Built Mathlib.FieldTheory.IsAlgClosed.Classification
+✔ [5103/6049] Built Mathlib.RingTheory.Nullstellensatz
+✔ [5104/6049] Built Mathlib.RepresentationTheory.Rep
+✔ [5105/6049] Built Mathlib.NumberTheory.LSeries.Linearity
+✔ [5106/6049] Built Mathlib.NumberTheory.ModularForms.EisensteinSeries.IsBoundedAtImInfty
+✔ [5107/6049] Built Mathlib.Topology.Sheaves.Functors
+✔ [5108/6049] Built Mathlib.Algebra.Category.ModuleCat.EnoughInjectives
+✔ [5109/6049] Built Mathlib.CategoryTheory.Preadditive.Schur
+✔ [5110/6049] Built Mathlib.AlgebraicTopology.DoldKan.Projections
+✔ [5111/6049] Built Mathlib.Algebra.Homology.Localization
+✔ [5112/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.HomComplex
+✔ [5113/6049] Built Mathlib.RingTheory.WittVector.FrobeniusFractionField
+✔ [5114/6049] Built Mathlib.Analysis.Convex.Uniform
+✔ [5115/6049] Built Mathlib.FieldTheory.IsAlgClosed.AlgebraicClosure
+✔ [5116/6049] Built Mathlib.Analysis.Normed.Lp.lpSpace
+✔ [5117/6049] Built Mathlib.CategoryTheory.Sites.DenseSubsite.InducedTopology
+✔ [5118/6049] Built Mathlib.Analysis.Convex.StrictConvexBetween
+✔ [5119/6049] Built Mathlib.CategoryTheory.Abelian.ProjectiveResolution
+✔ [5120/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.Projective
+✔ [5121/6049] Built Mathlib.Algebra.Homology.Opposite
+✔ [5122/6049] Built Mathlib.CategoryTheory.Galois.EssSurj
+✔ [5123/6049] Built Mathlib.LinearAlgebra.Eigenspace.Triangularizable
+✔ [5124/6049] Built Mathlib.Algebra.Category.ModuleCat.Differentials.Basic
+✔ [5125/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.Shift
+✔ [5126/6049] Built Mathlib.Combinatorics.Additive.Corner.Roth
+✔ [5127/6049] Built Mathlib.ModelTheory.Algebra.Ring.Definability
+✔ [5128/6049] Built Mathlib.FieldTheory.PrimitiveElement
+✔ [5129/6049] Built Mathlib.CategoryTheory.Sites.ConstantSheaf
+✔ [5130/6049] Built Mathlib.Analysis.NormedSpace.HahnBanach.SeparatingDual
+✔ [5131/6049] Built Mathlib.Algebra.Central.TensorProduct
+✔ [5132/6049] Built Mathlib.Algebra.Homology.ConcreteCategory
+✔ [5133/6049] Built Mathlib.NumberTheory.LSeries.Convolution
+✔ [5134/6049] Built Mathlib.CategoryTheory.Abelian.InjectiveResolution
+✔ [5135/6049] Built Mathlib.Analysis.Normed.Module.Dual
+✔ [5136/6049] Built Mathlib.NumberTheory.LSeries.Injectivity
+✔ [5137/6049] Built Mathlib.RingTheory.Flat.Stability
+✔ [5138/6049] Built Mathlib.Analysis.InnerProductSpace.Convex
+✔ [5139/6049] Built Mathlib.Algebra.Category.ModuleCat.Pseudofunctor
+✔ [5140/6049] Built Mathlib.Analysis.Convex.Side
+✔ [5141/6049] Built Mathlib.Topology.Sheaves.SheafCondition.OpensLeCover
+✔ [5142/6049] Built Mathlib.Algebra.Homology.Embedding.IsSupported
+✔ [5143/6049] Built Mathlib.RingTheory.Regular.IsSMulRegular
+✔ [5144/6049] Built Mathlib.Algebra.Homology.ShortComplex.ModuleCat
+✔ [5145/6049] Built Mathlib.AlgebraicTopology.DoldKan.PInfty
+✔ [5146/6049] Built Mathlib.Analysis.CStarAlgebra.Multiplier
+✔ [5147/6049] Built Mathlib.RingTheory.Smooth.Kaehler
+✔ [5148/6049] Built Mathlib.FieldTheory.AlgebraicClosure
+✔ [5149/6049] Built Mathlib.Topology.MetricSpace.Kuratowski
+✔ [5150/6049] Built Mathlib.Algebra.Homology.HomologySequenceLemmas
+✔ [5151/6049] Built Mathlib.LinearAlgebra.Eigenspace.Pi
+✔ [5152/6049] Built Mathlib.Analysis.CStarAlgebra.lpSpace
+✔ [5153/6049] Built Mathlib.CategoryTheory.Sites.Coherent.SheafComparison
+✔ [5154/6049] Built Mathlib.ModelTheory.Algebra.Field.IsAlgClosed
+✔ [5155/6049] Built Mathlib.Analysis.Normed.Lp.LpEquiv
+✔ [5156/6049] Built Mathlib.CategoryTheory.Abelian.LeftDerived
+✔ [5157/6049] Built Mathlib.Analysis.Normed.Operator.BoundedLinearMaps
+✔ [5158/6049] Built Mathlib.RepresentationTheory.FDRep
+✔ [5159/6049] Built Mathlib.RingTheory.Flat.EquationalCriterion
+✔ [5160/6049] Built Mathlib.FieldTheory.Isaacs
+✔ [5161/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.SingleFunctors
+✔ [5162/6049] Built Mathlib.FieldTheory.Minpoly.MinpolyDiv
+✔ [5163/6049] Built Mathlib.Analysis.Complex.Arg
+✔ [5164/6049] Built Mathlib.CategoryTheory.Sites.Equivalence
+✔ [5165/6049] Built Mathlib.RingTheory.Flat.Localization
+✔ [5166/6049] Built Mathlib.FieldTheory.Differential.Basic
+✔ [5167/6049] Built Mathlib.RingTheory.Flat.CategoryTheory
+✔ [5168/6049] Built Mathlib.Algebra.Category.ModuleCat.Biproducts
+✔ [5169/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.ShiftSequence
+✔ [5170/6049] Built Mathlib.Algebra.Homology.Embedding.Extend
+✔ [5171/6049] Built Mathlib.CategoryTheory.Abelian.RightDerived
+✔ [5172/6049] Built Mathlib.AlgebraicTopology.DoldKan.Decomposition
+✔ [5173/6049] Built Mathlib.Analysis.LocallyConvex.WeakOperatorTopology
+✔ [5174/6049] Built Mathlib.Algebra.Category.ModuleCat.Free
+✔ [5175/6049] Built Mathlib.Topology.Sheaves.Alexandrov
+✔ [5176/6049] Built Mathlib.Analysis.Normed.Module.WeakDual
+✔ [5177/6049] Built Mathlib.AlgebraicTopology.DoldKan.FunctorN
+✔ [5178/6049] Built Mathlib.RingTheory.WittVector.Isocrystal
+✔ [5179/6049] Built Mathlib.Condensed.Equivalence
+✔ [5180/6049] Built Mathlib.LinearAlgebra.LinearDisjoint
+✔ [5181/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.HomComplexShift
+✔ [5182/6049] Built Mathlib.Analysis.InnerProductSpace.Continuous
+✔ [5183/6049] Built Mathlib.Analysis.Calculus.FDeriv.Linear
+✔ [5184/6049] Built Mathlib.CategoryTheory.Sites.Coherent.LocallySurjective
+✔ [5185/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.MappingCone
+✔ [5186/6049] Built Mathlib.CategoryTheory.Sites.Coherent.Equivalence
+✔ [5187/6049] Built Mathlib.RingTheory.LocalRing.Module
+✔ [5188/6049] Built Mathlib.Analysis.InnerProductSpace.OfNorm
+✔ [5189/6049] Built Mathlib.Condensed.TopComparison
+✔ [5190/6049] Built Mathlib.CategoryTheory.Monoidal.Tor
+✔ [5191/6049] Built Mathlib.AlgebraicTopology.DoldKan.FunctorGamma
+✔ [5192/6049] Built Mathlib.RingTheory.AlgebraicIndependent.AlgebraicClosure
+✔ [5193/6049] Built Mathlib.RepresentationTheory.Invariants
+✔ [5194/6049] Built Mathlib.CategoryTheory.Abelian.Ext
+✔ [5195/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.Lemmas
+✔ [5196/6049] Built Mathlib.FieldTheory.Galois.Basic
+✔ [5197/6049] Built Mathlib.Condensed.Light.CartesianClosed
+✔ [5198/6049] Built Mathlib.Condensed.Discrete.Basic
+✔ [5199/6049] Built Mathlib.FieldTheory.AxGrothendieck
+✔ [5200/6049] Built Mathlib.Algebra.Homology.Embedding.StupidTrunc
+✔ [5201/6049] Built Mathlib.RingTheory.Flat.FaithfullyFlat.Basic
+✔ [5202/6049] Built Mathlib.RingTheory.Smooth.StandardSmoothCotangent
+✔ [5203/6049] Built Mathlib.Condensed.Light.Module
+✔ [5204/6049] Built Mathlib.Condensed.Explicit
+✔ [5205/6049] Built Mathlib.RingTheory.Bialgebra.TensorProduct
+✔ [5206/6049] Built Mathlib.MeasureTheory.Function.SpecialFunctions.Inner
+✔ [5207/6049] Built Mathlib.CategoryTheory.Triangulated.Functor
+✔ [5208/6049] Built Mathlib.AlgebraicTopology.DoldKan.Degeneracies
+✔ [5209/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.Inner
+✔ [5210/6049] Built Mathlib.Algebra.Homology.Embedding.HomEquiv
+✔ [5211/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Restrict
+✔ [5212/6049] Built Mathlib.AlgebraicTopology.DoldKan.Normalized
+✔ [5213/6049] Built Mathlib.Condensed.Light.TopComparison
+✔ [5214/6049] Built Mathlib.RingTheory.RingHom.Flat
+✔ [5215/6049] Built Mathlib.Analysis.Calculus.Deriv.Linear
+✔ [5216/6049] Built Mathlib.RingTheory.Unramified.Finite
+✔ [5217/6049] Built Mathlib.AlgebraicTopology.DoldKan.NReflectsIso
+✔ [5218/6049] Built Mathlib.RingTheory.Polynomial.Cyclotomic.Eval
+✔ [5219/6049] Built Mathlib.Topology.Sheaves.SheafCondition.PairwiseIntersections
+✔ [5220/6049] Built Mathlib.RingTheory.Smooth.Local
+✔ [5221/6049] Built Mathlib.Algebra.Homology.Embedding.ExtendHomology
+✔ [5222/6049] Built Mathlib.Condensed.AB
+✔ [5223/6049] Built Mathlib.Algebra.Homology.TotalComplexShift
+✔ [5224/6049] Built Mathlib.CategoryTheory.Sites.Coherent.SequentialLimit
+✔ [5225/6049] Built Mathlib.Condensed.Light.Limits
+✔ [5226/6049] Built Mathlib.Algebra.Category.Ring.LinearAlgebra
+✔ [5227/6049] Built Mathlib.MeasureTheory.Function.AEEqFun.DomAct
+✔ [5228/6049] Built Mathlib.Condensed.Light.Explicit
+✔ [5229/6049] Built Mathlib.Condensed.TopCatAdjunction
+✔ [5230/6049] Built Mathlib.Condensed.Epi
+✔ [5231/6049] Built Mathlib.RepresentationTheory.Character
+✔ [5232/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Unique
+✔ [5233/6049] Built Mathlib.Topology.VectorBundle.Basic
+✔ [5234/6049] Built Mathlib.FieldTheory.IsSepClosed
+✔ [5235/6049] Built Mathlib.FieldTheory.Finite.GaloisField
+✔ [5236/6049] Built Mathlib.FieldTheory.KrullTopology
+✔ [5237/6049] Built Mathlib.Topology.MetricSpace.GromovHausdorff
+✔ [5238/6049] Built Mathlib.AlgebraicTopology.DoldKan.HomotopyEquivalence
+✔ [5239/6049] Built Mathlib.NumberTheory.PrimesCongruentOne
+✔ [5240/6049] Built Mathlib.Algebra.Module.PID
+✔ [5241/6049] Built Mathlib.RingTheory.Regular.RegularSequence
+✔ [5242/6049] Built Mathlib.FieldTheory.PolynomialGaloisGroup
+✔ [5243/6049] Built Mathlib.RingTheory.TensorProduct.Nontrivial
+✔ [5244/6049] Built Mathlib.CategoryTheory.Localization.Triangulated
+✔ [5245/6049] Built Mathlib.FieldTheory.Differential.Liouville
+✔ [5246/6049] Built Mathlib.Analysis.InnerProductSpace.LinearMap
+✔ [5247/6049] Built Mathlib.Analysis.NormedSpace.PiTensorProduct.InjectiveSeminorm
+✔ [5248/6049] Built Mathlib.RingTheory.Norm.Basic
+✔ [5249/6049] Built Mathlib.Algebra.Homology.Embedding.TruncGE
+✔ [5250/6049] Built Mathlib.Algebra.Homology.LocalCohomology
+✔ [5251/6049] Built Mathlib.FieldTheory.AbsoluteGaloisGroup
+✔ [5252/6049] Built Mathlib.Algebra.Lie.Solvable
+✔ [5253/6049] Built Mathlib.FieldTheory.SeparableDegree
+✔ [5254/6049] Built Mathlib.FieldTheory.Cardinality
+✔ [5255/6049] Built Mathlib.Topology.Sheaves.SheafCondition.UniqueGluing
+✔ [5256/6049] Built Mathlib.Analysis.NormedSpace.Multilinear.Curry
+✔ [5257/6049] Built Mathlib.Condensed.Light.TopCatAdjunction
+✔ [5258/6049] Built Mathlib.AlgebraicTopology.DoldKan.SplitSimplicialObject
+✔ [5259/6049] Built Mathlib.Analysis.InnerProductSpace.ConformalLinearMap
+✔ [5260/6049] Built Mathlib.RingTheory.LittleWedderburn
+✔ [5261/6049] Built Mathlib.RingTheory.Flat.Equalizer
+✔ [5262/6049] Built Mathlib.Topology.VectorBundle.Constructions
+✔ [5263/6049] Built Mathlib.RingTheory.Spectrum.Prime.FreeLocus
+✔ [5264/6049] Built Mathlib.GroupTheory.FiniteAbelian.Basic
+✔ [5265/6049] Built Mathlib.CategoryTheory.Triangulated.Subcategory
+✔ [5266/6049] Built Mathlib.Algebra.Lie.Semisimple.Defs
+✔ [5267/6049] Built Mathlib.Analysis.InnerProductSpace.Completion
+✔ [5268/6049] Built Mathlib.MeasureTheory.Function.LpSpace
+✔ [5269/6049] Built Mathlib.Topology.Sheaves.SheafOfFunctions
+✔ [5270/6049] Built Mathlib.Algebra.Homology.Embedding.TruncLE
+✔ [5271/6049] Built Mathlib.Algebra.Lie.Character
+✔ [5272/6049] Built Mathlib.Algebra.Homology.Embedding.TruncGEHomology
+✔ [5273/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf
+✔ [5274/6049] Built Mathlib.FieldTheory.AbelRuffini
+✔ [5275/6049] Built Mathlib.Analysis.Calculus.FDeriv.Equiv
+✔ [5276/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.Group
+✔ [5277/6049] Built Mathlib.Analysis.InnerProductSpace.Orthonormal
+✔ [5278/6049] Built Mathlib.GroupTheory.FiniteAbelian.Duality
+✔ [5279/6049] Built Mathlib.Analysis.Calculus.FDeriv.Measurable
+✔ [5280/6049] Built Mathlib.Analysis.Calculus.FDeriv.Add
+✔ [5281/6049] Built Mathlib.Condensed.Discrete.LocallyConstant
+✔ [5282/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.IsomOfJ
+✔ [5283/6049] Built Mathlib.Condensed.Light.Epi
+✔ [5284/6049] Built Mathlib.Algebra.Homology.Embedding.TruncLEHomology
+✔ [5285/6049] Built Mathlib.AlgebraicTopology.DoldKan.GammaCompN
+✔ [5286/6049] Built Mathlib.MeasureTheory.Function.LpOrder
+✔ [5287/6049] Built Mathlib.MeasureTheory.Function.ConvergenceInMeasure
+✔ [5288/6049] Built Mathlib.Algebra.Homology.BifunctorShift
+✔ [5289/6049] Built Mathlib.Algebra.Homology.Embedding.CochainComplex
+✔ [5290/6049] Built Mathlib.RingTheory.Polynomial.Eisenstein.IsIntegral
+✔ [5291/6049] Built Mathlib.CategoryTheory.Triangulated.HomologicalFunctor
+✔ [5292/6049] Built Mathlib.Algebra.Lie.Semisimple.Basic
+✔ [5293/6049] Built Mathlib.MeasureTheory.Function.LpSpace.DomAct.Basic
+✔ [5294/6049] Built Mathlib.RingTheory.Trace.Basic
+✔ [5295/6049] Built Mathlib.Algebra.Lie.InvariantForm
+✔ [5296/6049] Built Mathlib.Topology.Category.Profinite.Nobeling
+✔ [5297/6049] Built Mathlib.Analysis.Calculus.Deriv.Inverse
+✔ [5298/6049] Built Mathlib.Analysis.Calculus.FDeriv.Star
+✔ [5299/6049] Built Mathlib.NumberTheory.MulChar.Duality
+✔ [5300/6049] Built Mathlib.RepresentationTheory.GroupCohomology.Resolution
+✔ [5301/6049] Built Mathlib.FieldTheory.SeparableClosure
+✔ [5302/6049] Built Mathlib.Analysis.Calculus.FDeriv.Pi
+✔ [5303/6049] Built Mathlib.Analysis.Calculus.Conformal.NormedSpace
+✔ [5304/6049] Built Mathlib.Condensed.Light.AB
+✔ [5305/6049] Built Mathlib.RingTheory.Ideal.Norm.AbsNorm
+✔ [5306/6049] Built Mathlib.Analysis.Calculus.InverseFunctionTheorem.FDeriv
+✔ [5307/6049] Built Mathlib.FieldTheory.Finite.Trace
+✔ [5308/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Limits
+✔ [5309/6049] Built Mathlib.Analysis.InnerProductSpace.Subspace
+✔ [5310/6049] Built Mathlib.Topology.VectorBundle.Hom
+✔ [5311/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Colimits
+✔ [5312/6049] Built Mathlib.NumberTheory.DirichletCharacter.Orthogonality
+✔ [5313/6049] Built Mathlib.Analysis.Calculus.Deriv.Star
+✔ [5314/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Free
+✔ [5315/6049] Built Mathlib.Topology.Sheaves.SheafCondition.EqualizerProducts
+✔ [5316/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf
+✔ [5317/6049] Built Mathlib.Geometry.Manifold.ConformalGroupoid
+✔ [5318/6049] Built Mathlib.Analysis.Calculus.Deriv.Pi
+✔ [5319/6049] Built Mathlib.Analysis.Calculus.InverseFunctionTheorem.Deriv
+✔ [5320/6049] Built Mathlib.FieldTheory.KummerExtension
+✔ [5321/6049] Built Mathlib.Analysis.Calculus.Conformal.InnerProduct
+✔ [5322/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.EpiMono
+✔ [5323/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Abelian
+✔ [5324/6049] Built Mathlib.FieldTheory.Galois.GaloisClosure
+✔ [5325/6049] Built Mathlib.Analysis.Calculus.Deriv.Add
+✔ [5326/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.ChangeOfRings
+✔ [5327/6049] Built Mathlib.Analysis.Calculus.FormalMultilinearSeries
+✔ [5328/6049] Built Mathlib.Analysis.Calculus.FDeriv.Prod
+✔ [5329/6049] Built Mathlib.CategoryTheory.Triangulated.Opposite.Pretriangulated
+✔ [5330/6049] Built Mathlib.AlgebraicTopology.DoldKan.NCompGamma
+✔ [5331/6049] Built Mathlib.Algebra.Lie.Nilpotent
+✔ [5332/6049] Built Mathlib.RingTheory.RootsOfUnity.Lemmas
+✔ [5333/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Limits
+✔ [5334/6049] Built Mathlib.Analysis.Complex.Conformal
+✔ [5335/6049] Built Mathlib.Analysis.Calculus.Deriv.Shift
+✔ [5336/6049] Built Mathlib.Analysis.InnerProductSpace.Symmetric
+✔ [5337/6049] Built Mathlib.Analysis.Calculus.Deriv.AffineMap
+✔ [5338/6049] Built Mathlib.RingTheory.DedekindDomain.IntegralClosure
+✔ [5339/6049] Built Mathlib.RingTheory.AdicCompletion.AsTensorProduct
+✔ [5340/6049] Built Mathlib.RingTheory.Discriminant
+✔ [5341/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Generator
+✔ [5342/6049] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.Basic
+✔ [5343/6049] Built Mathlib.AlgebraicTopology.DoldKan.EquivalenceAdditive
+✔ [5344/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.ChangeOfRings
+✔ [5345/6049] Built Mathlib.Analysis.Calculus.LagrangeMultipliers
+✔ [5346/6049] Built Mathlib.Analysis.InnerProductSpace.Orthogonal
+✔ [5347/6049] Built Mathlib.Algebra.Lie.CartanSubalgebra
+✔ [5348/6049] Built Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.PosPart
+✔ [5349/6049] Built Mathlib.Analysis.Calculus.FDeriv.Bilinear
+✔ [5350/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.Basic
+✔ [5351/6049] Built Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.Basic
+✔ [5352/6049] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.Conformal
+✔ [5353/6049] Built Mathlib.Analysis.Calculus.FDeriv.WithLp
+✔ [5354/6049] Built Mathlib.CategoryTheory.Triangulated.Yoneda
+✔ [5355/6049] Built Mathlib.RingTheory.Localization.NormTrace
+✔ [5356/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Monoidal
+✔ [5357/6049] Built Mathlib.FieldTheory.Galois.Profinite
+✔ [5358/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.Pretriangulated
+✔ [5359/6049] Built Mathlib.Algebra.Category.Ring.Under.Limits
+✔ [5360/6049] Built Mathlib.Topology.Sheaves.Stalks
+✔ [5361/6049] Built Mathlib.AlgebraicTopology.DoldKan.EquivalencePseudoabelian
+✔ [5362/6049] Built Mathlib.Analysis.Calculus.LocalExtr.Basic
+✔ [5363/6049] Built Mathlib.Geometry.Euclidean.PerpBisector
+✔ [5364/6049] Built Mathlib.NumberTheory.FunctionField
+✔ [5365/6049] Built Mathlib.Algebra.Lie.Engel
+✔ [5366/6049] Built Mathlib.Topology.Sheaves.LocallySurjective
+✔ [5367/6049] Built Mathlib.Analysis.Calculus.Deriv.Prod
+✔ [5368/6049] Built Mathlib.MeasureTheory.Function.L1Space.Integrable
+✔ [5369/6049] Built Mathlib.Analysis.Calculus.LocalExtr.Rolle
+✔ [5370/6049] Built Mathlib.FieldTheory.PurelyInseparable.Basic
+✔ [5371/6049] Built Mathlib.RepresentationTheory.GroupCohomology.Basic
+✔ [5372/6049] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.Affine
+✔ [5373/6049] Built Mathlib.Geometry.Euclidean.Inversion.ImageHyperplane
+✔ [5374/6049] Built Mathlib.AlgebraicTopology.DoldKan.Equivalence
+✔ [5375/6049] Built Mathlib.FieldTheory.Galois.Infinite
+✔ [5376/6049] Built Mathlib.Algebra.Category.ModuleCat.Differentials.Presheaf
+✔ [5377/6049] Built Mathlib.Probability.Independence.Integrable
+✔ [5378/6049] Built Mathlib.Topology.Sheaves.LocalPredicate
+✔ [5379/6049] Built Mathlib.Algebra.Lie.EngelSubalgebra
+✔ [5380/6049] Built Mathlib.NumberTheory.NumberField.Basic
+✔ [5381/6049] Built Mathlib.RingTheory.FractionalIdeal.Norm
+✔ [5382/6049] Built Mathlib.AlgebraicGeometry.EllipticCurve.DivisionPolynomial.Degree
+✔ [5383/6049] Built Mathlib.Topology.Sheaves.Skyscraper
+✔ [5384/6049] Built Mathlib.MeasureTheory.Function.L1Space.AEEqFun
+✔ [5385/6049] Built Mathlib.Geometry.Manifold.Sheaf.Basic
+✔ [5386/6049] Built Mathlib.Condensed.Discrete.Module
+✔ [5387/6049] Built Mathlib.Topology.Sheaves.Sheafify
+✔ [5388/6049] Built Mathlib.NumberTheory.ClassNumber.Finite
+✔ [5389/6049] Built Mathlib.CategoryTheory.Triangulated.Opposite.Functor
+✔ [5390/6049] Built Mathlib.Condensed.Discrete.Colimit
+✔ [5391/6049] Built Mathlib.RingTheory.LinearDisjoint
+✔ [5392/6049] Built Mathlib.MeasureTheory.Integral.IntegrableOn
+✔ [5393/6049] Built Mathlib.FieldTheory.JacobsonNoether
+✔ [5394/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.DegreewiseSplit
+✔ [5395/6049] Built Mathlib.Geometry.RingedSpace.Stalks
+✔ [5396/6049] Built Mathlib.NumberTheory.NumberField.Discriminant.Defs
+✔ [5397/6049] Built Mathlib.NumberTheory.ClassNumber.FunctionField
+✔ [5398/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.HomologicalFunctor
+✔ [5399/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafify
+✔ [5400/6049] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.RightAngle
+✔ [5401/6049] Built Mathlib.Topology.Sheaves.CommRingCat
+✔ [5402/6049] Built Mathlib.NumberTheory.NumberField.FractionalIdeal
+✔ [5403/6049] Built Mathlib.NumberTheory.NumberField.Norm
+✔ [5404/6049] Built Mathlib.Analysis.Calculus.Implicit
+✔ [5405/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Pushforward
+✔ [5406/6049] Built Mathlib.CategoryTheory.Triangulated.Adjunction
+✔ [5407/6049] Built Mathlib.Probability.Moments.IntegrableExpMul
+✔ [5408/6049] Built Mathlib.FieldTheory.IsPerfectClosure
+✔ [5409/6049] Built Mathlib.Algebra.Lie.Rank
+✔ [5410/6049] Built Mathlib.FieldTheory.PurelyInseparable.PerfectClosure
+✔ [5411/6049] Built Mathlib.Geometry.RingedSpace.SheafedSpace
+✔ [5412/6049] Built Mathlib.MeasureTheory.Function.UniformIntegrable
+✔ [5413/6049] Built Mathlib.RingTheory.Kaehler.JacobiZariski
+✔ [5414/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Pullback
+✔ [5415/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.PushforwardContinuous
+✔ [5416/6049] Built Mathlib.MeasureTheory.Decomposition.Lebesgue
+✔ [5417/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.Triangulated
+✔ [5418/6049] Built Mathlib.RingTheory.Unramified.Field
+✔ [5419/6049] Built Mathlib.MeasureTheory.Function.LocallyIntegrable
+✔ [5420/6049] Built Mathlib.Algebra.Homology.DerivedCategory.Basic
+✔ [5421/6049] Built Mathlib.Algebra.Homology.HomotopyCategory.ShortExact
+✔ [5422/6049] Built Mathlib.Condensed.Discrete.Characterization
+✔ [5423/6049] Built Mathlib.NumberTheory.Cyclotomic.Basic
+✔ [5424/6049] Built Mathlib.Geometry.RingedSpace.Basic
+✔ [5425/6049] Built Mathlib.MeasureTheory.Function.UnifTight
+✔ [5426/6049] Built Mathlib.Algebra.Homology.DerivedCategory.HomologySequence
+✔ [5427/6049] Built Mathlib.RingTheory.RootsOfUnity.AlgebraicallyClosed
+✔ [5428/6049] Built Mathlib.Algebra.Homology.DerivedCategory.ShortExact
+✔ [5429/6049] Built Mathlib.FieldTheory.PurelyInseparable.Tower
+✔ [5430/6049] Built Mathlib.Algebra.Category.ModuleCat.Presheaf.Sheafification
+✔ [5431/6049] Built Mathlib.Algebra.Homology.DerivedCategory.ExactFunctor
+✔ [5432/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Abelian
+✔ [5433/6049] Built Mathlib.Algebra.Homology.DerivedCategory.SingleTriangle
+✔ [5434/6049] Built Mathlib.Algebra.Lie.CartanExists
+✔ [5435/6049] Built Mathlib.Algebra.Lie.Weights.Basic
+✔ [5436/6049] Built Mathlib.Algebra.Homology.DerivedCategory.Ext.Basic
+✔ [5437/6049] Built Mathlib.MeasureTheory.Function.SimpleFuncDenseLp
+✔ [5438/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Colimits
+✔ [5439/6049] Built Mathlib.RingTheory.Etale.Field
+✔ [5440/6049] Built Mathlib.MeasureTheory.Function.StronglyMeasurable.Lp
+✔ [5441/6049] Built Mathlib.RepresentationTheory.GroupCohomology.LowDegree
+✔ [5442/6049] Built Mathlib.CategoryTheory.Sites.SheafCohomology.Basic
+✔ [5443/6049] Built Mathlib.MeasureTheory.Function.LpSpace.ContinuousCompMeasurePreserving
+✔ [5444/6049] Built Mathlib.Geometry.RingedSpace.LocallyRingedSpace
+✔ [5445/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Free
+✔ [5446/6049] Built Mathlib.Algebra.Homology.DerivedCategory.Ext.ExtClass
+✔ [5447/6049] Built Mathlib.MeasureTheory.Function.LpSpace.DomAct.Continuous
+✔ [5448/6049] Built Mathlib.RepresentationTheory.GroupCohomology.Hilbert90
+✔ [5449/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Generators
+✔ [5450/6049] Built Mathlib.Analysis.InnerProductSpace.Projection
+✔ [5451/6049] Built Mathlib.NumberTheory.Cyclotomic.PrimitiveRoots
+✔ [5452/6049] Built Mathlib.AlgebraicGeometry.StructureSheaf
+✔ [5453/6049] Built Mathlib.Geometry.RingedSpace.LocallyRingedSpace.ResidueField
+✔ [5454/6049] Built Mathlib.Analysis.InnerProductSpace.Semisimple
+✔ [5455/6049] Built Mathlib.MeasureTheory.Measure.SeparableMeasure
+✔ [5456/6049] Built Mathlib.Algebra.Category.ModuleCat.Sheaf.Quasicoherent
+✔ [5457/6049] Built Mathlib.Algebra.Lie.Weights.Linear
+✔ [5458/6049] Built Mathlib.Analysis.Convex.Cone.InnerDual
+✔ [5459/6049] Built Mathlib.Analysis.InnerProductSpace.MeanErgodic
+✔ [5460/6049] Built Mathlib.NumberTheory.Cyclotomic.Gal
+✔ [5461/6049] Built Mathlib.Algebra.Lie.Weights.Cartan
+✔ [5462/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.AEMeasurable
+✔ [5463/6049] Built Mathlib.Analysis.Calculus.ContDiff.FTaylorSeries
+✔ [5464/6049] Built Mathlib.Algebra.Lie.LieTheorem
+✔ [5465/6049] Built Mathlib.Analysis.Convex.Cone.Pointed
+✔ [5466/6049] Built Mathlib.Analysis.InnerProductSpace.Dual
+✔ [5467/6049] Built Mathlib.Analysis.Convex.Cone.Closure
+✔ [5468/6049] Built Mathlib.NumberTheory.Cyclotomic.Discriminant
+✔ [5469/6049] Built Mathlib.RingTheory.IntegralClosure.IntegralRestrict
+✔ [5470/6049] Built Mathlib.AlgebraicGeometry.ProjectiveSpectrum.StructureSheaf
+✔ [5471/6049] Built Mathlib.FieldTheory.LinearDisjoint
+✔ [5472/6049] Built Mathlib.Geometry.Euclidean.Basic
+✔ [5473/6049] Built Mathlib.Analysis.InnerProductSpace.WeakOperatorTopology
+✔ [5474/6049] Built Mathlib.Analysis.Analytic.Basic
+✔ [5475/6049] Built Mathlib.Algebra.Homology.DerivedCategory.Ext.ExactSequences
+✔ [5476/6049] Built Mathlib.Analysis.InnerProductSpace.LaxMilgram
+✔ [5477/6049] Built Mathlib.AlgebraicGeometry.Spec
+✔ [5478/6049] Built Mathlib.Geometry.Euclidean.Sphere.Basic
+✔ [5479/6049] Built Mathlib.CategoryTheory.Abelian.ProjectiveDimension
+✔ [5480/6049] Built Mathlib.Analysis.Analytic.RadiusLiminf
+✔ [5481/6049] Built Mathlib.Algebra.Lie.Weights.Chain
+✔ [5482/6049] Built Mathlib.Geometry.Euclidean.Sphere.Power
+✔ [5483/6049] Built Mathlib.Geometry.Euclidean.Sphere.SecondInter
+✔ [5484/6049] Built Mathlib.Analysis.Calculus.Gradient.Basic
+✔ [5485/6049] Built Mathlib.RingTheory.Trace.Quotient
+✔ [5486/6049] Built Mathlib.RingTheory.Invariant
+✔ [5487/6049] Built Mathlib.FieldTheory.CardinalEmb
+✔ [5488/6049] Built Mathlib.Analysis.Analytic.Linear
+✔ [5489/6049] Built Mathlib.Analysis.Analytic.OfScalars
+✔ [5490/6049] Built Mathlib.NumberTheory.Cyclotomic.Rat
+✔ [5491/6049] Built Mathlib.Analysis.Analytic.ChangeOrigin
+✔ [5492/6049] Built Mathlib.RingTheory.Ideal.Norm.RelNorm
+✔ [5493/6049] Built Mathlib.Geometry.Euclidean.Circumcenter
+✔ [5494/6049] Built Mathlib.Analysis.SpecialFunctions.OrdinaryHypergeometric
+✔ [5495/6049] Built Mathlib.AlgebraicGeometry.Scheme
+✔ [5496/6049] Built Mathlib.RingTheory.Etale.Kaehler
+✔ [5497/6049] Built Mathlib.Analysis.InnerProductSpace.PiL2
+✔ [5498/6049] Built Mathlib.AlgebraicGeometry.Modules.Presheaf
+✔ [5499/6049] Built Mathlib.AlgebraicGeometry.Over
+✔ [5500/6049] Built Mathlib.Algebra.Lie.TraceForm
+✔ [5501/6049] Built Mathlib.Topology.Category.TopCat.Sphere
+✔ [5502/6049] Built Mathlib.RingTheory.Unramified.Locus
+✔ [5503/6049] Built Mathlib.Geometry.Euclidean.Angle.Unoriented.CrossProduct
+✔ [5504/6049] Built Mathlib.AlgebraicGeometry.Modules.Sheaf
+✔ [5505/6049] Built Mathlib.Analysis.InnerProductSpace.ProdL2
+✔ [5506/6049] Built Mathlib.LinearAlgebra.Matrix.Hermitian
+✔ [5507/6049] Built Mathlib.Topology.CWComplex
+✔ [5508/6049] Built Mathlib.Algebra.Lie.Killing
+✔ [5509/6049] Built Mathlib.Geometry.RingedSpace.OpenImmersion
+✔ [5510/6049] Built Mathlib.RingTheory.RingHom.Unramified
+✔ [5511/6049] Built Mathlib.Analysis.Analytic.Composition
+✔ [5512/6049] Built Mathlib.RingTheory.Smooth.Locus
+✔ [5513/6049] Built Mathlib.Analysis.Normed.Algebra.Exponential
+✔ [5514/6049] Built Mathlib.RingTheory.Unramified.LocalRing
+✔ [5515/6049] Built Mathlib.Analysis.RCLike.Inner
+✔ [5516/6049] Built Mathlib.Analysis.InnerProductSpace.GramSchmidtOrtho
+✔ [5517/6049] Built Mathlib.Analysis.CStarAlgebra.Exponential
+✔ [5518/6049] Built Mathlib.Algebra.Lie.Derivation.Killing
+✔ [5519/6049] Built Mathlib.Analysis.Quaternion
+✔ [5520/6049] Built Mathlib.Geometry.Euclidean.MongePoint
+✔ [5521/6049] Built Mathlib.MeasureTheory.Measure.Haar.OfBasis
+✔ [5522/6049] Built Mathlib.Analysis.Matrix
+✔ [5523/6049] Built Mathlib.Analysis.Fourier.FiniteAbelian.Orthogonality
+✔ [5524/6049] Built Mathlib.MeasureTheory.Integral.SetToL1
+✔ [5525/6049] Built Mathlib.Geometry.RingedSpace.LocallyRingedSpace.HasColimits
+✔ [5526/6049] Built Mathlib.Combinatorics.Additive.Randomisation
+✔ [5527/6049] Built Mathlib.Analysis.Normed.Algebra.MatrixExponential
+✔ [5528/6049] Built Mathlib.MeasureTheory.Measure.Lebesgue.Basic
+✔ [5529/6049] Built Mathlib.NumberTheory.SiegelsLemma
+✔ [5530/6049] Built Mathlib.MeasureTheory.Constructions.UnitInterval
+✔ [5531/6049] Built Mathlib.Analysis.InnerProductSpace.l2Space
+✔ [5532/6049] Built Mathlib.AlgebraicGeometry.OpenImmersion
+✔ [5533/6049] Built Mathlib.Analysis.InnerProductSpace.Orientation
+✔ [5534/6049] Built Mathlib.Analysis.Fourier.FiniteAbelian.PontryaginDuality
+✔ [5535/6049] Built Mathlib.Analysis.Normed.Algebra.TrivSqZeroExt
+✔ [5536/6049] Built Mathlib.Analysis.BoxIntegral.Partition.Measure
+✔ [5537/6049] Built Mathlib.AlgebraicGeometry.Cover.MorphismProperty
+✔ [5538/6049] Built Mathlib.Analysis.NormedSpace.DualNumber
+✔ [5539/6049] Built Mathlib.AlgebraicGeometry.Modules.Tilde
+✔ [5540/6049] Built Mathlib.RingTheory.DedekindDomain.Different
+✔ [5541/6049] Built Mathlib.Analysis.Analytic.Inverse
+✔ [5542/6049] Built Mathlib.MeasureTheory.Measure.Hausdorff
+✔ [5543/6049] Built Mathlib.AlgebraicGeometry.Cover.Open
+✔ [5544/6049] Built Mathlib.Analysis.Analytic.Constructions
+✔ [5545/6049] Built Mathlib.Analysis.BoxIntegral.Basic
+✔ [5546/6049] Built Mathlib.Analysis.Analytic.Polynomial
+✔ [5547/6049] Built Mathlib.MeasureTheory.Measure.Lebesgue.EqHaar
+✔ [5548/6049] Built Mathlib.Analysis.Analytic.Within
+✔ [5549/6049] Built Mathlib.Analysis.InnerProductSpace.Adjoint
+✔ [5550/6049] Built Mathlib.Analysis.Convex.Measure
+✔ [5551/6049] Built Mathlib.Analysis.Analytic.Uniqueness
+✔ [5552/6049] Built Mathlib.Analysis.BoxIntegral.DivergenceTheorem
+✔ [5553/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousLinearMap
+✔ [5554/6049] Built Mathlib.Analysis.InnerProductSpace.TwoDim
+✔ [5555/6049] Built Mathlib.MeasureTheory.Measure.Haar.InnerProductSpace
+✔ [5556/6049] Built Mathlib.Analysis.Convex.Cone.Proper
+✔ [5557/6049] Built Mathlib.Analysis.VonNeumannAlgebra.Basic
+✔ [5558/6049] Built Mathlib.MeasureTheory.Measure.Lebesgue.Complex
+✔ [5559/6049] Built Mathlib.Analysis.InnerProductSpace.Positive
+✔ [5560/6049] Built Mathlib.Algebra.Lie.Weights.Killing
+✔ [5561/6049] Built Mathlib.Analysis.InnerProductSpace.LinearPMap
+✔ [5562/6049] Built Mathlib.MeasureTheory.Integral.Bochner
+✔ [5563/6049] Built Mathlib.Probability.ProbabilityMassFunction.Integrals
+✔ [5564/6049] Built Mathlib.Probability.Kernel.Integral
+✔ [5565/6049] Built Mathlib.Geometry.RingedSpace.PresheafedSpace.Gluing
+✔ [5566/6049] Built Mathlib.MeasureTheory.Group.Integral
+✔ [5567/6049] Built Mathlib.AlgebraicGeometry.Restrict
+✔ [5568/6049] Built Mathlib.MeasureTheory.Integral.BoundedContinuousFunction
+✔ [5569/6049] Built Mathlib.MeasureTheory.Function.ContinuousMapDense
+✔ [5570/6049] Built Mathlib.MeasureTheory.Integral.VitaliCaratheodory
+✔ [5571/6049] Built Mathlib.Analysis.Analytic.CPolynomial
+✔ [5572/6049] Built Mathlib.Analysis.CStarAlgebra.Matrix
+✔ [5573/6049] Built Mathlib.AlgebraicGeometry.Gluing
+✔ [5574/6049] Built Mathlib.MeasureTheory.Measure.FiniteMeasure
+✔ [5575/6049] Built Mathlib.Geometry.Euclidean.Angle.Oriented.Basic
+✔ [5576/6049] Built Mathlib.AlgebraicGeometry.GammaSpecAdjunction
+✔ [5577/6049] Built Mathlib.MeasureTheory.Integral.SetIntegral
+✔ [5578/6049] Built Mathlib.Algebra.Lie.Weights.RootSystem
+✔ [5579/6049] Built Mathlib.MeasureTheory.Integral.Asymptotics
+✔ [5580/6049] Built Mathlib.Probability.Kernel.WithDensity
+✔ [5581/6049] Built Mathlib.Probability.Integration
+✔ [5582/6049] Built Mathlib.MeasureTheory.Measure.Haar.NormedSpace
+✔ [5583/6049] Built Mathlib.MeasureTheory.Function.AEEqOfIntegral
+✔ [5584/6049] Built Mathlib.Analysis.BoxIntegral.Integrability
+✔ [5585/6049] Built Mathlib.Geometry.Euclidean.Angle.Oriented.Rotation
+✔ [5586/6049] Built Mathlib.MeasureTheory.Function.L2Space
+✔ [5587/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.Unique
+✔ [5588/6049] Built Mathlib.MeasureTheory.VectorMeasure.WithDensity
+✔ [5589/6049] Built Mathlib.Probability.Kernel.Disintegration.CDFToKernel
+✔ [5590/6049] Built Mathlib.MeasureTheory.Integral.Average
+✔ [5591/6049] Built Mathlib.MeasureTheory.Decomposition.SignedLebesgue
+✔ [5592/6049] Built Mathlib.MeasureTheory.Function.Intersectivity
+✔ [5593/6049] Built Mathlib.MeasureTheory.Integral.IntervalIntegral
+✔ [5594/6049] Built Mathlib.Analysis.Convex.Integral
+✔ [5595/6049] Built Mathlib.MeasureTheory.Integral.IntervalAverage
+✔ [5596/6049] Built Mathlib.MeasureTheory.Decomposition.RadonNikodym
+✔ [5597/6049] Built Mathlib.Geometry.Euclidean.Angle.Oriented.Affine
+✔ [5598/6049] Built Mathlib.MeasureTheory.Measure.ProbabilityMeasure
+✔ [5599/6049] Built Mathlib.MeasureTheory.Measure.WithDensityFinite
+✔ [5600/6049] Built Mathlib.MeasureTheory.Decomposition.IntegralRNDeriv
+✔ [5601/6049] Built Mathlib.Analysis.SumIntegralComparisons
+✔ [5602/6049] Built Mathlib.MeasureTheory.Integral.Layercake
+✔ [5603/6049] Built Mathlib.Probability.Density
+✔ [5604/6049] Built Mathlib.MeasureTheory.Group.FundamentalDomain
+✔ [5605/6049] Built Mathlib.MeasureTheory.Covering.Differentiation
+✔ [5606/6049] Built Mathlib.Probability.Kernel.Disintegration.CondCDF
+✔ [5607/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.CondexpL2
+✔ [5608/6049] Built Mathlib.MeasureTheory.Measure.DiracProba
+✔ [5609/6049] Built Mathlib.MeasureTheory.Measure.FiniteMeasureProd
+✔ [5610/6049] Built Mathlib.Probability.CDF
+✔ [5611/6049] Built Mathlib.MeasureTheory.Integral.DominatedConvergence
+✔ [5612/6049] Built Mathlib.Geometry.Euclidean.Triangle
+✔ [5613/6049] Built Mathlib.MeasureTheory.Measure.Tilted
+✔ [5614/6049] Built Mathlib.MeasureTheory.Covering.DensityTheorem
+✔ [5615/6049] Built Mathlib.Geometry.Euclidean.Sphere.Ptolemy
+✔ [5616/6049] Built Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Scheme
+✔ [5617/6049] Built Mathlib.MeasureTheory.Measure.Portmanteau
+✔ [5618/6049] Built Mathlib.AlgebraicGeometry.AffineScheme
+✔ [5619/6049] Built Mathlib.MeasureTheory.Covering.OneDim
+✔ [5620/6049] Built Mathlib.Probability.Kernel.MeasurableIntegral
+✔ [5621/6049] Built Mathlib.MeasureTheory.Measure.LogLikelihoodRatio
+✔ [5622/6049] Built Mathlib.MeasureTheory.Group.GeometryOfNumbers
+✔ [5623/6049] Built Mathlib.MeasureTheory.Covering.LiminfLimsup
+✔ [5624/6049] Built Mathlib.Analysis.Calculus.FDeriv.Analytic
+✔ [5625/6049] Built Mathlib.AlgebraicGeometry.Sites.SmallAffineZariski
+✔ [5626/6049] Built Mathlib.MeasureTheory.Covering.Besicovitch
+✔ [5627/6049] Built Mathlib.Geometry.Euclidean.Angle.Oriented.RightAngle
+✔ [5628/6049] Built Mathlib.MeasureTheory.Integral.Prod
+✔ [5629/6049] Built Mathlib.Probability.Kernel.Composition.IntegralCompProd
+✔ [5630/6049] Built Mathlib.Analysis.Calculus.Monotone
+✔ [5631/6049] Built Mathlib.AlgebraicGeometry.Properties
+✔ [5632/6049] Built Mathlib.MeasureTheory.Measure.Haar.Quotient
+✔ [5633/6049] Built Mathlib.Analysis.BoundedVariation
+✔ [5634/6049] Built Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Basic
+✔ [5635/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.CondexpL1
+✔ [5636/6049] Built Mathlib.Probability.Kernel.Composition.MeasureCompProd
+✔ [5637/6049] Built Mathlib.MeasureTheory.Integral.Pi
+✔ [5638/6049] Built Mathlib.MeasureTheory.Measure.LevyProkhorovMetric
+✔ [5639/6049] Built Mathlib.AlgebraicGeometry.FunctionField
+✔ [5640/6049] Built Mathlib.Probability.Kernel.Composition.MeasureComp
+✔ [5641/6049] Built Mathlib.Probability.Kernel.Disintegration.Basic
+✔ [5642/6049] Built Mathlib.Geometry.Euclidean.Angle.Sphere
+✔ [5643/6049] Built Mathlib.MeasureTheory.Integral.Periodic
+✔ [5644/6049] Built Mathlib.Probability.Kernel.Composition.Lemmas
+✔ [5645/6049] Built Mathlib.AlgebraicGeometry.IdealSheaf
+✔ [5646/6049] Built Mathlib.Analysis.SpecialFunctions.Exponential
+✔ [5647/6049] Built Mathlib.MeasureTheory.Covering.BesicovitchVectorSpace
+✔ [5648/6049] Built Mathlib.MeasureTheory.Integral.DivergenceTheorem
+✔ [5649/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.Basic
+✔ [5650/6049] Built Mathlib.Probability.Distributions.Poisson
+✔ [5651/6049] Built Mathlib.Combinatorics.Derangements.Exponential
+✔ [5652/6049] Built Mathlib.MeasureTheory.Group.AddCircle
+✔ [5653/6049] Built Mathlib.Algebra.Module.ZLattice.Basic
+✔ [5654/6049] Built Mathlib.Probability.Notation
+✔ [5655/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.Indicator
+✔ [5656/6049] Built Mathlib.MeasureTheory.Order.UpperLower
+✔ [5657/6049] Built Mathlib.MeasureTheory.Measure.Haar.Unique
+✔ [5658/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Series
+✔ [5659/6049] Built Mathlib.Analysis.Fourier.FourierTransform
+✔ [5660/6049] Built Mathlib.Probability.ConditionalExpectation
+✔ [5661/6049] Built Mathlib.MeasureTheory.Measure.Lebesgue.Integral
+✔ [5662/6049] Built Mathlib.Dynamics.Ergodic.AddCircle
+✔ [5663/6049] Built Mathlib.AlgebraicGeometry.Pullbacks
+✔ [5664/6049] Built Mathlib.Probability.Distributions.Uniform
+✔ [5665/6049] Built Mathlib.MeasureTheory.Function.ConditionalExpectation.Real
+✔ [5666/6049] Built Mathlib.Dynamics.Ergodic.Action.OfMinimal
+✔ [5667/6049] Built Mathlib.AlgebraicGeometry.Sites.MorphismProperty
+✔ [5668/6049] Built Mathlib.Probability.Variance
+✔ [5669/6049] Built Mathlib.Analysis.Normed.Algebra.QuaternionExponential
+✔ [5670/6049] Built Mathlib.AlgebraicGeometry.Sites.BigZariski
+✔ [5671/6049] Built Mathlib.Analysis.BoxIntegral.UnitPartition
+✔ [5672/6049] Built Mathlib.NumberTheory.WellApproximable
+✔ [5673/6049] Built Mathlib.Probability.Process.Filtration
+✔ [5674/6049] Built Mathlib.Probability.IdentDistrib
+✔ [5675/6049] Built Mathlib.AlgebraicGeometry.GluingOneHypercover
+✔ [5676/6049] Built Mathlib.MeasureTheory.Measure.Haar.Disintegration
+✔ [5677/6049] Built Mathlib.Probability.Process.PartitionFiltration
+✔ [5678/6049] Built Mathlib.Probability.Process.Adapted
+✔ [5679/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Basic
+✔ [5680/6049] Built Mathlib.Probability.CondVar
+✔ [5681/6049] Built Mathlib.Probability.Moments.Basic
+✔ [5682/6049] Built Mathlib.MeasureTheory.Function.Jacobian
+✔ [5683/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Constructors
+✔ [5684/6049] Built Mathlib.AlgebraicGeometry.Limits
+✔ [5685/6049] Built Mathlib.Analysis.Calculus.ContDiff.Defs
+✔ [5686/6049] Built Mathlib.Algebra.Module.ZLattice.Covolume
+✔ [5687/6049] Built Mathlib.Analysis.Calculus.ContDiff.FaaDiBruno
+✔ [5688/6049] Built Mathlib.AlgebraicGeometry.Morphisms.UnderlyingMap
+✔ [5689/6049] Built Mathlib.Analysis.Calculus.ContDiff.CPolynomial
+✔ [5690/6049] Built Mathlib.Probability.Process.Stopping
+✔ [5691/6049] Built Mathlib.AlgebraicGeometry.Morphisms.OpenImmersion
+✔ [5692/6049] Built Mathlib.Analysis.Calculus.IteratedDeriv.Defs
+✔ [5693/6049] Built Mathlib.Probability.StrongLaw
+✔ [5694/6049] Built Mathlib.AlgebraicGeometry.Morphisms.IsIso
+✔ [5695/6049] Built Mathlib.Probability.Process.HittingTime
+✔ [5696/6049] Built Mathlib.AlgebraicGeometry.Morphisms.QuasiCompact
+✔ [5697/6049] Built Mathlib.Probability.Martingale.Basic
+✔ [5698/6049] Built Mathlib.AlgebraicGeometry.Cover.Over
+✔ [5699/6049] Built Mathlib.AlgebraicGeometry.Morphisms.RingHomProperties
+✔ [5700/6049] Built Mathlib.Probability.Martingale.OptionalStopping
+✔ [5701/6049] Built Mathlib.Probability.Martingale.Centering
+✔ [5702/6049] Built Mathlib.AlgebraicGeometry.Morphisms.FinitePresentation
+✔ [5703/6049] Built Mathlib.AlgebraicGeometry.Morphisms.FiniteType
+✔ [5704/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Flat
+✔ [5705/6049] Built Mathlib.Probability.Martingale.OptionalSampling
+✔ [5706/6049] Built Mathlib.AlgebraicGeometry.Sites.Small
+✔ [5707/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Smooth
+✔ [5708/6049] Built Mathlib.Probability.Martingale.Upcrossing
+✔ [5709/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Etale
+✔ [5710/6049] Built Mathlib.Probability.Martingale.Convergence
+✔ [5711/6049] Built Mathlib.AlgebraicGeometry.Morphisms.SurjectiveOnStalks
+✔ [5712/6049] Built Mathlib.Probability.Martingale.BorelCantelli
+✔ [5713/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Preimmersion
+✔ [5714/6049] Built Mathlib.Probability.BorelCantelli
+✔ [5715/6049] Built Mathlib.Probability.Kernel.Disintegration.Density
+✔ [5716/6049] Built Mathlib.AlgebraicGeometry.Morphisms.QuasiSeparated
+✔ [5717/6049] Built Mathlib.Analysis.Calculus.FDeriv.Mul
+✔ [5718/6049] Built Mathlib.Probability.Kernel.Disintegration.StandardBorel
+✔ [5719/6049] Built Mathlib.AlgebraicGeometry.Noetherian
+✔ [5720/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Affine
+✔ [5721/6049] Built Mathlib.AlgebraicGeometry.Stalk
+✔ [5722/6049] Built Mathlib.Probability.Kernel.RadonNikodym
+✔ [5723/6049] Built Mathlib.Analysis.Calculus.DiffContOnCl
+✔ [5724/6049] Built Mathlib.Analysis.Calculus.DSlope
+✔ [5725/6049] Built Mathlib.Probability.Kernel.Disintegration.Integral
+✔ [5726/6049] Built Mathlib.AlgebraicGeometry.Morphisms.AffineAnd
+✔ [5727/6049] Built Mathlib.Probability.Kernel.Disintegration.Unique
+✔ [5728/6049] Built Mathlib.AlgebraicGeometry.ResidueField
+✔ [5729/6049] Built Mathlib.AlgebraicGeometry.SpreadingOut
+✔ [5730/6049] Built Mathlib.Probability.Kernel.CondDistrib
+✔ [5731/6049] Built Mathlib.Analysis.Analytic.IsolatedZeros
+✔ [5732/6049] Built Mathlib.AlgebraicGeometry.Morphisms.ClosedImmersion
+✔ [5733/6049] Built Mathlib.Analysis.Analytic.Order
+✔ [5734/6049] Built Mathlib.Probability.Kernel.Condexp
+✔ [5735/6049] Built Mathlib.AlgebraicGeometry.PullbackCarrier
+✔ [5736/6049] Built Mathlib.Analysis.Meromorphic.Basic
+✔ [5737/6049] Built Mathlib.AlgebraicGeometry.Sites.Etale
+✔ [5738/6049] Built Mathlib.AlgebraicGeometry.Morphisms.UniversallyInjective
+✔ [5739/6049] Built Mathlib.Probability.Independence.Conditional
+✔ [5740/6049] Built Mathlib.Analysis.Meromorphic.Order
+✔ [5741/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Separated
+✔ [5742/6049] Built Mathlib.AlgebraicGeometry.Morphisms.UniversallyClosed
+✔ [5743/6049] Built Mathlib.Analysis.Calculus.Deriv.Mul
+✔ [5744/6049] Built Mathlib.Probability.Independence.ZeroOne
+✔ [5745/6049] Built Mathlib.AlgebraicGeometry.Morphisms.FormallyUnramified
+✔ [5746/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Integral
+✔ [5747/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Immersion
+✔ [5748/6049] Built Mathlib.Analysis.Calculus.Darboux
+✔ [5749/6049] Built Mathlib.Analysis.Calculus.Deriv.Pow
+✔ [5750/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Finite
+✔ [5751/6049] Built Mathlib.AlgebraicGeometry.Morphisms.Proper
+✔ [5752/6049] Built Mathlib.AlgebraicGeometry.Fiber
+✔ [5753/6049] Built Mathlib.AlgebraicGeometry.ProjectiveSpectrum.Proper
+✔ [5754/6049] Built Mathlib.AlgebraicGeometry.PointsPi
+✔ [5755/6049] Built Mathlib.Analysis.Calculus.Deriv.Inv
+✔ [5756/6049] Built Mathlib.Analysis.Calculus.Deriv.Polynomial
+✔ [5757/6049] Built Mathlib.Analysis.Calculus.LocalExtr.Polynomial
+✔ [5758/6049] Built Mathlib.Analysis.Calculus.Deriv.ZPow
+✔ [5759/6049] Built Mathlib.Analysis.Calculus.LineDeriv.Basic
+✔ [5760/6049] Built Mathlib.AlgebraicGeometry.RationalMap
+✔ [5761/6049] Built Mathlib.AlgebraicGeometry.ValuativeCriterion
+✔ [5762/6049] Built Mathlib.Analysis.Calculus.LogDeriv
+✔ [5763/6049] Built Mathlib.Analysis.Calculus.LocalExtr.LineDeriv
+✔ [5764/6049] Built Mathlib.Analysis.Calculus.LineDeriv.Measurable
+✔ [5765/6049] Built Mathlib.Analysis.Calculus.LineDeriv.QuadraticMap
+✔ [5766/6049] Built Mathlib.Analysis.Calculus.MeanValue
+✔ [5767/6049] Built Mathlib.MeasureTheory.Integral.FundThmCalculus
+✔ [5768/6049] Built Mathlib.Analysis.Calculus.FirstDerivativeTest
+✔ [5769/6049] Built Mathlib.Analysis.Calculus.ContDiff.RCLike
+✔ [5770/6049] Built Mathlib.Analysis.Calculus.FDeriv.Extend
+✔ [5771/6049] Built Mathlib.Analysis.Calculus.LHopital
+✔ [5772/6049] Built Mathlib.NumberTheory.Transcendental.Liouville.Basic
+✔ [5773/6049] Built Mathlib.Analysis.Convex.Deriv
+✔ [5774/6049] Built Mathlib.Analysis.Calculus.Taylor
+✔ [5775/6049] Built Mathlib.NumberTheory.Transcendental.Liouville.Residual
+✔ [5776/6049] Built Mathlib.NumberTheory.Transcendental.Liouville.LiouvilleNumber
+✔ [5777/6049] Built Mathlib.Analysis.Calculus.UniformLimitsDeriv
+✔ [5778/6049] Built Mathlib.Analysis.Calculus.ParametricIntegral
+✔ [5779/6049] Built Mathlib.Topology.MetricSpace.HausdorffDimension
+✔ [5780/6049] Built Mathlib.NumberTheory.Transcendental.Liouville.LiouvilleWith
+✔ [5781/6049] Built Mathlib.NumberTheory.Transcendental.Liouville.Measure
+✔ [5782/6049] Built Mathlib.Analysis.Calculus.ParametricIntervalIntegral
+✔ [5783/6049] Built Mathlib.AlgebraicGeometry.AffineSpace
+✔ [5784/6049] Built Mathlib.Analysis.Calculus.ContDiff.Basic
+✔ [5785/6049] Built Mathlib.Analysis.Calculus.AddTorsor.AffineMap
+✔ [5786/6049] Built Mathlib.Analysis.Calculus.ContDiff.WithLp
+✔ [5787/6049] Built Mathlib.Analysis.Calculus.ContDiff.FiniteDimension
+✔ [5788/6049] Built Mathlib.Analysis.Calculus.InverseFunctionTheorem.ContDiff
+✔ [5789/6049] Built Mathlib.Analysis.Calculus.AddTorsor.Coord
+✔ [5790/6049] Built Mathlib.Analysis.Calculus.BumpFunction.Basic
+✔ [5791/6049] Built Mathlib.Analysis.SpecialFunctions.Sqrt
+✔ [5792/6049] Built Mathlib.Analysis.Calculus.IteratedDeriv.Lemmas
+✔ [5793/6049] Built Mathlib.Analysis.Complex.RealDeriv
+✔ [5794/6049] Built Mathlib.Geometry.Manifold.IsManifold.Basic
+✔ [5795/6049] Built Mathlib.Geometry.Manifold.Metrizable
+✔ [5796/6049] Built Mathlib.Geometry.Manifold.AnalyticManifold
+✔ [5797/6049] Built Mathlib.Analysis.Calculus.BumpFunction.Normed
+✔ [5798/6049] Built Mathlib.Analysis.Calculus.SmoothSeries
+✔ [5799/6049] Built Mathlib.Analysis.Analytic.IteratedFDeriv
+✔ [5800/6049] Built Mathlib.Analysis.SpecialFunctions.ExpDeriv
+✔ [5801/6049] Built Mathlib.Geometry.Manifold.IsManifold.ExtChartAt
+✔ [5802/6049] Built Mathlib.RingTheory.Polynomial.Hermite.Gaussian
+✔ [5803/6049] Built Mathlib.Analysis.InnerProductSpace.Calculus
+✔ [5804/6049] Built Mathlib.Analysis.SpecialFunctions.SmoothTransition
+✔ [5805/6049] Built Mathlib.Geometry.Manifold.MFDeriv.Defs
+✔ [5806/6049] Built Mathlib.Geometry.Manifold.IsManifold.InteriorBoundary
+✔ [5807/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.LogDeriv
+✔ [5808/6049] Built Mathlib.Analysis.ODE.Gronwall
+✔ [5809/6049] Built Mathlib.Analysis.Calculus.BumpFunction.InnerProduct
+✔ [5810/6049] Built Mathlib.NumberTheory.EulerProduct.ExpLog
+✔ [5811/6049] Built Mathlib.NumberTheory.Transcendental.Lindemann.Init.AnalyticalPart
+✔ [5812/6049] Built Mathlib.Analysis.InnerProductSpace.EuclideanDist
+✔ [5813/6049] Built Mathlib.Geometry.Euclidean.Inversion.Calculus
+✔ [5814/6049] Built Mathlib.Analysis.SpecialFunctions.Log.Deriv
+✔ [5815/6049] Built Mathlib.Geometry.Manifold.ContMDiff.Defs
+✔ [5816/6049] Built Mathlib.Analysis.Calculus.ContDiff.Bounds
+✔ [5817/6049] Built Mathlib.Analysis.Calculus.Deriv.Abs
+✔ [5818/6049] Built Mathlib.Tactic.FunProp.Differentiable
+✔ [5819/6049] Built Mathlib.Analysis.InnerProductSpace.Rayleigh
+✔ [5820/6049] Built Mathlib.Analysis.SpecialFunctions.Log.NegMulLog
+✔ [5821/6049] Built Mathlib.Data.Complex.ExponentialBounds
+✔ [5822/6049] Built Mathlib.Analysis.SpecialFunctions.NonIntegrable
+✔ [5823/6049] Built Mathlib.Geometry.Manifold.ContMDiff.Basic
+✔ [5824/6049] Built Mathlib.Tactic.FunProp.ContDiff
+✔ [5825/6049] Built Mathlib.Geometry.Manifold.Instances.Real
+✔ [5826/6049] Built Mathlib.NumberTheory.Harmonic.EulerMascheroni
+✔ [5827/6049] Built Mathlib.Analysis.Fourier.RiemannLebesgueLemma
+✔ [5828/6049] Built Mathlib.Analysis.Fourier.AddCircle
+✔ [5829/6049] Built Mathlib.Geometry.Manifold.ContMDiff.Atlas
+✔ [5830/6049] Built Mathlib.Geometry.Manifold.ContMDiff.Product
+✔ [5831/6049] Built Mathlib.Analysis.Calculus.FDeriv.Symmetric
+✔ [5832/6049] Built Mathlib.Analysis.InnerProductSpace.Spectrum
+✔ [5833/6049] Built Mathlib.Analysis.Calculus.FDeriv.Norm
+✔ [5834/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv
+✔ [5835/6049] Built Mathlib.Combinatorics.Additive.AP.Three.Behrend
+✔ [5836/6049] Built Mathlib.Analysis.SpecialFunctions.BinaryEntropy
+✔ [5837/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.ComplexDeriv
+✔ [5838/6049] Built Mathlib.Analysis.InnerProductSpace.JointEigenspace
+✔ [5839/6049] Built Mathlib.Analysis.SpecialFunctions.Arsinh
+✔ [5840/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.InverseDeriv
+✔ [5841/6049] Built Mathlib.Analysis.Convex.SpecificFunctions.Deriv
+✔ [5842/6049] Built Mathlib.Analysis.Fourier.AddCircleMulti
+✔ [5843/6049] Built Mathlib.LinearAlgebra.Matrix.Spectrum
+✔ [5844/6049] Built Mathlib.MeasureTheory.Integral.CircleIntegral
+✔ [5845/6049] Built Mathlib.NumberTheory.ZetaValues
+✔ [5846/6049] Built Mathlib.Analysis.SpecialFunctions.PolarCoord
+✔ [5847/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv
+✔ [5848/6049] Built Mathlib.Combinatorics.Extremal.RuzsaSzemeredi
+✔ [5849/6049] Built Mathlib.NumberTheory.Bertrand
+✔ [5850/6049] Built Mathlib.Geometry.Manifold.MFDeriv.Basic
+✔ [5851/6049] Built Mathlib.Geometry.Manifold.MFDeriv.FDeriv
+✔ [5852/6049] Built Mathlib.LinearAlgebra.Matrix.HermitianFunctionalCalculus
+✔ [5853/6049] Built Mathlib.MeasureTheory.Integral.TorusIntegral
+✔ [5854/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Bounds
+✔ [5855/6049] Built Mathlib.Analysis.Calculus.VectorField
+✔ [5856/6049] Built Mathlib.MeasureTheory.Integral.CircleTransform
+✔ [5857/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.Manifold
+✔ [5858/6049] Built Mathlib.Analysis.Complex.CauchyIntegral
+✔ [5859/6049] Built Mathlib.LinearAlgebra.Matrix.PosDef
+✔ [5860/6049] Built Mathlib.Analysis.Complex.Angle
+✔ [5861/6049] Built Mathlib.Analysis.Complex.TaylorSeries
+✔ [5862/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.Analytic
+✔ [5863/6049] Built Mathlib.Analysis.Complex.RemovableSingularity
+✔ [5864/6049] Built Mathlib.Analysis.Complex.Liouville
+✔ [5865/6049] Built Mathlib.LinearAlgebra.Matrix.LDL
+✔ [5866/6049] Built Mathlib.Data.Real.Pi.Bounds
+✔ [5867/6049] Built Mathlib.Analysis.Complex.Positivity
+✔ [5868/6049] Built Mathlib.Analysis.Complex.AbsMax
+✔ [5869/6049] Built Mathlib.Probability.Moments.ComplexMGF
+✔ [5870/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.Metric
+✔ [5871/6049] Built Mathlib.Combinatorics.SimpleGraph.LapMatrix
+✔ [5872/6049] Built Mathlib.Analysis.Complex.Periodic
+✔ [5873/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Deriv
+✔ [5874/6049] Built Mathlib.Geometry.Manifold.Complex
+✔ [5875/6049] Built Mathlib.Analysis.Complex.LocallyUniformLimit
+✔ [5876/6049] Built Mathlib.Analysis.Complex.Schwarz
+✔ [5877/6049] Built Mathlib.Analysis.Complex.UpperHalfPlane.Exp
+✔ [5878/6049] Built Mathlib.Analysis.Complex.OpenMapping
+✔ [5879/6049] Built Mathlib.Probability.Moments.MGFAnalytic
+✔ [5880/6049] Built Mathlib.Analysis.Complex.Polynomial.Basic
+✔ [5881/6049] Built Mathlib.Geometry.Manifold.ContMDiff.NormedSpace
+✔ [5882/6049] Built Mathlib.NumberTheory.ModularForms.EisensteinSeries.MDifferentiable
+✔ [5883/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.Cotangent
+✔ [5884/6049] Built Mathlib.Analysis.Complex.Polynomial.UnitTrinomial
+✔ [5885/6049] Built Mathlib.NumberTheory.LSeries.Deriv
+✔ [5886/6049] Built Mathlib.Geometry.Manifold.ContMDiffMap
+✔ [5887/6049] Built Mathlib.NumberTheory.LSeries.Positivity
+✔ [5888/6049] Built Mathlib.Analysis.Complex.PhragmenLindelof
+✔ [5889/6049] Built Mathlib.RingTheory.Polynomial.Selmer
+✔ [5890/6049] Built Mathlib.NumberTheory.LegendreSymbol.AddCharacter
+✔ [5891/6049] Built Mathlib.Analysis.InnerProductSpace.NormPow
+✔ [5892/6049] Built Mathlib.Geometry.Manifold.MFDeriv.SpecificFunctions
+✔ [5893/6049] Built Mathlib.Analysis.Convolution
+✔ [5894/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.CircleAddChar
+✔ [5895/6049] Built Mathlib.LinearAlgebra.Matrix.SchurComplement
+✔ [5896/6049] Built Mathlib.Geometry.Manifold.VectorBundle.FiberwiseLinear
+✔ [5897/6049] Built Mathlib.Geometry.Manifold.Algebra.Monoid
+✔ [5898/6049] Built Mathlib.Analysis.Complex.Hadamard
+✔ [5899/6049] Built Mathlib.NumberTheory.ModularForms.Basic
+✔ [5900/6049] Built Mathlib.NumberTheory.GaussSum
+✔ [5901/6049] Built Mathlib.Analysis.Calculus.BumpFunction.Convolution
+✔ [5902/6049] Built Mathlib.Geometry.Manifold.MFDeriv.Atlas
+✔ [5903/6049] Built Mathlib.NumberTheory.ModularForms.EisensteinSeries.Basic
+✔ [5904/6049] Built Mathlib.MeasureTheory.Integral.IntegralEqImproper
+✔ [5905/6049] Built Mathlib.Analysis.SpecialFunctions.Integrals
+✔ [5906/6049] Built Mathlib.Geometry.Manifold.Algebra.LieGroup
+✔ [5907/6049] Built Mathlib.NumberTheory.LegendreSymbol.QuadraticChar.GaussSum
+✔ [5908/6049] Built Mathlib.NumberTheory.DirichletCharacter.GaussSum
+✔ [5909/6049] Built Mathlib.NumberTheory.ModularForms.QExpansion
+✔ [5910/6049] Built Mathlib.MeasureTheory.Integral.ExpDecay
+✔ [5911/6049] Built Mathlib.Geometry.Manifold.Algebra.Structures
+✔ [5912/6049] Built Mathlib.Analysis.SpecialFunctions.Pow.Integral
+✔ [5913/6049] Built Mathlib.Geometry.Manifold.Instances.UnitsOfNormedAlgebra
+✔ [5914/6049] Built Mathlib.NumberTheory.Harmonic.Bounds
+✔ [5915/6049] Built Mathlib.NumberTheory.NumberField.Embeddings
+✔ [5916/6049] Built Mathlib.NumberTheory.LegendreSymbol.QuadraticReciprocity
+✔ [5917/6049] Built Mathlib.Data.Real.Pi.Wallis
+✔ [5918/6049] Built Mathlib.NumberTheory.ModularForms.LevelOne
+✔ [5919/6049] Built Mathlib.Analysis.SpecialFunctions.JapaneseBracket
+✔ [5920/6049] Built Mathlib.NumberTheory.JacobiSum.Basic
+✔ [5921/6049] Built Mathlib.MeasureTheory.Constructions.HaarToSphere
+✔ [5922/6049] Built Mathlib.NumberTheory.Cyclotomic.Embeddings
+✔ [5923/6049] Built Mathlib.Geometry.Manifold.VectorBundle.Basic
+✔ [5924/6049] Built Mathlib.Analysis.Calculus.BumpFunction.FiniteDimension
+✔ [5925/6049] Built Mathlib.NumberTheory.Fermat
+✔ [5926/6049] Built Mathlib.Analysis.ODE.PicardLindelof
+✔ [5927/6049] Built Mathlib.Analysis.Fourier.ZMod
+✔ [5928/6049] Built Mathlib.NumberTheory.AbelSummation
+✔ [5929/6049] Built Mathlib.NumberTheory.NumberField.Completion
+✔ [5930/6049] Built Mathlib.Geometry.Manifold.VectorBundle.Pullback
+✔ [5931/6049] Built Mathlib.Analysis.Calculus.LineDeriv.IntegrationByParts
+✔ [5932/6049] Built Mathlib.Analysis.SpecialFunctions.ImproperIntegrals
+✔ [5933/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.LogBounds
+✔ [5934/6049] Built Mathlib.Geometry.Manifold.MFDeriv.UniqueDifferential
+✔ [5935/6049] Built Mathlib.Analysis.Normed.Algebra.Spectrum
+✔ [5936/6049] Built Mathlib.NumberTheory.LegendreSymbol.JacobiSymbol
+✔ [5937/6049] Built Mathlib.Data.Real.Pi.Irrational
+✔ [5938/6049] Built Mathlib.Geometry.Manifold.BumpFunction
+✔ [5939/6049] Built Mathlib.MeasureTheory.Integral.PeakFunction
+✔ [5940/6049] Built Mathlib.NumberTheory.NumberField.FinitePlaces
+✔ [5941/6049] Built Mathlib.Probability.Distributions.Pareto
+✔ [5942/6049] Built Mathlib.Analysis.SpecialFunctions.Log.Summable
+✔ [5943/6049] Built Mathlib.NumberTheory.NumberField.Units.Basic
+✔ [5944/6049] Built Mathlib.Geometry.Manifold.VectorBundle.SmoothSection
+✔ [5945/6049] Built Mathlib.NumberTheory.LSeries.SumCoeff
+✔ [5946/6049] Built Mathlib.Geometry.Manifold.Algebra.SmoothFunctions
+✔ [5947/6049] Built Mathlib.Analysis.SpecialFunctions.Complex.Arctan
+✔ [5948/6049] Built Mathlib.Computability.AkraBazzi.AkraBazzi
+✔ [5949/6049] Built Mathlib.Analysis.SpecialFunctions.Stirling
+✔ [5950/6049] Built Mathlib.Analysis.Normed.Algebra.Basic
+✔ [5951/6049] Built Mathlib.Geometry.Manifold.VectorBundle.Hom
+✔ [5952/6049] Built Mathlib.Tactic.NormNum.LegendreSymbol
+✔ [5953/6049] Built Mathlib.NumberTheory.NumberField.ProductFormula
+✔ [5954/6049] Built Mathlib.Analysis.MellinTransform
+✔ [5955/6049] Built Mathlib.Data.Real.Pi.Leibniz
+✔ [5956/6049] Built Mathlib.Analysis.SpecialFunctions.Gamma.Basic
+✔ [5957/6049] Built Mathlib.Tactic
+✔ [5958/6049] Built Mathlib.Geometry.Manifold.VectorBundle.Tangent
+✔ [5959/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Integral
+✔ [5960/6049] Built Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.ExpLog
+✔ [5961/6049] Built Mathlib.Probability.Distributions.Gamma
+✔ [5962/6049] Built Mathlib.Geometry.Manifold.Diffeomorph
+✔ [5963/6049] Built Mathlib.Analysis.SpecialFunctions.Gamma.Deriv
+✔ [5964/6049] Built Mathlib.Geometry.Manifold.PartitionOfUnity
+✔ [5965/6049] Built Mathlib.Analysis.CStarAlgebra.Spectrum
+✔ [5966/6049] Built Mathlib.Geometry.Manifold.MFDeriv.Tangent
+✔ [5967/6049] Built Mathlib.MeasureTheory.Integral.Gamma
+✔ [5968/6049] Built Mathlib.Geometry.Manifold.LocalDiffeomorph
+✔ [5969/6049] Built Mathlib.Probability.Distributions.Exponential
+✔ [5970/6049] Built Mathlib.Geometry.Manifold.DerivationBundle
+✔ [5971/6049] Built Mathlib.Analysis.FunctionalSpaces.SobolevInequality
+✔ [5972/6049] Built Mathlib.Analysis.Distribution.AEEqOfIntegralContDiff
+✔ [5973/6049] Built Mathlib.Analysis.SpecialFunctions.Gaussian.GaussianIntegral
+✔ [5974/6049] Built Mathlib.Analysis.SpecialFunctions.Trigonometric.EulerSineProd
+✔ [5975/6049] Built Mathlib.Geometry.Manifold.IntegralCurve.Basic
+✔ [5976/6049] Built Mathlib.NumberTheory.LSeries.AbstractFuncEq
+✔ [5977/6049] Built Mathlib.Geometry.Manifold.WhitneyEmbedding
+✔ [5978/6049] Built Mathlib.Geometry.Manifold.Instances.Sphere
+✔ [5979/6049] Built Mathlib.Geometry.Manifold.IntegralCurve.Transform
+✔ [5980/6049] Built Mathlib.Geometry.Manifold.Sheaf.Smooth
+✔ [5981/6049] Built Mathlib.Geometry.Manifold.ContMDiffMFDeriv
+✔ [5982/6049] Built Mathlib.Geometry.Manifold.PoincareConjecture
+✔ [5983/6049] Built Mathlib.Analysis.SpecialFunctions.Gamma.BohrMollerup
+✔ [5984/6049] Built Mathlib.Geometry.Manifold.Sheaf.LocallyRingedSpace
+✔ [5985/6049] Built Mathlib.Geometry.Manifold.IntegralCurve.ExistUnique
+✔ [5986/6049] Built Mathlib.Probability.Distributions.Gaussian
+✔ [5987/6049] Built Mathlib.Analysis.CStarAlgebra.GelfandDuality
+✔ [5988/6049] Built Mathlib.Geometry.Manifold.MFDeriv.NormedSpace
+✔ [5989/6049] Built Mathlib.Analysis.Calculus.Rademacher
+✔ [5990/6049] Built Mathlib.MeasureTheory.Measure.Lebesgue.VolumeOfBalls
+✔ [5991/6049] Built Mathlib.Geometry.Manifold.IntegralCurve.UniformTime
+✔ [5992/6049] Built Mathlib.Geometry.Manifold.VectorBundle.MDifferentiable
+✔ [5993/6049] Built Mathlib.Analysis.SpecialFunctions.Gamma.Beta
+✔ [5994/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Instances
+✔ [5995/6049] Built Mathlib.Analysis.SpecialFunctions.Gaussian.FourierTransform
+✔ [5996/6049] Built Mathlib.Analysis.Distribution.SchwartzSpace
+✔ [5997/6049] Built Mathlib.Geometry.Manifold.VectorField
+✔ [5998/6049] Built Mathlib.Analysis.Fourier.Inversion
+✔ [5999/6049] Built Mathlib.Analysis.SpecialFunctions.Gamma.Deligne
+✔ [6000/6049] Built Mathlib.Geometry.Manifold.Algebra.LeftInvariantDerivation
+✔ [6001/6049] Built Mathlib.Analysis.MellinInversion
+✔ [6002/6049] Built Mathlib.NumberTheory.NumberField.CanonicalEmbedding.Basic
+✔ [6003/6049] Built Mathlib.NumberTheory.Harmonic.GammaDeriv
+✔ [6004/6049] Built Mathlib.NumberTheory.LSeries.MellinEqDirichlet
+✔ [6005/6049] Built Mathlib.NumberTheory.NumberField.EquivReindex
+✔ [6006/6049] Built Mathlib.NumberTheory.NumberField.AdeleRing
+✔ [6007/6049] Built Mathlib.NumberTheory.NumberField.House
+✔ [6008/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Isometric
+✔ [6009/6049] Built Mathlib.Analysis.Fourier.FourierTransformDeriv
+✔ [6010/6049] Built Mathlib.Analysis.SpecialFunctions.ContinuousFunctionalCalculus.Rpow.Isometric
+✔ [6011/6049] Built Mathlib.Analysis.Distribution.FourierSchwartz
+✔ [6012/6049] Built Mathlib.NumberTheory.NumberField.CanonicalEmbedding.ConvexBody
+✔ [6013/6049] Built Mathlib.Analysis.Fourier.PoissonSummation
+✔ [6014/6049] Built Mathlib.Analysis.SpecialFunctions.Gaussian.PoissonSummation
+✔ [6015/6049] Built Mathlib.NumberTheory.NumberField.Units.DirichletTheorem
+✔ [6016/6049] Built Mathlib.NumberTheory.ModularForms.JacobiTheta.TwoVariable
+✔ [6017/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Basic
+✔ [6018/6049] Built Mathlib.NumberTheory.NumberField.Units.Regulator
+✔ [6019/6049] Built Mathlib.NumberTheory.NumberField.Discriminant.Basic
+✔ [6020/6049] Built Mathlib.NumberTheory.Cyclotomic.Three
+✔ [6021/6049] Built Mathlib.Analysis.CStarAlgebra.SpecialFunctions.PosPart
+✔ [6022/6049] Built Mathlib.NumberTheory.ModularForms.JacobiTheta.OneVariable
+✔ [6023/6049] Built Mathlib.NumberTheory.NumberField.ClassNumber
+✔ [6024/6049] Built Mathlib.NumberTheory.ModularForms.JacobiTheta.Bounds
+✔ [6025/6049] Built Mathlib.NumberTheory.ModularForms.JacobiTheta.Manifold
+✔ [6026/6049] Built Mathlib.Analysis.InnerProductSpace.StarOrder
+✔ [6027/6049] Built Mathlib.NumberTheory.Cyclotomic.PID
+✔ [6028/6049] Built Mathlib.NumberTheory.NumberField.CanonicalEmbedding.FundamentalCone
+✔ [6029/6049] Built Mathlib.NumberTheory.LSeries.HurwitzZetaOdd
+✔ [6030/6049] Built Mathlib.NumberTheory.LSeries.HurwitzZetaEven
+✔ [6031/6049] Built Mathlib.NumberTheory.LSeries.HurwitzZeta
+✔ [6032/6049] Built Mathlib.NumberTheory.LSeries.RiemannZeta
+✔ [6033/6049] Built Mathlib.NumberTheory.FLT.Three
+✔ [6034/6049] Built Mathlib.Analysis.CStarAlgebra.ContinuousFunctionalCalculus.Order
+✔ [6035/6049] Built Mathlib.NumberTheory.LSeries.HurwitzZetaValues
+✔ [6036/6049] Built Mathlib.NumberTheory.LSeries.Dirichlet
+✔ [6037/6049] Built Mathlib.Analysis.CStarAlgebra.Hom
+✔ [6038/6049] Built Mathlib.NumberTheory.Harmonic.ZetaAsymp
+✔ [6039/6049] Built Mathlib.NumberTheory.EulerProduct.DirichletLSeries
+✔ [6040/6049] Built Mathlib.NumberTheory.LSeries.ZMod
+✔ [6041/6049] Built Mathlib.Analysis.CStarAlgebra.Module.Defs
+✔ [6042/6049] Built Mathlib.NumberTheory.LSeries.DirichletContinuation
+✔ [6043/6049] Built Mathlib.NumberTheory.LSeries.Nonvanishing
+✔ [6044/6049] Built Mathlib.Analysis.CStarAlgebra.ApproximateUnit
+✔ [6045/6049] Built Mathlib.Analysis.CStarAlgebra.Module.Constructions
+✔ [6046/6049] Built Mathlib.NumberTheory.LSeries.PrimesInAP
+✔ [6047/6049] Built Mathlib.Analysis.CStarAlgebra.CStarMatrix
+✔ [6048/6049] Built Mathlib
+Build completed successfully.
+✅ DSP-Plus Build Complete at Fri Jan 23 14:46:29 EST 2026

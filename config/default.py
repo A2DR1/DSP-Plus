@@ -7,7 +7,7 @@ load_dotenv()
 
 print("Loaded environment variables from .env file.")
 print(f"OPENAI_API_KEY: {os.environ.get('OPENAI_API_KEY')}")
-print(f"FIREWORKS_API_KEY: {os.environ.get('FIREWORKS_API_KEY')}")
+print(f"FIREWORKS_API_KEY: {os.environ.get('FIREWORK_API_KEY')}")
 
 """
 Record all your configurations here
@@ -41,7 +41,7 @@ prove_leanserver_num = 2
 draft_model_config = [
     {
         "base_url": "https://api.fireworks.ai/inference/v1",
-        "api_key": os.environ.get("FIREWORKS_API_KEY"),
+        "api_key": os.environ.get("FIREWORK_API_KEY"),
     },
 ]
 
@@ -57,7 +57,7 @@ draft_sample_config = {
 sketch_model_config = [
     {
         "base_url": "https://api.fireworks.ai/inference/v1",
-        "api_key": os.environ.get("FIREWORKS_API_KEY"),     
+        "api_key": os.environ.get("FIREWORK_API_KEY"),     
     },
 ]
 
