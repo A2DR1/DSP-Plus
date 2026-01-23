@@ -23,15 +23,23 @@ class RequestSender:
             api_key = api_key,
         )
         use_beam_search = sampling_params.pop('use_beam_search', False)
-        response = client.completions.create(
-            model = self.model,
-            prompt = prompt,
-            logprobs = 1,
-            **sampling_params,
-            extra_body={
-                "use_beam_search": use_beam_search,
-            }
-        )
+        if use_beam_search: 
+            response = client.completions.create(
+                model = self.model,
+                prompt = prompt,
+                logprobs = 1,
+                **sampling_params,
+                extra_body={
+                    "use_beam_search": use_beam_search,
+                }
+            )
+        else:
+            response = client.completions.create(
+                model = self.model,
+                prompt = prompt,
+                logprobs = 1,
+                **sampling_params,
+            )
         # print(f"   Received response from url {base_url}.", flush=True)
         return response
 
@@ -43,7 +51,7 @@ class RequestSender:
             try:
                 return self.send_request_once_openai(prompt, base_url, api_key, sampling_params)
             except Exception as e:
-                pass
+                print(f"DEBUG: OpenAI API Error: {e}")
         raise RuntimeError("Failed to get response from API.")
 
 
