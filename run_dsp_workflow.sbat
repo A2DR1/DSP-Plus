@@ -1,0 +1,29 @@
+#!/bin/bash
+#SBATCH --job-name=DSP_miniF2F
+#SBATCH --account=lsa1           # Use your PI's account or your UMRCP
+#SBATCH --partition=standard
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=8        # To support concurrent_num=8 in config.py
+#SBATCH --mem=64g                 # 64GB ensures large search trees don't crash
+#SBATCH --time=12:00:00          # miniF2F (test set) takes significant time
+#SBATCH --output=%x-%j.out       # Logs named after job-id
+
+# 1. Clear and Load System Modules
+module purge
+module load python3.11-anaconda/2024.02
+module load gcc
+module load cmake
+
+# 2. Initialize Environments
+source /sw/pkgs/arc/python3.11-anaconda/2024.02-1/etc/profile.d/conda.sh
+conda activate DSP_Plus_env
+source $HOME/.elan/env
+
+# 3. Navigate to Project Root
+cd /home/austinsz/Lean_QC/DSP-Plus
+
+# 4. Clean Build Command
+python dsp_workflow.py
+
+echo "✅ DSP-Plus Workflow Complete at $(date)"
