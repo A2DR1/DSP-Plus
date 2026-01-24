@@ -26,8 +26,8 @@ image = (
     )
     .env({
         "PATH": "/root/.elan/bin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
-        # Ensure Lean finds system OpenBLAS
-        "LEAN_LIBRARY_PATH": "/usr/lib/x86_64-linux-gnu"
+        # Use a relative path placeholder to allow Lean to use its own defaults
+        "LEAN_LIBRARY_PATH": "/usr/lib/x86_64-linux-gnu:"
     })
     .pip_install(
         "pexpect==4.9.0",
@@ -161,50 +161,37 @@ def setup_openblas_for_leancopilot(repo_path: Path):
 
 
 def build_mathlib(repo_path: Path):
-    """Build Mathlib4 and LeanCopilot if not already built."""
     mathlib_path = repo_path / "mathlib4"
     build_marker = mathlib_path / "build" / ".build_complete"
     
-    # Check if we need to build
-    if build_marker.exists():
-        print("✅ Mathlib4 already built (found .build_complete marker)")
+    # Check for actual binaries, not just a marker
+    olean_sample = mathlib_path / ".lake" / "build" / "lib" / "Mathlib" / "Data" / "Nat" / "Basic.olean"
+    
+    if build_marker.exists() and olean_sample.exists():
+        print("✅ Mathlib4 is fully built and binaries are present.")
         return
+
+    print("🔨 Building Mathlib4 in stages to ensure persistence...")
     
-    print("🔨 Building Mathlib4 and LeanCopilot...")
+    # Stage 1: Core dependencies
+    # This gets the 'Unit' and 'Nat' basics out of the way
+    # run_command("source /root/.elan/env && lake build Init", 
+    #             cwd=mathlib_path, shell=True, description="Building Init")
+    # workspace_volume.commit() # Save progress immediately
+
+    # Stage 2: Attempt Cache
+    run_command("source /root/.elan/env && lake exe cache get || echo 'Cache miss'", 
+                cwd=mathlib_path, shell=True, description="Fetching Cache")
+
+    # Stage 3: The Full Build
+    # This is the long one. If it hangs, the 'Init' we just saved stays safe.
+    print("🚀 Starting full Mathlib build (this may take 20-40 mins)...")
+    run_command("source /root/.elan/env && lake build", 
+                cwd=mathlib_path, shell=True, description="Full Build")
     
-    # Build script with proper environment sourcing
-    build_script = """
-    set -e  # Exit on error
-    source /root/.elan/env
-    
-    # Ensure OpenBLAS is found
-    export LEAN_LIBRARY_PATH=/usr/lib/x86_64-linux-gnu:${LEAN_LIBRARY_PATH}
-    
-    # Build in order
-    echo "Building RulesetInit..."
-    lake build RulesetInit
-    
-    echo "Building LeanCopilot..."
-    lake build LeanCopilot
-    
-    echo "Building repl..."
-    lake build repl
-    
-    echo "Building all remaining dependencies..."
-    lake build
-    
-    # Create completion marker
-    mkdir -p build
-    touch build/.build_complete
-    echo "✅ Build completed successfully"
-    """
-    
-    run_command(
-        build_script,
-        cwd=mathlib_path,
-        shell=True,
-        description="Building Mathlib4 components"
-    )
+    run_command("mkdir -p build && touch build/.build_complete", cwd=mathlib_path, shell=True)
+    workspace_volume.commit() 
+    print("✅ Build committed to Volume.")
 
 
 def verify_dependencies():
@@ -224,6 +211,103 @@ def verify_dependencies():
         except Exception as e:
             print(f"❌ {name} not found: {e}")
             raise
+
+def test_lean_mathlib(repo_path: Path):
+    print("🧪 Testing Mathlib integration...")
+    mathlib_path = repo_path / "mathlib4"
+    
+    # We pipe the JSON into the REPL while ensuring the environment is sourced
+    test_input = '{"cmd": "import Mathlib.Data.Nat.Basic\\n#check Nat.add_comm"}'
+    
+    # WRAP the command in a bash shell that sources the environment
+    full_cmd = f"source /root/.elan/env && echo '{test_input}' | lake env lake exe repl"
+    
+    try:
+        result = subprocess.run(
+            full_cmd,
+            cwd=mathlib_path,
+            capture_output=True,
+            text=True,
+            shell=True,
+            executable="/bin/bash"
+        )
+        
+        if "Nat.add_comm" in result.stdout:
+            print("✅ Mathlib check successful!")
+        else:
+            print(f"⚠️ REPL Response: {result.stdout}")
+    except Exception as e:
+        print(f"❌ Mathlib Test Failed: {e}")
+
+def test_lean_repl(repo_path: Path):
+    print("🧪 Testing Lean REPL interactive session...")
+    mathlib_path = repo_path / "mathlib4"
+    
+    # Simple Lean command to check if it can evaluate 1 + 1
+    test_input = '{"cmd": "import Lean\\n#eval 1 + 1"}'
+    
+    try:
+        # We run the repl binary and pipe the test_input into it
+        result = subprocess.run(
+            ["lake", "env", "lake", "exe", "repl"], # Wrap the command in 'lake env'
+            input=test_input,
+            cwd=mathlib_path,
+            capture_output=True,
+            text=True,
+            check=True
+        )
+        print("✅ REPL Response:", result.stdout)
+        if "2" in result.stdout:
+            print("✨ Lean Server is fully operational!")
+    except Exception as e:
+        print(f"❌ REPL Test Failed: {e}")
+        # Check if it's a library linking error (common with OpenBLAS)
+        if "libopenblas" in str(e):
+            print("💡 Hint: OpenBLAS linking is still broken.")
+        raise
+
+def test_lean_server():
+    from dsp.utils import load_dataset, load_config
+    print("🧪 Testing Lean server startup...")
+    config = "config/default.py"
+    cfg = load_config(config)
+    try:
+        from dsp import Draft, Sketch, Prove
+        Sketch.launch_lean4server(max_lean4_requests = cfg.sketch_leanserver_num, **cfg.sketch_verify_config)
+        Prove.launch_lean4server(max_lean4_requests = cfg.prove_leanserver_num, **cfg.prove_verify_config)
+        print("✅ Lean server started successfully!")
+    except Exception as e:
+        print(f"❌ Lean server failed to start: {e}")
+        raise
+
+def debug_lean_paths(repo_path: Path):
+    print("\n🕵️ --- LEAN PATH DIAGNOSTIC START ---")
+    mathlib_path = repo_path / "mathlib4"
+    
+    # 1. Check Physical Location of Binaries
+    sample_path = mathlib_path / ".lake" / "build" / "lib" / "Init.olean"
+    print(f"📂 Physical check: Does Init.olean exist? {'✅ YES' if sample_path.exists() else '❌ NO'}")
+    print(f"📍 Full Physical Path: {sample_path.absolute()}")
+
+    # 2. Check Lean's Internal Search Paths
+    print("\n🔍 Lean's Search Environment:")
+    # --print-libdir shows where the core toolchain is
+    run_command("source /root/.elan/env && lean --print-libdir", 
+                cwd=mathlib_path, shell=True, description="Toolchain Lib Dir")
+    
+    # lake env lean --print-libdir shows where the current project looks
+    run_command("source /root/.elan/env && lake env lean --print-libdir", 
+                cwd=mathlib_path, shell=True, description="Project Active Lib Dir")
+
+    # 3. Check for LEAN_PATH environment variable
+    print("\n🌐 Environment Variables:")
+    run_command("env | grep LEAN || echo 'No LEAN variables set'", shell=True)
+    
+    # 4. List the first few files in the build directory to confirm structure
+    print("\n📁 Build Directory Sample:")
+    run_command(f"ls -R {mathlib_path}/.lake/build/lib | head -n 10", shell=True)
+    
+    print("🕵️ --- LEAN PATH DIAGNOSTIC END ---\n")
 
 # ============================================================================
 # MAIN FUNCTION
@@ -260,12 +344,25 @@ def run_remote_prover():
     os.chdir(repo_path)
     setup_openblas_for_leancopilot(repo_path)
     build_mathlib(repo_path)
+
+    # Initial commit of workspace
+    print("💾 Saving build to Volume...")
+    workspace_volume.commit()
     
     # Step 4: Run the workflow with unbuffered output
     print("🏃 Starting the DSP workflow...")
 
     # print current path
     print(f"Current working directory: {os.getcwd()}")
+
+    # Test lean server setup
+    os.chdir(repo_path)
+    # NEW: Run the debugger here
+    debug_lean_paths(repo_path)
+
+    test_lean_repl(repo_path)
+    test_lean_mathlib(repo_path)
+    # test_lean_server()
     
     # Use unbuffered Python output and verbose logging
     # workflow_cmd = """
@@ -274,24 +371,24 @@ def run_remote_prover():
     # python -u dsp_workflow.py --config config/default.py 2>&1 | tee -a workflow.log
     # """
 
-    workflow_cmd = """
-    source /root/.elan/env
-    export PYTHONUNBUFFERED=1
-    python quick_start.py 2>&1 | tee -a workflow.log
-    """
+    # workflow_cmd = """
+    # source /root/.elan/env
+    # export PYTHONUNBUFFERED=1
+    # python quick_start.py 2>&1 | tee -a workflow.log
+    # """
     
-    run_command(
-        workflow_cmd,
-        cwd=repo_path,
-        shell=True,
-        description="Running DSP workflow"
-    )
+    # run_command(
+    #     workflow_cmd,
+    #     cwd=repo_path,
+    #     shell=True,
+    #     description="Running DSP workflow"
+    # )
     
-    # Step 5: Commit changes to volume
-    print("💾 Committing workspace to volume...")
-    workspace_volume.commit()
+    # # Step 5: Commit changes to volume
+    # print("💾 Committing workspace to volume...")
+    # workspace_volume.commit()
     
-    print("✅ Workflow completed successfully!")
+    # print("✅ Workflow completed successfully!")
 
 
 # ============================================================================
