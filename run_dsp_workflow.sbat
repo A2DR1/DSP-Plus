@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=DSP_miniF2F
+#SBATCH --job-name=dsp_workflow
 #SBATCH --account=lsa1           # Use your PI's account or your UMRCP
 #SBATCH --partition=standard
 #SBATCH --nodes=1
@@ -9,21 +9,27 @@
 #SBATCH --time=12:00:00          # miniF2F (test set) takes significant time
 #SBATCH --output=%x-%j.out       # Logs named after job-id
 
+echo "Start running dsp_workflow.py"
+
 # 1. Clear and Load System Modules
+echo "Loading System Modules"
 module purge
 module load python3.11-anaconda/2024.02
 module load gcc
 module load cmake
 
 # 2. Initialize Environments
+echo "Initializing Environemnt"
 source /sw/pkgs/arc/python3.11-anaconda/2024.02-1/etc/profile.d/conda.sh
 conda activate DSP_Plus_env
 source $HOME/.elan/env
 
 # 3. Navigate to Project Root
+echo "Naviagting to Project Root"
 cd /home/austinsz/Lean_QC/DSP-Plus
 
 # 4. Clean Build Command
-python dsp_workflow.py
+echo "Running Command"
+python dsp_workflow.py --config config/default.py
 
 echo "✅ DSP-Plus Workflow Complete at $(date)"

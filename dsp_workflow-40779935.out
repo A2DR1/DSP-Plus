@@ -1,0 +1,18 @@
+Start running dsp_workflow.py
+Loading System Modules
+Initializing Environemnt
+Naviagting to Project Root
+Running Command
+Traceback (most recent call last):
+  File "/home/austinsz/Lean_QC/DSP-Plus/dsp_workflow.py", line 61, in <module>
+    cfg = load_config(args.config)
+  File "/home/austinsz/Lean_QC/DSP-Plus/dsp/utils.py", line 37, in load_config
+    name = Path(fname).stem
+  File "/home/austinsz/.conda/envs/DSP_Plus_env/lib/python3.10/pathlib.py", line 960, in __new__
+    self = cls._from_parts(args)
+  File "/home/austinsz/.conda/envs/DSP_Plus_env/lib/python3.10/pathlib.py", line 594, in _from_parts
+    drv, root, parts = self._parse_args(args)
+  File "/home/austinsz/.conda/envs/DSP_Plus_env/lib/python3.10/pathlib.py", line 578, in _parse_args
+    a = os.fspath(a)
+TypeError: expected str, bytes or os.PathLike object, not NoneType
+✅ DSP-Plus Workflow Complete at Fri Jan 23 16:04:09 EST 2026
